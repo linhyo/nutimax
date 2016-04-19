@@ -1,0 +1,76 @@
+* {
+  outline: none;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+// Font smoothing hack
+html, html a {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+body {
+  background-color: @bg-color;
+  color: @text-color;
+  font-family: @base-font;
+  font-size: 13px;
+  overflow-x: hidden;
+  cursor: url("../images/paint-hover.png"), default;
+}
+
+input, textarea, button, a {
+  font-family: @base-font !important;
+}
+
+input, textarea {
+  border-color: @main-color !important;
+  color: @main-color !important;
+  font-size: 13px !important;
+  &:focus {
+    border-color: #66afe9 !important;
+  }
+}
+
+input, textarea, button, select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  min-height: 50px;
+  resize: vertical;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+}
+
+p {
+  color: @text-color;
+}
+
+input.has-error, textarea.has-error {
+  background-color: #e2787a !important;
+  color: #fff !important;
+  &::-webkit-input-placeholder {
+    color: whitesmoke !important;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+    color: whitesmoke !important;
+  }
+
+  &::-moz-placeholder {  /* Firefox 19+ */
+    color: whitesmoke !important;
+  }
+
+  &:-ms-input-placeholder {
+    color: whitesmoke !important;
+  }
+}
