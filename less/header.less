@@ -1,0 +1,124 @@
+//Homepage Icon
+.icon-homepage {
+  background: url("../images/spritesheet.png") no-repeat;
+  display: block;
+
+  &.icon-logo1 {
+    .stitches-element(-342px, -190px, 140px, 122px);
+  }
+
+  &.icon-logo2 {
+    .stitches-element(-293px, -322px, 198px, 45px);
+  }
+}
+
+.header {
+  .gradient(#e71c1f, #c2171a);
+  display: table;
+  float: left;
+  height: 125px;
+  position: relative;
+  width: 100%;
+  clear: both;
+  .content {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/partern.png") repeat-x;
+    left: 0;
+    top: 0;
+  }
+  .navbar-default, .navbar {
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    .navbar-collapse {
+      border: 0;
+      background-color: transparent;
+      position: relative;
+      z-index: 10;
+    }
+    .navbar-brand {
+      display: table;
+      padding: 0;
+    }
+    .navbar-nav {
+      margin-left: 25px;
+      margin-top: 75px;
+      margin-right: 0;
+      li {
+        height: 30px;
+        a {
+          .border-radius(4px);
+          font-size: 14px;
+          color: white;
+          padding: 5px 10px;
+          text-transform: uppercase;
+          font-weight: 700;
+          transition: background-color 0.2s ease;
+        }
+        &.active, &:hover {
+          a {
+            color: white;
+            background-color: #009639;
+            transition: background-color 0.2s ease;
+          }
+        }
+      }
+    }
+    .social-icons {
+      float: right;
+      margin-top: -64px;
+      margin-right: 3px;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .navbar-collapse {
+        box-shadow: none;
+        .navbar-nav {
+          float: none;
+          margin-left: 5px;
+          margin-right: 5px;
+          margin-top: 15px;
+        }
+        .social-icons {
+          margin-bottom: 0;
+          margin-top: -55px;
+        }
+      }
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .navbar-collapse {
+        box-shadow: none;
+        .navbar-nav {
+          float: none;
+          margin-left: 5px;
+          margin-right: 5px;
+          margin-top: 15px;
+        }
+        .social-icons {
+          margin-bottom: 0;
+          margin-top: -55px;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      .navbar-collapse {
+        box-shadow: none;
+        background-color: #c2171a;
+        .navbar-nav {
+          margin-left: 5px;
+          margin-right: 5px;
+          margin-top: 15px;
+        }
+        .social-icons {
+          float: right;
+          margin-bottom: 10px;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
