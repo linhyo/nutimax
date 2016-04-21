@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,800&subset=latin,vietnamese);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900,100italic,300italic,400italic,500italic,700italic,900italic&subset=latin,vietnamese);
 .icon-homepage {
   background: url("../images/spritesheet.png") no-repeat;
   display: block;
@@ -93,7 +93,7 @@
 .header .navbar-default .social-icons,
 .header .navbar .social-icons {
   float: right;
-  margin-top: -64px;
+  margin-top: 40px;
   margin-right: 3px;
   margin-bottom: 0;
 }
@@ -221,7 +221,7 @@
 .footer .copyright-footer .sub-menu li a {
   color: white;
   display: block;
-  font-weight: 600;
+  font-weight: 500;
   padding: 10px 0;
   text-decoration: none;
   transition: all 0.5s ease;
