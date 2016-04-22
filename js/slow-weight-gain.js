@@ -1,7 +1,9 @@
 $(document).ready(function () {
   $('#light-slider').lightSlider({
     item: 4,
+    auto: true,
     loop: true,
+    pauseOnHover: true,
     slideMove: 2,
     slideMargin: 20,
     easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
