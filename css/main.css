@@ -1005,23 +1005,73 @@ textarea.has-error:-ms-input-placeholder {
   background: transparent url(../images/golden-stage/expand.png) no-repeat;
 }
 .milk-product {
-  background: url("../images/golden-stage/milk-product.png") no-repeat center / cover;
-  width: 279px;
-  height: 169px;
-  position: absolute;
-  bottom: -75px;
-  left: -155px;
-  z-index: 99;
-}
-.milk-product:after {
-  background: rgba(0, 0, 0, 0) url("../images/golden-stage/note2.png") no-repeat scroll center center / cover;
-  content: "";
-  height: 72px;
+  display: block;
+  bottom: 0;
   left: 0;
   position: absolute;
-  top: -50px;
-  width: 122px;
+}
+.milk-product:before {
+  background: rgba(0, 0, 0, 0) url("../images/golden-stage/note2.png") no-repeat scroll center center / cover;
+  content: "";
   display: block;
+  height: 72px;
+  left: -165px;
+  position: absolute;
+  top: -150px;
+  width: 122px;
+}
+.milk-product .effect-after-milk {
+  background: rgba(0, 0, 0, 0) url("../images/golden-stage/after.png") no-repeat scroll 0 0;
+  height: 0;
+  left: -140px;
+  position: absolute;
+  bottom: -21px;
+  width: 280px;
+  z-index: 98;
+  display: block;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.milk-product .milk {
+  background: rgba(0, 0, 0, 0) url("../images/golden-stage/milk-product.png") no-repeat scroll center center / cover;
+  bottom: -40px;
+  height: 150px;
+  left: -75px;
+  width: 124px;
+  position: absolute;
+  z-index: 99;
+}
+.milk-product .effect-before-milk {
+  background: rgba(0, 0, 0, 0) url("../images/golden-stage/before.png") no-repeat scroll 0 0;
+  height: 0;
+  left: -140px;
+  position: absolute;
+  bottom: -50px;
+  width: 276px;
+  z-index: 100;
+  display: block;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.milk-product:hover .effect-after-milk {
+  height: 94px;
+  background-position: top left;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.milk-product:hover .effect-before-milk {
+  height: 94px;
+  background-position: top left;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 .modal-dialog .view_full_button {
   right: 30px;
@@ -1144,7 +1194,11 @@ textarea.has-error:-ms-input-placeholder {
 }
 #book-view .book_wrapper .page2 {
   padding: 50px 0 30px;
-  font-size: 13px;
+  font-size: 14px;
+}
+#book-view .book_wrapper .page2 .content-page {
+  padding: 10px 25px;
+  line-height: 19px;
 }
 #book-view .book_wrapper .page3 {
   padding: 52px 0 30px;
