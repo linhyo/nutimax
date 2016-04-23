@@ -10,6 +10,25 @@
   background: transparent url(../images/golden-stage/expand.png) no-repeat;
 }
 
+.milk-product{
+  background: url("../images/golden-stage/milk-product.png") no-repeat center/ cover;
+  width: 279px;
+  height: 169px;
+  position: absolute;
+  bottom: -75px;
+  left: -155px;
+  z-index: 99;
+  &:after{
+    background: hsla(0, 0%, 0%, 0) url("../images/golden-stage/note2.png") no-repeat scroll center center / cover ;
+    content: "";
+    height: 72px;
+    left: 0;
+    position: absolute;
+    top: -50px;
+    width: 122px;
+  }
+}
+
 .modal-dialog {
   .view_full_button {
     right: 30px;
@@ -23,6 +42,7 @@
   position: relative;
   padding: 65px 0;
   background: url("../images/golden-stage/video.jpg") no-repeat center center/ cover;
+
   .note-book {
     position: absolute;
     background: url("../images/golden-stage/note1.png") no-repeat;
