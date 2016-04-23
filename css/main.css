@@ -965,6 +965,41 @@ textarea.has-error:-ms-input-placeholder {
   height: 850px;
   background: transparent url("../images/landing/fruit-bg.jpg") no-repeat center center / cover;
   padding: 100px 0;
+  position: relative;
+}
+#landing-food .gs-block {
+  bottom: 0;
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+#landing-food .gs-block .gs-expert {
+  background: rgba(0, 0, 0, 0) url("../images/landing/expert.png") no-repeat scroll center top;
+  bottom: 0;
+  height: 572px;
+  position: absolute;
+  right: 50px;
+  width: 420px;
+}
+#landing-food .gs-block .gs-expert:after {
+  content: '';
+  position: absolute;
+  left: -65px;
+  top: 75px;
+  width: 220px;
+  height: 234px;
+  background: transparent url("../images/landing/expert-text.png");
+}
+#landing-food .gs-block .gs-expert .btn-question {
+  background: url("../images/golden-stage/question.png") no-repeat;
+  position: absolute;
+  width: 376px;
+  height: 99px;
+  left: 50%;
+  bottom: 15px;
+  margin-left: -150px;
 }
 #landing-food .gs-box {
   position: relative;
@@ -980,17 +1015,144 @@ textarea.has-error:-ms-input-placeholder {
   background-clip: padding-box;
   padding: 60px 0;
 }
-#landing-food .gs-box .gs-expert {
-  content: '';
+#landing-food .gs-box .gs-child-tab {
   position: absolute;
-  right: -50px;
-  top: 30%;
-  width: 420px;
-  height: 572px;
-  background: transparent url("../images/landing/expert.png") no-repeat center top;
+  left: 0;
+  margin-top: 30px;
+  top: -100%;
+  z-index: 1;
+  width: 100%;
+  border: 0 none;
+}
+#landing-food .gs-box .gs-child-tab:after {
+  position: absolute;
+  top: -85px;
+  left: 0;
+  background: url("../images/golden-stage/thick.png") no-repeat;
+  width: 100%;
+  height: 69px;
+}
+#landing-food .gs-box .gs-child-tab li {
+  display: block;
+  padding: 0;
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+#landing-food .gs-box .gs-child-tab li a {
+  width: 309px;
+  height: 374px;
+  display: block;
+  border: 0;
+  padding: 0;
+  position: relative;
+}
+#landing-food .gs-box .gs-child-tab li a .title-tab {
+  font-family: 'Nabila', sans-serif;
+  color: #07a94e;
+  position: absolute;
+  width: 100%;
+  display: block;
+  left: 0;
+  text-align: center;
+  font-size: 25px;
+  bottom: 35px;
+}
+#landing-food .gs-box .gs-child-tab li a.one-year-old {
+  z-index: 2;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  top: -15px;
+  background: url("../images/golden-stage/1.png") center / 100% auto;
+}
+#landing-food .gs-box .gs-child-tab li a.one-year-old:before {
+  background: url("../images/golden-stage/k1.png") no-repeat center / 100% auto;
+  width: 43px;
+  height: 128px;
+  content: '';
+  top: -83px;
+  left: 50%;
+  position: absolute;
+  z-index: 5;
+  margin-left: -21px;
+}
+#landing-food .gs-box .gs-child-tab li a.two-year-old {
+  left: 10px;
+  top: 0;
+  z-index: 3;
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  background: url("../images/golden-stage/2.png") center / 100% auto;
+}
+#landing-food .gs-box .gs-child-tab li a.two-year-old:before {
+  background: url("../images/golden-stage/k2.png") no-repeat center / 100% auto;
+  width: 41px;
+  height: 109px;
+  content: '';
+  top: -75px;
+  left: 50%;
+  position: absolute;
+  z-index: 5;
+  margin-left: -20px;
+}
+#landing-food .gs-box .gs-child-tab li a.three-year-old {
+  top: -5px;
+  z-index: 4;
+  background: url("../images/golden-stage/3.png") center / 100% auto;
+}
+#landing-food .gs-box .gs-child-tab li a.three-year-old:before {
+  background: url("../images/golden-stage/k3.png") no-repeat center / 100% auto;
+  width: 29px;
+  height: 127px;
+  content: '';
+  top: -83px;
+  left: 50%;
+  position: absolute;
+  z-index: 5;
+  margin-left: -15px;
+}
+#landing-food .gs-box .gs-child-tab li a:after {
+  background-color: rgba(0, 0, 0, 0.4);
+  content: "";
+  height: 350px;
+  left: 7px;
+  position: absolute;
+  top: 11px;
+  width: 285px;
+  z-index: 1;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#landing-food .gs-box .gs-child-tab li.active a,
+#landing-food .gs-box .gs-child-tab li:hover a {
+  z-index: 5;
+}
+#landing-food .gs-box .gs-child-tab li.active a .title-tab,
+#landing-food .gs-box .gs-child-tab li:hover a .title-tab {
+  color: #bf2a2e;
+}
+#landing-food .gs-box .gs-child-tab li.active a:after,
+#landing-food .gs-box .gs-child-tab li:hover a:after {
+  background-color: transparent;
 }
 #landing-food .gs-box .gs-tab {
   border: none;
+  position: relative;
+  z-index: 1;
 }
 #landing-food .gs-box .gs-tab > li.active > a {
   background-color: #07a94e;
@@ -1013,15 +1175,7 @@ textarea.has-error:-ms-input-placeholder {
 #landing-food .gs-box .gs-content {
   position: relative;
   padding: 20px 0;
-}
-#landing-food .gs-box .gs-content:after {
-  content: '';
-  position: absolute;
-  right: 15%;
-  top: 40%;
-  width: 220px;
-  height: 234px;
-  background: transparent url("../images/landing/expert-text.png");
+  z-index: 1;
 }
 #landing-food .gs-box .gs-content .tab-pane {
   width: 53%;
