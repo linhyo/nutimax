@@ -1594,6 +1594,10 @@ textarea.has-error:-ms-input-placeholder {
     color: #2c8249;
   }
 }
+.gs-slogan {
+  display: inline-block;
+  margin: 10px 0 0 20%;
+}
 #landing-landscape {
   width: 100%;
   background: transparent url("../images/golden-stage/nature-bg.jpg") no-repeat center center / cover;
