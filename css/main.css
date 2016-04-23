@@ -1018,8 +1018,7 @@ textarea.has-error:-ms-input-placeholder {
 #landing-food .gs-box .gs-child-tab {
   position: absolute;
   left: 0;
-  margin-top: 30px;
-  top: -100%;
+  top: -485px;
   z-index: 1;
   width: 100%;
   border: 0 none;
@@ -1027,10 +1026,10 @@ textarea.has-error:-ms-input-placeholder {
 #landing-food .gs-box .gs-child-tab:after {
   position: absolute;
   top: -85px;
-  left: 0;
+  left: -50%;
   background: url("../images/golden-stage/thick.png") no-repeat;
-  width: 100%;
-  height: 69px;
+  width: 1849px;
+  height: 89px;
 }
 #landing-food .gs-box .gs-child-tab li {
   display: block;
@@ -1060,11 +1059,11 @@ textarea.has-error:-ms-input-placeholder {
 }
 #landing-food .gs-box .gs-child-tab li a.one-year-old {
   z-index: 2;
-  -webkit-transform: rotate(10deg);
-  -moz-transform: rotate(10deg);
-  -ms-transform: rotate(10deg);
-  -o-transform: rotate(10deg);
-  top: -15px;
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  top: 10px;
   background: url("../images/golden-stage/1.png") center / 100% auto;
 }
 #landing-food .gs-box .gs-child-tab li a.one-year-old:before {
@@ -1080,7 +1079,7 @@ textarea.has-error:-ms-input-placeholder {
 }
 #landing-food .gs-box .gs-child-tab li a.two-year-old {
   left: 10px;
-  top: 0;
+  top: 5px;
   z-index: 3;
   -webkit-transform: rotate(-15deg);
   -moz-transform: rotate(-15deg);
