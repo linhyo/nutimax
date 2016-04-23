@@ -1282,12 +1282,10 @@ textarea.has-error:-ms-input-placeholder {
     background: transparent url(../images/golden-stage/bg.png) no-repeat left top;
   }
   #book-view .book_wrapper-mobile .book-view .milk-product {
-    background: rgba(0, 0, 0, 0) url("../images/golden-stage/milk-product.png") no-repeat scroll center center / 100% auto;
-    bottom: -60px;
+    bottom: 0;
     height: 120px;
-    left: 10px;
+    left: 115px;
     position: absolute;
-    width: 170px;
     z-index: 99;
   }
   #book-view .book_wrapper-mobile .book-view .milk-product:after {
