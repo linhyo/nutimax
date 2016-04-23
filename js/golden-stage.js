@@ -1,3 +1,54 @@
+$(document).ready(function () {
+  var wow = new WOW(
+    {
+      boxClass: 'wow',      // default
+      animateClass: 'animated', // default
+      offset: 0,          // default
+      mobile: true,       // default
+      live: true        // default
+    }
+  );
+  wow.init();
+
+  $('#bookMobile').slick({
+    lazyLoad: 'ondemand',
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: $('.prev_page_button'),
+    nextArrow: $('.next_page_button'),
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 360,
+        settings: {
+          arrows: false,
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          arrows: false,
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+});
+
 $(function () {
   var $mybook = $('#mybook');
   var $bttn_next = $('#next_page_button');
