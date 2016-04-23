@@ -12,16 +12,16 @@ $(document).ready(function () {
 
   $('#bookMobile').slick({
     lazyLoad: 'ondemand',
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: $('.prev_page_button'),
     nextArrow: $('.next_page_button'),
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 770,
         settings: {
           arrows: false,
-          slidesToShow: 3
+          slidesToShow: 1
         }
       },
       {
