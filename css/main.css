@@ -1818,14 +1818,14 @@ textarea.has-error:-ms-input-placeholder {
 }
 @media (min-width: 768px) {
   #landing-food {
-    height: 850px;
+    min-height: 850px;
     background-position: center center;
     padding: 100px 0;
   }
 }
 @media (max-width: 767px) {
   #landing-food {
-    height: 700px;
+    min-height: 700px;
     background-position: 10% 15%;
     padding: 50px 0;
   }
@@ -1939,7 +1939,6 @@ textarea.has-error:-ms-input-placeholder {
 #landing-food .gs-box {
   position: relative;
   width: 100%;
-  min-height: 300px;
   background-color: rgba(255, 255, 255, 0.6);
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -1951,11 +1950,13 @@ textarea.has-error:-ms-input-placeholder {
 }
 @media (min-width: 768px) {
   #landing-food .gs-box {
-    padding: 60px 0;
+    min-height: 760px;
+    padding: 50px 0 20px;
   }
 }
 @media (max-width: 767px) {
   #landing-food .gs-box {
+    min-height: 600px;
     padding: 30px 0;
   }
 }
@@ -2322,13 +2323,17 @@ textarea.has-error:-ms-input-placeholder {
 }
 @media (min-width: 768px) {
   #landing-food .gs-box .gs-panel .panel-body {
-    padding: 15px 0 15px 30px;
+    padding: 10px 0 10px 30px;
   }
 }
 @media (max-width: 767px) {
   #landing-food .gs-box .gs-panel .panel-body {
     padding: 5px 0 5px 30px;
   }
+}
+#landing-food ul {
+  list-style: disc inside !important;
+  margin-top: 10px;
 }
 #page-banner .nutrition-banner {
   position: relative;
