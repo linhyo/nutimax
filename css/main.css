@@ -1029,10 +1029,10 @@ textarea.has-error:-ms-input-placeholder {
   width: 280px;
   z-index: 98;
   display: block;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .milk-product .milk {
   background: rgba(0, 0, 0, 0) url("../images/golden-stage/milk-product.png") no-repeat scroll center center / cover;
@@ -1052,30 +1052,38 @@ textarea.has-error:-ms-input-placeholder {
   width: 276px;
   z-index: 100;
   display: block;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 .milk-product:hover .effect-after-milk {
   height: 94px;
   background-position: top left;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .milk-product:hover .effect-before-milk {
   height: 94px;
   background-position: top left;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+.modal-lg {
+  width: 1024px;
 }
 .modal-dialog .view_full_button {
   right: 30px;
   top: 20px;
+}
+@media (max-width: 360px) {
+  .modal-dialog .view_full_button {
+    right: 15px;
+  }
 }
 #book-view {
   display: block;
@@ -1084,6 +1092,11 @@ textarea.has-error:-ms-input-placeholder {
   padding: 65px 0;
   background: url("../images/golden-stage/video.jpg") no-repeat center center / cover;
   /* Booklet jQuery Plugin Style*/
+}
+@media (max-width: 360px) {
+  #book-view {
+    padding: 95px 0;
+  }
 }
 #book-view .note-book {
   position: absolute;
@@ -1186,8 +1199,30 @@ textarea.has-error:-ms-input-placeholder {
   font-size: 20px;
 }
 #book-view .book_wrapper .page1 {
-  padding: 50px 0 30px;
+  padding: 45px 0 30px;
   font-size: 14px;
+}
+#book-view .book_wrapper .page1 .title-large-1 {
+  color: #2c8149;
+  font-size: 26px;
+  line-height: 33px;
+  text-align: center;
+}
+#book-view .book_wrapper .page1 .title-normal-1 {
+  color: #2c8149;
+  font-size: 20px;
+  line-height: 49px;
+  text-align: center;
+}
+#book-view .book_wrapper .page1 .divide-1 {
+  width: 100px;
+  height: 2px;
+  background-color: #2c8249;
+  margin: 2px auto 15px;
+}
+#book-view .book_wrapper .page1 .content-page-1 {
+  line-height: 19px;
+  padding: 7px 25px 15px;
 }
 #book-view .book_wrapper .page1 img {
   width: 90%;
@@ -1196,17 +1231,43 @@ textarea.has-error:-ms-input-placeholder {
   padding: 50px 0 30px;
   font-size: 14px;
 }
-#book-view .book_wrapper .page2 .content-page {
-  padding: 10px 25px;
+#book-view .book_wrapper .page2 .content-page-1 {
   line-height: 19px;
+  padding: 12px 25px 15px;
+}
+#book-view .book_wrapper .page2 .content-page-2 {
+  line-height: 19px;
+  padding: 4px 25px 15px;
 }
 #book-view .book_wrapper .page3 {
   padding: 52px 0 30px;
   font-size: 14px;
   position: relative;
 }
+#book-view .book_wrapper .page3 .title-normal-1 {
+  color: #2c8149;
+  font-size: 24px;
+  line-height: 37px;
+  text-align: center;
+}
+#book-view .book_wrapper .page3 .divide-1 {
+  width: 100px;
+  height: 2px;
+  background-color: #2c8249;
+  margin: 0 auto 10px;
+}
+#book-view .book_wrapper .page3 .divide-2 {
+  width: 100px;
+  height: 2px;
+  background-color: #2c8249;
+  margin: 2px auto 15px;
+}
+#book-view .book_wrapper .page3 .content-page-1 {
+  line-height: 19px;
+  padding: 15px 25px;
+}
 #book-view .book_wrapper .page3 img {
-  bottom: -90%;
+  bottom: -95%;
   left: 15px;
   margin-bottom: 10px;
   position: absolute;
@@ -1216,49 +1277,83 @@ textarea.has-error:-ms-input-placeholder {
   font-size: 14px;
   padding: 25px;
 }
-#book-view .book_wrapper .page4 h4 {
+#book-view .book_wrapper .page4 .title-normal-1 {
   color: #2c8249;
   padding: 0 5px;
   font-size: 14px;
   margin-top: 15px;
   text-align: left;
 }
-#book-view .book_wrapper .page4 .content-page {
-  padding: 0 5px;
+#book-view .book_wrapper .page4 .content-page-1 {
+  line-height: 19px;
+  padding: 5px 5px 0;
+}
+#book-view .book_wrapper .page4 .content-page-2 {
+  line-height: 19px;
+  padding: 2px 5px 5px;
+}
+#book-view .book_wrapper .page4 .content-page-3 {
+  line-height: 19px;
+  padding: 4px 5px 0;
 }
 #book-view .book_wrapper .page5 {
   font-size: 14px;
   padding: 30px 20px;
 }
-#book-view .book_wrapper .page5 .title-normal {
-  line-height: 30px;
-  text-align: left;
+#book-view .book_wrapper .page5 .title-normal-1 {
+  color: #2c8149;
   font-size: 20px;
+  line-height: 29px;
+  margin-top: 3px;
+  padding: 0 5px;
+  text-align: left;
 }
-#book-view .book_wrapper .page5 .divide {
-  margin: 15px 0;
+#book-view .book_wrapper .page5 .divide-1 {
+  width: 100px;
+  height: 2px;
+  background-color: #2c8249;
+  margin: 13px 0 15px;
 }
-#book-view .book_wrapper .page5 .content-page {
-  padding: 2px 0 15px;
+#book-view .book_wrapper .page5 .content-page-1 {
+  line-height: 19px;
+  padding: 6px 5px 0;
+}
+#book-view .book_wrapper .page5 .content-page-2 {
+  line-height: 19px;
+  padding: 1px 5px 5px;
 }
 #book-view .book_wrapper .page6 {
   font-size: 14px;
   padding: 30px 20px;
 }
-#book-view .book_wrapper .page6 .content-page {
-  padding: 5px 0 10px;
+#book-view .book_wrapper .page6 .content-page-1 {
+  line-height: 19px;
+  padding: 10px 5px 20px;
+}
+#book-view .book_wrapper .page6 .content-page-2 {
+  line-height: 19px;
+  padding: 2px 5px 17px;
+}
+#book-view .book_wrapper .page6 .content-page-3 {
+  line-height: 19px;
+  padding: 4px 5px 0;
 }
 #book-view .book_wrapper .page7 {
   font-size: 14px;
   padding: 20px 30px;
 }
-#book-view .book_wrapper .page7 .title-large {
-  line-height: 35px;
-  margin-bottom: 20px;
+#book-view .book_wrapper .page7 .title-large-1 {
+  color: #2c8149;
+  font-size: 25px;
+  margin-top: 3px;
+  padding: 0 5px;
+  text-align: left;
+  line-height: 38px;
+  margin-bottom: 11px;
 }
-#book-view .book_wrapper .page7 .content-page {
+#book-view .book_wrapper .page7 .content-page-1 {
   line-height: 19px;
-  padding: 10px 0;
+  padding: 8px 0;
 }
 #book-view .book_wrapper .page8 {
   padding: 15px 20px;
@@ -1282,13 +1377,13 @@ textarea.has-error:-ms-input-placeholder {
     background: transparent url(../images/golden-stage/bg.png) no-repeat left top;
   }
   #book-view .book_wrapper-mobile .book-view .milk-product {
-    bottom: 0;
+    bottom: -40px;
     height: 120px;
     left: 115px;
     position: absolute;
     z-index: 99;
   }
-  #book-view .book_wrapper-mobile .book-view .milk-product:after {
+  #book-view .book_wrapper-mobile .book-view .milk-product:before {
     display: none;
   }
   #book-view .book_wrapper-mobile .book-view .next_page_button,
@@ -1534,7 +1629,7 @@ textarea.has-error:-ms-input-placeholder {
     font-size: 13px;
     height: 555px;
     margin: 0 auto;
-    padding: 20px 5px 30px 25px;
+    padding: 35px 5px 30px 25px;
     width: 100%;
   }
   #book-view .book_wrapper-mobile .book-view #bookMobile .page1 img {
@@ -1545,7 +1640,7 @@ textarea.has-error:-ms-input-placeholder {
     font-size: 13px;
     height: 555px;
     margin: 0 auto;
-    padding: 20px 5px 30px 25px;
+    padding: 35px 5px 30px 25px;
     width: 100%;
   }
   #book-view .book_wrapper-mobile .book-view #bookMobile .page3 {
@@ -1553,7 +1648,7 @@ textarea.has-error:-ms-input-placeholder {
     font-size: 13px;
     height: 555px;
     margin: 0 auto;
-    padding: 20px 5px 30px 25px;
+    padding: 35px 5px 30px 25px;
     width: 100%;
   }
   #book-view .book_wrapper-mobile .book-view #bookMobile .page3 img {
@@ -1568,7 +1663,7 @@ textarea.has-error:-ms-input-placeholder {
     font-size: 13px;
     height: 555px;
     margin: 0 auto;
-    padding: 20px 5px 30px 25px;
+    padding: 35px 5px 30px 25px;
     width: 100%;
   }
   #book-view .book_wrapper-mobile .book-view #bookMobile .page4 h4 {
@@ -1587,7 +1682,7 @@ textarea.has-error:-ms-input-placeholder {
     font-size: 13px;
     height: 555px;
     margin: 0 auto;
-    padding: 20px 5px 30px 25px;
+    padding: 5px 5px 30px 25px;
     width: 100%;
   }
   #book-view .book_wrapper-mobile .book-view #bookMobile .page5 .title-normal {
@@ -1607,7 +1702,7 @@ textarea.has-error:-ms-input-placeholder {
     font-size: 13px;
     height: 555px;
     margin: 0 auto;
-    padding: 20px 5px 30px 25px;
+    padding: 35px 5px 30px 25px;
     width: 100%;
   }
   #book-view .book_wrapper-mobile .book-view #bookMobile .page6 .content-page {
@@ -1618,12 +1713,12 @@ textarea.has-error:-ms-input-placeholder {
     font-size: 13px;
     height: 555px;
     margin: 0 auto;
-    padding: 20px 5px 30px 25px;
+    padding: 25px 5px 30px 25px;
     width: 100%;
   }
   #book-view .book_wrapper-mobile .book-view #bookMobile .page7 .title-large {
-    line-height: 35px;
-    margin-bottom: 20px;
+    line-height: 30px;
+    margin-bottom: 5px;
   }
   #book-view .book_wrapper-mobile .book-view #bookMobile .page7 .content-page {
     line-height: 19px;
@@ -1634,7 +1729,7 @@ textarea.has-error:-ms-input-placeholder {
     font-size: 13px;
     height: 555px;
     margin: 0 auto;
-    padding: 20px 5px 30px 25px;
+    padding: 35px 5px 30px 25px;
     width: 100%;
   }
   #book-view .book_wrapper-mobile .book-view #bookMobile span.number-page {
@@ -1658,6 +1753,42 @@ textarea.has-error:-ms-input-placeholder {
     vertical-align: middle;
     color: #2c8249;
   }
+}
+.homepage-hero-module {
+  border-right: none;
+  border-left: none;
+  position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+  display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important;
+}
+.video-container {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+.video-container .filter {
+  z-index: 100;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+.video-container video.fillWidth {
+  width: 100%;
 }
 .gs-slogan {
   display: inline-block;
