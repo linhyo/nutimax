@@ -45,17 +45,15 @@ $(document).ready(function () {
       videoWidth,
       videoHeight;
 
-    console.log(windowHeight);
-
     $(element).each(function () {
       var videoAspectRatio = $(this).data('height') / $(this).data('width'),
         windowAspectRatio = windowHeight / windowWidth;
 
       if (videoAspectRatio > windowAspectRatio) {
-        videoWidth = windowWidth;
+        videoWidth = windowWidth + 20;
         videoHeight = videoWidth * videoAspectRatio;
       } else {
-        videoHeight = windowHeight;
+        videoHeight = windowHeight + 20;
         videoWidth = videoHeight / videoAspectRatio;
         $(this).css({'margin-top': 0, 'margin-left': -(videoWidth - windowWidth) / 2 + 'px'});
       }
