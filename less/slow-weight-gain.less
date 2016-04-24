@@ -4,15 +4,106 @@
 }
 
 #landing-landscape {
+  position: relative;
   width: 100%;
   background: transparent url("../images/golden-stage/nature-bg.jpg") no-repeat center center / cover;
   @media (min-width: 768px) {
-    height: 430px;
+    height: 450px;
   }
   @media (max-width: 767px) {
     height: 180px;
     border-top: 3px solid #ebebeb ;
     border-bottom: 3px solid #ebebeb ;
+  }
+  .leaves {
+    position: absolute;
+    height: 150%;
+    width: 100%;
+  }
+  .leaf {
+    display: block;
+    position: absolute;
+  }
+  .leaf-1 {
+    z-index: 100;
+    left: 60%;
+    animation: fallingLeaf 5s linear infinite;
+    -webkit-animation: fallingLeaf 5s linear infinite;
+    width: 164px;
+    height: 119px;
+    background: transparent url("../images/golden-stage/leaf-1.png") no-repeat center center;
+  }
+  .leaf-2 {
+    left: 33%;
+    animation: fallingLeaf 7s linear infinite;
+    -webkit-animation: fallingLeaf 7s linear infinite;
+    width: 99px;
+    height: 77px;
+    background: transparent url("../images/golden-stage/leaf-2.png") no-repeat center center;
+  }
+  .leaf-3 {
+    left: 5%;
+    animation: fallingLeaf 9s linear infinite;
+    -webkit-animation: fallingLeaf 9s linear infinite;
+    width: 68px;
+    height: 63px;
+    background: transparent url("../images/golden-stage/leaf-3.png") no-repeat center center;
+  }
+}
+
+@-webkit-keyframes fallingLeaf {
+  0% {
+    transform: translate(0, 0);
+    .opacity(1);
+  }
+  50% {
+    .opacity(0.7);
+  }
+  100% {
+    transform: translate(180px, 450px);
+    .opacity(0.4);
+  }
+}
+
+@-moz-keyframes fallingLeaf {
+  0% {
+    transform: translate(0, 0);
+    .opacity(1);
+  }
+  50% {
+    .opacity(0.7);
+  }
+  100% {
+    transform: translate(180px, 450px);
+    .opacity(0.4);
+  }
+}
+
+@-o-keyframes fallingLeaf {
+  0% {
+    transform: translate(0, 0);
+    .opacity(1);
+  }
+  50% {
+    .opacity(0.7);
+  }
+  100% {
+    transform: translate(180px, 450px);
+    .opacity(0.4);
+  }
+}
+
+@keyframes fallingLeaf {
+  0% {
+    transform: translate(0, 0);
+    .opacity(1);
+  }
+  50% {
+    .opacity(0.7);
+  }
+  100% {
+    transform: translate(180px, 450px);
+    .opacity(0.4);
   }
 }
 
