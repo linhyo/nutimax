@@ -1100,17 +1100,16 @@ textarea.has-error:-ms-input-placeholder {
 }
 .milk-product .effect-after-milk {
   background: rgba(0, 0, 0, 0) url("../images/golden-stage/sua-2.png") no-repeat scroll 0 0;
-  height: 0;
+  height: 200px;
   left: -160px;
   position: absolute;
   bottom: -110px;
   width: 320px;
   z-index: 98;
   display: block;
-  -webkit-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  -o-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
+  -webkit-animation: mymove 1s infinite;
+  /* Chrome, Safari, Opera */
+  animation: mymove 1s infinite;
 }
 .milk-product .milk {
   background: rgba(0, 0, 0, 0) url("../images/golden-stage/milk-product.png") no-repeat scroll center center / cover;
@@ -1123,33 +1122,38 @@ textarea.has-error:-ms-input-placeholder {
 }
 .milk-product .effect-before-milk {
   background: rgba(0, 0, 0, 0) url("../images/golden-stage/sua-1.png") no-repeat scroll 0 0;
-  height: 0;
+  height: 200px;
   left: -160px;
   position: absolute;
-  bottom: -110px;
+  bottom: -120px;
   width: 320px;
   z-index: 100;
   display: block;
-  -webkit-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  -o-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
+  -webkit-animation: mymove 1s infinite;
+  /* Chrome, Safari, Opera */
+  animation: mymove 1s infinite;
 }
-.milk-product:hover .effect-after-milk {
-  height: 200px;
-  background-position: top left;
-  -webkit-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  -o-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
+@-webkit-keyframes mymove {
+  0% {
+    bottom: -120px;
+  }
+  50% {
+    bottom: -110px;
+  }
+  100% {
+    bottom: -120px;
+  }
 }
-.milk-product:hover .effect-before-milk {
-  height: 200px;
-  background-position: top left;
-  -webkit-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  -o-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
+@keyframes mymove {
+  0% {
+    bottom: -120px;
+  }
+  50% {
+    bottom: -110px;
+  }
+  100% {
+    bottom: -120px;
+  }
 }
 .modal-lg {
   width: 1024px;
