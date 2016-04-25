@@ -1107,9 +1107,9 @@ textarea.has-error:-ms-input-placeholder {
   width: 320px;
   z-index: 98;
   display: block;
-  -webkit-animation: mymove 2.5s infinite;
+  -webkit-animation: mymove 3s infinite;
   /* Chrome, Safari, Opera */
-  animation: mymove 2.5s infinite;
+  animation: mymove 3s infinite;
 }
 .milk-product .milk {
   background: rgba(0, 0, 0, 0) url("../images/golden-stage/milk-product.png") no-repeat scroll center center / cover;
@@ -1129,30 +1129,30 @@ textarea.has-error:-ms-input-placeholder {
   width: 320px;
   z-index: 100;
   display: block;
-  -webkit-animation: mymove 2.5s infinite;
+  -webkit-animation: mymove 3s infinite;
   /* Chrome, Safari, Opera */
-  animation: mymove 2.5s infinite;
+  animation: mymove 3s infinite;
 }
 @-webkit-keyframes mymove {
   0% {
-    bottom: -120px;
+    bottom: -125px;
   }
   50% {
-    bottom: -110px;
+    bottom: -105px;
   }
   100% {
-    bottom: -120px;
+    bottom: -125px;
   }
 }
 @keyframes mymove {
   0% {
-    bottom: -120px;
+    bottom: -125px;
   }
   50% {
-    bottom: -110px;
+    bottom: -105px;
   }
   100% {
-    bottom: -120px;
+    bottom: -125px;
   }
 }
 .modal-lg {
