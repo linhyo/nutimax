@@ -14,6 +14,126 @@ $(document).ready(function () {
   );
   wow.init();
 
+  $('.fullImage1').on('shown.bs.modal', function () {
+    $('.your-book1').slick({
+      initialSlide: 0,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow: $('.prev_page1'),
+      nextArrow: $('.next_page1')
+    });
+  });
+
+  $('.fullImage2').on('shown.bs.modal', function () {
+    $('.your-book2').slick({
+      initialSlide: 1,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow: $('.prev_page2'),
+      nextArrow: $('.next_page2')
+    });
+  });
+
+  $('.fullImage3').on('shown.bs.modal', function () {
+    $('.your-book3').slick({
+      initialSlide: 2,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow: $('.prev_page3'),
+      nextArrow: $('.next_page3')
+    });
+  });
+
+  $('.fullImage4').on('shown.bs.modal', function () {
+    $('.your-book4').slick({
+      initialSlide: 3,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow: $('.prev_page4'),
+      nextArrow: $('.next_page4')
+    });
+  });
+
+  $('.fullImage-mobile1').on('shown.bs.modal', function () {
+    $('.your-mobile-book1').slick({
+      initialSlide: 0,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow: $('.prev-mobile-book1'),
+      nextArrow: $('.next-mobile-book1')
+    });
+  });
+
+  $('.fullImage-mobile2').on('shown.bs.modal', function () {
+    $('.your-mobile-book2').slick({
+      initialSlide: 1,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow: $('.prev-mobile-book2'),
+      nextArrow: $('.next-mobile-book2')
+    });
+  });
+
+  $('.fullImage-mobile3').on('shown.bs.modal', function () {
+    $('.your-mobile-book3').slick({
+      initialSlide: 2,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow: $('.prev-mobile-book3'),
+      nextArrow: $('.next-mobile-book3')
+    });
+  });
+
+  $('.fullImage-mobile4').on('shown.bs.modal', function () {
+    $('.your-mobile-book4').slick({
+      initialSlide: 3,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow: $('.prev-mobile-book4'),
+      nextArrow: $('.next-mobile-book4')
+    });
+  });
+
+  $('.fullImage-mobile5').on('shown.bs.modal', function () {
+    $('.your-mobile-book5').slick({
+      initialSlide: 4,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow: $('.prev-mobile-book5'),
+      nextArrow: $('.next-mobile-book5')
+    });
+  });
+
+  $('.fullImage-mobile6').on('shown.bs.modal', function () {
+    $('.your-mobile-book6').slick({
+      initialSlide: 5,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow: $('.prev-mobile-book6'),
+      nextArrow: $('.next-mobile-book6')
+    });
+  });
+
+  $('.fullImage-mobile7').on('shown.bs.modal', function () {
+    $('.your-mobile-book7').slick({
+      initialSlide: 6,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow: $('.prev-mobile-book7'),
+      nextArrow: $('.next-mobile-book7')
+    });
+  });
+
+  $('.fullImage-mobile8').on('shown.bs.modal', function () {
+    $('.your-mobile-book8').slick({
+      initialSlide: 7,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow: $('.prev-mobile-book8'),
+      nextArrow: $('.next-mobile-book8')
+    });
+  });
+
   $('#bookMobile').slick({
     lazyLoad: 'ondemand',
     slidesToShow: 1,

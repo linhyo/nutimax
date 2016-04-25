@@ -10,7 +10,52 @@
   background: transparent url(../images/golden-stage/expand.png) no-repeat;
 }
 
-.header{
+.next_page1, .next_page2, .next_page3, .next_page4, .prev_page1, .prev_page2, .prev_page3, .prev_page4 {
+  display: block;
+  position: absolute;
+  width: 35px;
+  height: 31px;
+  cursor: pointer;
+  margin-top: -20px;
+  bottom: 35px;
+  z-index: 99;
+}
+
+.next-mobile-book1, .next-mobile-book2, .next-mobile-book3, .next-mobile-book4, .next-mobile-book5, .next-mobile-book6, .next-mobile-book7, .next-mobile-book8,
+.prev-mobile-book1, .prev-mobile-book2, .prev-mobile-book3, .prev-mobile-book4, .prev-mobile-book5, .prev-mobile-book6, .prev-mobile-book7, .prev-mobile-book8 {
+  display: block;
+  position: absolute;
+  width: 35px;
+  height: 31px;
+  cursor: pointer;
+  margin-top: -20px;
+  bottom: 25px;
+  z-index: 99;
+}
+
+.prev_page1, .prev_page2, .prev_page3, .prev_page4 {
+  right: 75px;
+  background: transparent url(../images/golden-stage/prev.png) no-repeat;
+}
+
+.prev-mobile-book1, .prev-mobile-book2, .prev-mobile-book3, .prev-mobile-book4, .prev-mobile-book5, .prev-mobile-book6, .prev-mobile-book7, .prev-mobile-book8 {
+  right: 50%;
+  margin-right: 10px;
+  background: transparent url(../images/golden-stage/prev.png) no-repeat;
+}
+
+.next_page1, .next_page2, .next_page3, .next_page4 {
+  right: 35px;
+  background: transparent url(../images/golden-stage/next.png);
+}
+
+.next-mobile-book1, .next-mobile-book2, .next-mobile-book3, .next-mobile-book4, .next-mobile-book5, .next-mobile-book6, .next-mobile-book7, .next-mobile-book8 {
+  right: 50%;
+  margin-right: -40px;
+  background: transparent url(../images/golden-stage/next.png);
+}
+
+.header {
   z-index: 1;
 }
 
@@ -93,8 +138,8 @@
 
 .modal-dialog {
   .view_full_button {
-    right: 30px;
-    top: 20px;
+    right: 35px;
+    top: 25px;
     @media (max-width: 360px) {
       right: 15px;
     }
