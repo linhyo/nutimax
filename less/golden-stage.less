@@ -80,12 +80,14 @@
     height: 200px;
     left: -160px;
     position: absolute;
-    bottom: -110px;
+    bottom: -120px;
     width: 320px;
     z-index: 98;
     display: block;
-    -webkit-animation: mymove 3s infinite; /* Chrome, Safari, Opera */
-    animation: mymove 3s infinite;
+    .scale(0.8);
+    -webkit-animation: mymove 2.3s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 2.3s infinite;
+    .transition();
   }
   .milk {
     background: hsla(0, 0%, 0%, 0) url("../images/golden-stage/milk-product.png") no-repeat scroll center center / cover;
@@ -105,30 +107,38 @@
     width: 320px;
     z-index: 100;
     display: block;
-    -webkit-animation: mymove 3s infinite; /* Chrome, Safari, Opera */
-    animation: mymove 3s infinite;
+    .scale(0.95);
+    -webkit-animation: mymove 2.3s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 2.3s infinite;
+    .transition();
   }
   @-webkit-keyframes mymove {
     0% {
-      bottom: -125px;
+      .scale(0.95);
+      bottom: -120px;
     }
     50% {
-      bottom: -105px;
+      .scale(1);
+      bottom: -115px;
     }
     100% {
-      bottom: -125px;
+      .scale(0.95);
+      bottom: -120px;
     }
   }
 
   @keyframes mymove {
     0% {
-      bottom: -125px;
+      .scale(0.95);
+      bottom: -120px;
     }
     50% {
-      bottom: -105px;
+      .scale(1);
+      bottom: -115px;
     }
     100% {
-      bottom: -125px;
+      .scale(0.95);
+      bottom: -120px;
     }
   }
 }
