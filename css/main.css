@@ -1439,7 +1439,7 @@ textarea.has-error:-ms-input-placeholder {
 #book-view .book_wrapper-mobile {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 1185px) {
   #book-view .book_wrapper {
     display: none;
   }
@@ -1451,6 +1451,7 @@ textarea.has-error:-ms-input-placeholder {
     padding-top: 15px;
     width: 570px;
     height: 590px;
+    max-width: 100vw;
     position: relative;
     background: transparent url(../images/golden-stage/bg.png) no-repeat left top;
   }
@@ -1642,6 +1643,11 @@ textarea.has-error:-ms-input-placeholder {
     color: #2c8249;
   }
 }
+@media (max-width: 1185px) and (max-width: 360px) {
+  #book-view .book_wrapper-mobile .book-view {
+    max-width: 100vw;
+  }
+}
 @media (max-width: 360px) {
   #book-view .book_wrapper-mobile {
     display: block;
@@ -1649,7 +1655,6 @@ textarea.has-error:-ms-input-placeholder {
   #book-view .book_wrapper-mobile .book-view {
     margin: 0 auto;
     padding-top: 15px;
-    width: 903px;
     height: 590px;
     position: relative;
     background: transparent url(../images/golden-stage/bg.png) no-repeat left top;
@@ -1875,6 +1880,21 @@ textarea.has-error:-ms-input-placeholder {
   position: relative;
   width: 100%;
   background: transparent url("../images/golden-stage/nature-bg.jpg") no-repeat center center / cover;
+}
+#landing-landscape:before {
+  background: url("../images/golden-stage/thick.png") no-repeat center center / cover;
+  height: 89px;
+  left: 0;
+  position: absolute;
+  top: 20px;
+  display: block;
+  width: 100%;
+  content: '';
+}
+@media (max-width: 768px) {
+  #landing-landscape:before {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
   #landing-landscape {
@@ -2253,8 +2273,8 @@ textarea.has-error:-ms-input-placeholder {
 #landing-food .gs-box .gs-child-tab {
   position: absolute;
   z-index: 1;
-  width: 100%;
   border: 0 none;
+  width: 100%;
 }
 @media (min-width: 768px) {
   #landing-food .gs-box .gs-child-tab {
@@ -2275,18 +2295,6 @@ textarea.has-error:-ms-input-placeholder {
 @media (max-width: 399px) {
   #landing-food .gs-box .gs-child-tab {
     left: 15px;
-  }
-}
-#landing-food .gs-box .gs-child-tab:after {
-  position: absolute;
-  top: -85px;
-  left: -50%;
-  width: 1849px;
-  height: 89px;
-}
-@media (min-width: 768px) {
-  #landing-food .gs-box .gs-child-tab:after {
-    background: url("../images/golden-stage/thick.png") no-repeat;
   }
 }
 #landing-food .gs-box .gs-child-tab li {
@@ -2399,7 +2407,7 @@ textarea.has-error:-ms-input-placeholder {
     -moz-transform: rotate(8deg);
     -ms-transform: rotate(8deg);
     -o-transform: rotate(8deg);
-    top: 10px;
+    top: -15px;
   }
 }
 #landing-food .gs-box .gs-child-tab li a.one-year-old:before {
@@ -2424,7 +2432,7 @@ textarea.has-error:-ms-input-placeholder {
 @media (min-width: 768px) {
   #landing-food .gs-box .gs-child-tab li a.two-year-old {
     left: 10px;
-    top: 5px;
+    top: -5px;
     -webkit-transform: rotate(-15deg);
     -moz-transform: rotate(-15deg);
     -ms-transform: rotate(-15deg);

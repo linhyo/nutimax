@@ -7,6 +7,19 @@
   position: relative;
   width: 100%;
   background: transparent url("../images/golden-stage/nature-bg.jpg") no-repeat center center / cover;
+  &:before {
+    background: url("../images/golden-stage/thick.png") no-repeat  center center / cover;
+    height: 89px;
+    left: 0;
+    position: absolute;
+    top: 20px;
+    display: block;
+    width: 100%;
+    content: '';
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
   @media (min-width: 768px) {
     height: 450px;
   }
@@ -266,8 +279,8 @@
     .gs-child-tab {
       position: absolute;
       z-index: 1;
-      width: 100%;
       border: 0 none;
+      width: 100%;
       @media (min-width: 768px) {
         top: -485px;
       }
@@ -281,16 +294,7 @@
       @media (max-width: 399px) {
         left: 15px;
       }
-      &:after {
-        position: absolute;
-        top: -85px;
-        left: -50%;
-        width: 1849px;
-        height: 89px;
-        @media (min-width: 768px) {
-          background: url("../images/golden-stage/thick.png") no-repeat;
-        }
-      }
+
       li {
         display: block;
         padding: 0;
@@ -372,7 +376,7 @@
             background: url("../images/golden-stage/1.png") no-repeat center / 100% auto;
             @media (min-width: 768px) {
               .rotate(8deg);
-              top: 10px;
+              top: -15px;
             }
             &:before {
               width: 43px;
@@ -393,7 +397,7 @@
             background: url("../images/golden-stage/2.png") no-repeat center / 100% auto;
             @media (min-width: 768px) {
               left: 10px;
-              top: 5px;
+              top: -5px;
               .rotate(-15deg);
             }
             &:before {
