@@ -30,71 +30,20 @@
   }
 }
 
-@-webkit-keyframes fallingLeaf {
-  0% {
-    transform: translate(0, 0);
-    .opacity(1);
-  }
-  50% {
-    .opacity(0.7);
-  }
-  100% {
-    transform: translate(180px, 450px);
-    .opacity(0.4);
-  }
-}
-
-@-moz-keyframes fallingLeaf {
-  0% {
-    transform: translate(0, 0);
-    .opacity(1);
-  }
-  50% {
-    .opacity(0.7);
-  }
-  100% {
-    transform: translate(180px, 450px);
-    .opacity(0.4);
-  }
-}
-
-@-o-keyframes fallingLeaf {
-  0% {
-    transform: translate(0, 0);
-    .opacity(1);
-  }
-  50% {
-    .opacity(0.7);
-  }
-  100% {
-    transform: translate(180px, 450px);
-    .opacity(0.4);
-  }
-}
-
-@keyframes fallingLeaf {
-  0% {
-    transform: translate(0, 0);
-    .opacity(1);
-  }
-  50% {
-    .opacity(0.7);
-  }
-  100% {
-    transform: translate(180px, 450px);
-    .opacity(0.4);
-  }
-}
-
 #landing-food {
   width: 100%;
   background: transparent url("../images/golden-stage/fruit-bg.jpg") no-repeat;
   background-size: cover;
   position: relative;
   @media (min-width: 768px) {
-    min-height: 850px;
-    background-position: center center;
+    min-height: 999px;
     padding: 100px 0;
+  }
+  @media (min-width: 992px) {
+    background-position: center center;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    background-position: right center;
   }
   @media (max-width: 767px) {
     min-height: 700px;
@@ -116,13 +65,13 @@
       &:after {
         content: '';
         position: absolute;
-        left: -65px;
+        left: -80px;
         top: 75px;
         background: transparent url("../images/golden-stage/expert-text.png") no-repeat scroll center center / 100% auto;
       }
       @media (min-width: 1200px) {
         width: 420px;
-        height: 572px;
+        height: 606px;
         &:after {
           width: 220px;
           height: 234px;
@@ -130,7 +79,7 @@
       }
       @media (min-width: 992px) and (max-width: 1199px) {
         width: 378px;
-        height: 515px;
+        height: 545px;
         &:after {
           width: 198px;
           height: 210px;
@@ -138,7 +87,7 @@
       }
       @media (min-width: 768px) and (max-width: 991px) {
         width: 336px;
-        height: 457px;
+        height: 484px;
         &:after {
           width: 176px;
           height: 187px;
@@ -146,7 +95,7 @@
       }
       @media (max-width: 767px) {
         width: 140px;
-        height: 190px;
+        height: 202px;
         right: 10px !important;
         &:after {
           width: 73px;
@@ -193,7 +142,7 @@
     background-color: rgba(255, 255, 255, 0.6);
     .border-radius(8px);
     @media (min-width: 768px) {
-      min-height: 760px;
+      min-height: 880px;
       padding: 50px 0 20px;
     }
     @media (max-width: 767px) {
@@ -413,6 +362,10 @@
           }
         }
       }
+    }
+
+    .gs-intro {
+      font-size: 15px;
     }
 
     .gs-content {
