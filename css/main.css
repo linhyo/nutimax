@@ -1099,18 +1099,18 @@ textarea.has-error:-ms-input-placeholder {
   width: 122px;
 }
 .milk-product .effect-after-milk {
-  background: rgba(0, 0, 0, 0) url("../images/golden-stage/after.png") no-repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) url("../images/golden-stage/sua-2.png") no-repeat scroll 0 0;
   height: 0;
-  left: -140px;
+  left: -160px;
   position: absolute;
-  bottom: -21px;
-  width: 280px;
+  bottom: -110px;
+  width: 320px;
   z-index: 98;
   display: block;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 .milk-product .milk {
   background: rgba(0, 0, 0, 0) url("../images/golden-stage/milk-product.png") no-repeat scroll center center / cover;
@@ -1122,12 +1122,12 @@ textarea.has-error:-ms-input-placeholder {
   z-index: 99;
 }
 .milk-product .effect-before-milk {
-  background: rgba(0, 0, 0, 0) url("../images/golden-stage/before.png") no-repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) url("../images/golden-stage/sua-1.png") no-repeat scroll 0 0;
   height: 0;
-  left: -140px;
+  left: -160px;
   position: absolute;
-  bottom: -50px;
-  width: 276px;
+  bottom: -110px;
+  width: 320px;
   z-index: 100;
   display: block;
   -webkit-transition: all 0.4s ease-out;
@@ -1136,15 +1136,15 @@ textarea.has-error:-ms-input-placeholder {
   transition: all 0.4s ease-out;
 }
 .milk-product:hover .effect-after-milk {
-  height: 94px;
+  height: 200px;
   background-position: top left;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 .milk-product:hover .effect-before-milk {
-  height: 94px;
+  height: 200px;
   background-position: top left;
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
