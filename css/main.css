@@ -1493,6 +1493,7 @@ textarea.has-error:-ms-input-placeholder {
     height: 100%;
   }
   #book-view .book_wrapper-mobile .book-view #bookMobile .content-page {
+    font-family: 'Nabila', sans-serif;
     padding: 9px 25px 15px;
   }
   #book-view .book_wrapper-mobile .book-view #bookMobile .divide {
