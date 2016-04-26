@@ -1891,7 +1891,8 @@ textarea.has-error:-ms-input-placeholder {
 #landing-landscape {
   position: relative;
   width: 100%;
-  background: transparent url("../images/golden-stage/nature-bg.jpg") no-repeat center center / cover;
+  background: transparent url("../images/golden-stage/nature-bg.jpg") no-repeat;
+  background-size: cover;
 }
 #landing-landscape:before {
   background: url("../images/golden-stage/thick.png") no-repeat center center / cover;
@@ -1903,19 +1904,27 @@ textarea.has-error:-ms-input-placeholder {
   width: 100%;
   content: '';
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   #landing-landscape:before {
     display: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #landing-landscape {
     height: 450px;
+    background-position: center center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #landing-landscape {
+    height: 300px;
+    background-position: 25% 75%;
   }
 }
 @media (max-width: 767px) {
   #landing-landscape {
     height: 180px;
+    background-position: center center;
     border-top: 3px solid #ebebeb ;
     border-bottom: 3px solid #ebebeb ;
   }
@@ -1926,27 +1935,36 @@ textarea.has-error:-ms-input-placeholder {
   background-size: cover;
   position: relative;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #landing-food {
+    background-position: center center;
     min-height: 999px;
     padding: 100px 0;
   }
 }
-@media (min-width: 992px) {
-  #landing-food {
-    background-position: center center;
+@media (max-width: 991px) {
+  #landing-food:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.6);
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #landing-food {
-    background-position: right center;
+    background-position: left center;
+    height: 880px;
+    padding: 30px 0;
   }
 }
 @media (max-width: 767px) {
   #landing-food {
-    min-height: 700px;
+    min-height: 800px;
     background-position: 10% 15%;
-    padding: 50px 0;
+    padding: 10px 0;
   }
 }
 #landing-food .gs-block {
@@ -1956,6 +1974,11 @@ textarea.has-error:-ms-input-placeholder {
   position: absolute;
   right: 0;
   width: 100%;
+}
+@media (max-width: 991px) {
+  #landing-food .gs-block {
+    display: none;
+  }
 }
 #landing-food .gs-block .gs-expert {
   position: absolute;
@@ -1990,29 +2013,6 @@ textarea.has-error:-ms-input-placeholder {
     height: 210px;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  #landing-food .gs-block .gs-expert {
-    width: 336px;
-    height: 484px;
-  }
-  #landing-food .gs-block .gs-expert:after {
-    width: 176px;
-    height: 187px;
-  }
-}
-@media (max-width: 767px) {
-  #landing-food .gs-block .gs-expert {
-    width: 140px;
-    height: 202px;
-    right: 10px !important;
-  }
-  #landing-food .gs-block .gs-expert:after {
-    width: 73px;
-    height: 78px;
-    left: -30px !important;
-    top: 28px !important;
-  }
-}
 #landing-food .gs-block .gs-expert .btn-question {
   background: url("../images/golden-stage/question.png") no-repeat scroll center center / 100% auto;
   position: absolute;
@@ -2032,33 +2032,9 @@ textarea.has-error:-ms-input-placeholder {
     height: 89px;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  #landing-food .gs-block .gs-expert .btn-question {
-    width: 300px;
-    height: 79px;
-  }
-}
-@media (max-width: 767px) {
-  #landing-food .gs-block .gs-expert .btn-question {
-    width: 220px;
-    height: 58px;
-    left: 0 !important;
-  }
-}
-@media (min-width: 400px) and (max-width: 767px) {
-  #landing-food .gs-block .gs-expert .btn-question {
-    margin-left: -240px !important;
-  }
-}
-@media (max-width: 399px) {
-  #landing-food .gs-block .gs-expert .btn-question {
-    margin-left: -192px !important;
-  }
-}
 #landing-food .gs-box {
   position: relative;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.6);
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
@@ -2066,6 +2042,11 @@ textarea.has-error:-ms-input-placeholder {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
+}
+@media (min-width: 992px) {
+  #landing-food .gs-box {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
 }
 @media (min-width: 768px) {
   #landing-food .gs-box {
@@ -2085,24 +2066,21 @@ textarea.has-error:-ms-input-placeholder {
   border: 0 none;
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #landing-food .gs-box .gs-child-tab {
     top: -485px;
   }
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 991px) {
   #landing-food .gs-box .gs-child-tab {
-    top: -180px;
-    left: 15px;
-  }
-}
-@media (min-width: 400px) {
-  #landing-food .gs-box .gs-child-tab {
+    top: -320px;
     left: 40px;
   }
 }
-@media (max-width: 399px) {
+@media (max-width: 767px) {
   #landing-food .gs-box .gs-child-tab {
+    white-space: nowrap;
+    top: -160px;
     left: 15px;
   }
 }
@@ -2143,10 +2121,10 @@ textarea.has-error:-ms-input-placeholder {
     height: 374px;
   }
   #landing-food .gs-box .gs-child-tab li a:after {
-    height: 361px;
-    left: 4px;
-    top: 5px;
     width: 292px;
+    height: 361px;
+    top: 5px;
+    left: 4px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2155,10 +2133,10 @@ textarea.has-error:-ms-input-placeholder {
     height: 314px;
   }
   #landing-food .gs-box .gs-child-tab li a:after {
-    height: 303px;
-    left: 3px;
-    top: 4px;
     width: 246px;
+    height: 303px;
+    top: 4px;
+    left: 3px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2167,22 +2145,34 @@ textarea.has-error:-ms-input-placeholder {
     height: 280px;
   }
   #landing-food .gs-box .gs-child-tab li a:after {
+    width: 216px;
     height: 265px;
-    left: 2px;
     top: 6px;
-    width: 215px;
+    left: 2px;
   }
 }
-@media (max-width: 767px) {
+@media (min-width: 400px) and (max-width: 767px) {
+  #landing-food .gs-box .gs-child-tab li a {
+    width: 128px;
+    height: 155px;
+  }
+  #landing-food .gs-box .gs-child-tab li a:after {
+    width: 121px;
+    height: 150px;
+    top: 1px;
+    left: 1px;
+  }
+}
+@media (max-width: 399px) {
   #landing-food .gs-box .gs-child-tab li a {
     width: 110px;
     height: 133px;
   }
   #landing-food .gs-box .gs-child-tab li a:after {
-    height: 129px;
-    left: 1px;
-    top: 1px;
     width: 104px;
+    height: 129px;
+    top: 1px;
+    left: 1px;
   }
 }
 #landing-food .gs-box .gs-child-tab li a .title-tab {
@@ -2194,10 +2184,16 @@ textarea.has-error:-ms-input-placeholder {
   left: 0;
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #landing-food .gs-box .gs-child-tab li a .title-tab {
     font-size: 25px;
     bottom: 35px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #landing-food .gs-box .gs-child-tab li a .title-tab {
+    font-size: 25px;
+    bottom: 20px;
   }
 }
 @media (max-width: 767px) {
@@ -2210,7 +2206,7 @@ textarea.has-error:-ms-input-placeholder {
   z-index: 2;
   background: url("../images/golden-stage/1.png") no-repeat center / 100% auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #landing-food .gs-box .gs-child-tab li a.one-year-old {
     -webkit-transform: rotate(8deg);
     -moz-transform: rotate(8deg);
@@ -2229,7 +2225,7 @@ textarea.has-error:-ms-input-placeholder {
   z-index: 5;
   margin-left: -21px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #landing-food .gs-box .gs-child-tab li a.one-year-old:before {
     background: url("../images/golden-stage/k1.png") no-repeat center / 100% auto;
   }
@@ -2238,7 +2234,7 @@ textarea.has-error:-ms-input-placeholder {
   z-index: 3;
   background: url("../images/golden-stage/2.png") no-repeat center / 100% auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #landing-food .gs-box .gs-child-tab li a.two-year-old {
     left: 10px;
     top: -5px;
@@ -2258,7 +2254,7 @@ textarea.has-error:-ms-input-placeholder {
   z-index: 5;
   margin-left: -20px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #landing-food .gs-box .gs-child-tab li a.two-year-old:before {
     background: url("../images/golden-stage/k2.png") no-repeat center / 100% auto;
   }
@@ -2267,7 +2263,7 @@ textarea.has-error:-ms-input-placeholder {
   z-index: 4;
   background: url("../images/golden-stage/3.png") no-repeat center / 100% auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #landing-food .gs-box .gs-child-tab li a.three-year-old {
     top: -5px;
   }
@@ -2282,7 +2278,7 @@ textarea.has-error:-ms-input-placeholder {
   z-index: 5;
   margin-left: -15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #landing-food .gs-box .gs-child-tab li a.three-year-old:before {
     background: url("../images/golden-stage/k3.png") no-repeat center / 100% auto;
   }
@@ -2304,9 +2300,21 @@ textarea.has-error:-ms-input-placeholder {
   position: relative;
   z-index: 1;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #landing-food .gs-box .gs-tab {
     white-space: nowrap;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #landing-food .gs-box .gs-tab {
+    margin-left: 29px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #landing-food .gs-box .gs-tab > li {
+    width: 214px;
+    word-wrap: break-word;
+    margin-right: 15px;
   }
 }
 @media (max-width: 767px) {
@@ -2328,15 +2336,6 @@ textarea.has-error:-ms-input-placeholder {
 @media (min-width: 992px) {
   #landing-food .gs-box .gs-tab > li > a {
     font-size: 20px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  #landing-food .gs-box .gs-tab > li > a {
-    font-size: 19px;
-  }
-}
-@media (min-width: 768px) {
-  #landing-food .gs-box .gs-tab > li > a {
     -webkit-border-radius: 8px 8px 0 0;
     -moz-border-radius: 8px 8px 0 0;
     border-radius: 8px 8px 0 0;
@@ -2344,6 +2343,20 @@ textarea.has-error:-ms-input-placeholder {
     -moz-background-clip: padding-box;
     background-clip: padding-box;
     padding: 12px 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #landing-food .gs-box .gs-tab > li > a {
+    font-size: 25px;
+    text-align: center;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+    padding: 10px 30px;
   }
 }
 @media (max-width: 767px) {
@@ -2361,16 +2374,27 @@ textarea.has-error:-ms-input-placeholder {
   }
 }
 #landing-food .gs-box .gs-intro {
+  display: block;
   font-size: 15px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #landing-food .gs-box .gs-intro {
+    margin-left: 30px;
+  }
 }
 #landing-food .gs-box .gs-content {
   position: relative;
   padding: 20px 0;
   z-index: 1;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #landing-food .gs-box .gs-content .tab-pane {
     width: 53%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #landing-food .gs-box .gs-content .tab-pane {
+    width: 97%;
   }
 }
 #landing-food .gs-box .gs-panel {
@@ -2445,6 +2469,101 @@ textarea.has-error:-ms-input-placeholder {
 #landing-food ul {
   list-style: disc inside !important;
   margin-top: 10px;
+}
+#landing-question {
+  position: relative;
+  display: none;
+  background-color: #07a94e;
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  #landing-question {
+    display: block !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #landing-question {
+    min-height: 400px;
+  }
+}
+@media (max-width: 767px) {
+  #landing-question {
+    min-height: 215px;
+  }
+}
+#landing-question .gs-expert {
+  position: absolute;
+  top: 20px;
+  background: rgba(0, 0, 0, 0) url("../images/golden-stage/expert.png") no-repeat scroll center top / 100% auto;
+}
+#landing-question .gs-expert:after {
+  content: '';
+  position: absolute;
+  background: transparent url("../images/golden-stage/expert-message.png") no-repeat scroll center center / 100% auto;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #landing-question .gs-expert {
+    right: 30px;
+    width: 290px;
+    height: 400px;
+  }
+  #landing-question .gs-expert:after {
+    left: -60px;
+    top: 40px;
+    width: 150px;
+    height: 160px;
+  }
+}
+@media (max-width: 767px) {
+  #landing-question .gs-expert {
+    right: 15px;
+    width: 157px;
+    height: 226px;
+  }
+  #landing-question .gs-expert:after {
+    left: -30px;
+    top: 26px;
+    width: 81px;
+    height: 86px;
+  }
+}
+#landing-question .ask-question {
+  background: url("../images/golden-stage/expert-ask.png") no-repeat scroll center center / 100% auto;
+  position: absolute;
+  bottom: 30%;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #landing-question .ask-question {
+    left: 30px;
+    width: 383px;
+    height: 75px;
+  }
+}
+@media (max-width: 767px) {
+  #landing-question .ask-question {
+    left: 15px;
+    width: 206px;
+    height: 41px;
+  }
+}
+#landing-question .btn-question {
+  background: url("../images/golden-stage/ques.png") no-repeat scroll center center / 100% auto;
+  position: absolute;
+  bottom: 13%;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #landing-question .btn-question {
+    left: 15px;
+    width: 212px;
+    height: 53px;
+  }
+}
+@media (max-width: 767px) {
+  #landing-question .btn-question {
+    left: 15px;
+    width: 114px;
+    height: 28px;
+  }
 }
 #page-banner .nutrition-banner {
   position: relative;
