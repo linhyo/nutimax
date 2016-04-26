@@ -1174,6 +1174,7 @@ textarea.has-error:-ms-input-placeholder {
   }
 }
 #book-view {
+  z-index: 0;
   display: block;
   width: 100%;
   position: relative;
