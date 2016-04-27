@@ -1858,8 +1858,8 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 }
 #landing-food {
   width: 100%;
-  background: transparent url("../images/golden-stage/fruit-bg.png") no-repeat;
   background-size: cover;
+  background: transparent url("../images/golden-stage/fruit-bg.png") no-repeat fixed;
   position: relative;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
