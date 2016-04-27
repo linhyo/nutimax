@@ -2348,7 +2348,7 @@ textarea.has-error:-ms-input-placeholder {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #landing-question .btn-question {
-    left: 15px;
+    left: 30px;
     width: 212px;
     height: 53px;
   }
