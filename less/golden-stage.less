@@ -120,8 +120,6 @@
       transform: translate3d(0, -10px, 0);
     }
 
-
-
     to {
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
@@ -134,14 +132,10 @@
       transform: translate3d(0, 0, 0);
     }
 
-
-
     50% {
       -webkit-transform: translate3d(0, -10px, 0);
       transform: translate3d(0, -10px, 0);
     }
-
-
 
     to {
       -webkit-transform: translate3d(0, 0, 0);
@@ -445,378 +439,189 @@
 
     .book_wrapper-mobile {
       display: block;
-      .book-view {
-        margin: 0 auto;
-        padding-top: 15px;
-        width: 570px;
-        height: 590px;
-        max-width: 100vw;
-        position: relative;
-        background: transparent url(../images/golden-stage/bg.png) no-repeat left top;
-        @media (max-width: 360px) {
-          max-width: 100vw;
+      margin: 0 auto;
+      padding-top: 15px;
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      .milk-product {
+        display: block;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+
+        &:before {
+          display: none;
         }
-        .milk-product {
-          bottom: -40px;
-          height: 120px;
-          left: 115px;
+
+        .effect-after-milk {
+          background: hsla(0, 0%, 0%, 0) url("../images/golden-stage/sua-2-tablet.png") no-repeat scroll 0 0;
+          height: 140px;
+          left: 0;
           position: absolute;
-          z-index: 99;
-          &:before {
-            display: none;
-          }
-        }
-        .next_page_button, .prev_page_button {
+          bottom: -75px;
+          width: 224px;
+          z-index: 98;
           display: block;
+          -webkit-animation: mymove-mobile 2s infinite; /* Chrome, Safari, Opera */
+          animation: mymove-mobile 2s infinite;
+        }
+        .milk {
+          background: hsla(0, 0%, 0%, 0) url("../images/golden-stage/milk-product-tablet.png") no-repeat scroll center center / cover;
+          bottom: -15px;
+          height: 100px;
+          left: 70px;
+          width: 83px;
           position: absolute;
-          width: 35px;
-          height: 31px;
-          cursor: pointer;
-          margin-top: -20px;
-          bottom: 25px;
           z-index: 99;
         }
-        .prev_page_button {
-          left: 340px;
-          background: transparent url(../images/golden-stage/prev.png) no-repeat;
+        .effect-before-milk {
+          background: hsla(0, 0%, 0%, 0) url("../images/golden-stage/sua-1-tablet.png") no-repeat scroll 0 0;
+          height: 140px;
+          left: 0;
+          position: absolute;
+          bottom: -75px;
+          width: 224px;
+          z-index: 100;
+          display: block;
+          -webkit-animation: mymove-mobile 2s infinite; /* Chrome, Safari, Opera */
+          animation: mymove-mobile 2s infinite;
         }
-        .next_page_button {
-          left: 390px;
-          background: transparent url(../images/golden-stage/next.png);
-        }
-        #bookMobile {
-          font-family: @import-font;
-          font-weight: 300;
-          div {
-            width: 450px;
-            height: 100%;
-          }
-          .content-page {
-            font-family: @import-font;
-            padding: 9px 25px 15px;
-          }
-          .divide {
-            width: 100px;
-            height: 2px;
-            background-color: #2c8249;
-            margin: 15px auto;
-          }
-          .title-large {
-            color: #2c8249;
-            font-size: 25px;
-            line-height: 30px;
-            text-align: center;
-          }
-          .title-normal {
-            line-height: 30px;
-            color: #2c8249;
-            text-align: center;
-            font-size: 20px;
-          }
-          .page1 {
-            position: relative;
-            font-size: 13px;
-            height: 555px;
-            margin: 0 auto;
-            padding: 35px 5px 30px 25px;
-            width: 100%;
-            img {
-              width: 90%;
-            }
-          }
-          .page2 {
-            position: relative;
-            font-size: 13px;
-            height: 555px;
-            margin: 0 auto;
-            padding: 35px 5px 30px 25px;
-            width: 100%;
-          }
-          .page3 {
-            position: relative;
-            font-size: 13px;
-            height: 555px;
-            margin: 0 auto;
-            padding: 35px 5px 30px 25px;
-            width: 100%;
-            img {
-              left: 15px;
-              margin-bottom: 10px;
-              position: relative;
-              width: 90%;
-            }
-          }
-          .page4 {
-            position: relative;
-            display: block;
-            font-size: 13px;
-            height: 555px;
-            margin: 0 auto;
-            padding: 35px 5px 30px 25px;
-            width: 100%;
-            h4 {
-              color: #2c8249;
-              padding: 0 5px;
-              font-size: 14px;
-              margin-top: 15px;
-              text-align: left;
-            }
-            .content-page {
-              padding: 0 5px;
-            }
-          }
-          .page5 {
-            position: relative;
-            display: block;
-            font-size: 13px;
-            height: 555px;
-            margin: 0 auto;
-            padding: 35px 5px 30px 25px;
-            width: 100%;
-            .title-normal {
-              line-height: 30px;
-              text-align: left;
-              font-size: 20px;
-            }
-            .divide {
-              margin: 15px 0;
-            }
-            .content-page {
-              padding: 2px 0 15px;
-            }
-          }
-          .page6 {
-            position: relative;
-            display: block;
-            font-size: 13px;
-            height: 555px;
-            margin: 0 auto;
-            padding: 35px 5px 30px 25px;
-            width: 100%;
-            .content-page {
-              padding: 5px 0 10px;
-            }
-          }
-          .page7 {
-            position: relative;
-            font-size: 13px;
-            height: 555px;
-            margin: 0 auto;
-            padding: 35px 5px 30px 25px;
-            width: 100%;
-            .title-large {
-              line-height: 35px;
-              margin-bottom: 20px;
-            }
-            .content-page {
-              line-height: 19px;
-              padding: 10px 0;
-            }
-          }
-          .page8 {
-            position: relative;
-            font-size: 13px;
-            height: 555px;
-            margin: 0 auto;
-            padding: 35px 5px 30px 25px;
-            width: 100%;
-          }
-          span.number-page {
+
+        @media (max-width: 480px) {
+          .effect-after-milk {
+            background: hsla(0, 0%, 0%, 0) url("../images/golden-stage/sua-2-mobile.png") no-repeat scroll 0 0;
+            height: 78px;
+            left: 0;
             position: absolute;
-            left: 365px;
-            bottom: 35px;
+            bottom: -75px;
+            width: 125px;
+            z-index: 98;
             display: block;
-            width: 30px;
-            height: 30px;
-            border: 2px solid #2c8249;
-            .border-radius(50%);
-            font-size: 20px;
-            text-align: center;
-            line-height: 20px;
-            vertical-align: middle;
-            color: #2c8249;
+            -webkit-animation: mymove-mobile 1.2s infinite; /* Chrome, Safari, Opera */
+            animation: mymove-mobile 1.2s infinite;
+          }
+
+          .milk {
+            background: hsla(0, 0%, 0%, 0) url("../images/golden-stage/milk-product-mobile.png") no-repeat scroll center center / cover;
+            bottom: -40px;
+            height: 75px;
+            left: 30px;
+            width: 62px;
+            position: absolute;
+            z-index: 99;
+          }
+
+          .effect-before-milk {
+            background: hsla(0, 0%, 0%, 0) url("../images/golden-stage/sua-1-mobile.png") no-repeat scroll 0 0;
+            height: 78px;
+            left: 0;
+            position: absolute;
+            bottom: -75px;
+            width: 125px;
+            z-index: 100;
+            display: block;
+            -webkit-animation: mymove-mobile 1.2s infinite; /* Chrome, Safari, Opera */
+            animation: mymove-mobile 1.2s infinite;
+          }
+        }
+
+        @-webkit-keyframes mymove-mobile {
+          from {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+          }
+
+          50% {
+            -webkit-transform: translate3d(0, -5px, 0);
+            transform: translate3d(0, -5px, 0);
+          }
+
+          to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+          }
+        }
+
+        @keyframes mymove-mobile {
+          from {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+          }
+
+          50% {
+            -webkit-transform: translate3d(0, -5px, 0);
+            transform: translate3d(0, -5px, 0);
+          }
+
+          to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
           }
         }
       }
-    }
-  }
-  @media (max-width: 360px) {
-    .book_wrapper-mobile {
-      display: block;
-      .book-view {
-        margin: 0 auto;
-        padding-top: 15px;
-        height: 590px;
-        position: relative;
-        background: transparent url(../images/golden-stage/bg.png) no-repeat left top;
-        .next_page_button, .prev_page_button {
+
+      .next_page_button, .prev_page_button {
+        display: block;
+        position: absolute;
+        width: 35px;
+        height: 31px;
+        cursor: pointer;
+        bottom: -45px;
+        z-index: 99;
+        left: 50%;
+      }
+      .prev_page_button {
+        margin-left: -40px;
+        background: transparent url(../images/golden-stage/prev.png) no-repeat;
+      }
+      .next_page_button {
+        margin-left: 5px;
+        background: transparent url(../images/golden-stage/next.png);
+      }
+      .title-mobile {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        bottom: -70px;
+        z-index: 99;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-family: @import-font;
+      }
+      #bookMobile {
+        font-family: @import-font;
+        font-weight: 300;
+        .page-content {
+          padding: 0 20px;
+          width: 100%;
+          height: 100%;
+          position: relative;
           display: block;
-          position: absolute;
-          width: 35px;
-          height: 31px;
-          cursor: pointer;
-          margin-top: -20px;
-          bottom: 25px;
-          z-index: 99;
-        }
-        .prev_page_button {
-          left: 260px;
-          background: transparent url(../images/golden-stage/prev.png) no-repeat;
-        }
-        .next_page_button {
-          left: 310px;
-          background: transparent url(../images/golden-stage/next.png);
-        }
-        #bookMobile {
-          font-family: @import-font;
-          font-weight: 300;
-          div {
-            width: 360px;
-            height: 100%;
-          }
-          .content-page {
-            padding: 9px 25px 15px;
-          }
-          .divide {
-            width: 100px;
-            height: 2px;
-            background-color: #2c8249;
-            margin: 15px auto;
-          }
-          .title-large {
-            color: #2c8249;
-            font-size: 25px;
-            line-height: 30px;
-            text-align: center;
-          }
-          .title-normal {
-            line-height: 30px;
-            color: #2c8249;
-            text-align: center;
-            font-size: 20px;
-          }
-          .page1 {
-            position: relative;
-            font-size: 13px;
-            height: 555px;
+          img {
             margin: 0 auto;
-            padding: 35px 5px 30px 25px;
-            width: 100%;
-            img {
-              width: 90%;
-            }
-          }
-          .page2 {
-            position: relative;
-            font-size: 13px;
-            height: 555px;
-            margin: 0 auto;
-            padding: 35px 5px 30px 25px;
-            width: 100%;
-          }
-          .page3 {
-            position: relative;
-            font-size: 13px;
-            height: 555px;
-            margin: 0 auto;
-            padding: 35px 5px 30px 25px;
-            width: 100%;
-            img {
-              left: 15px;
-              margin-bottom: 10px;
-              position: relative;
-              width: 90%;
-            }
-          }
-          .page4 {
-            position: relative;
-            display: block;
-            font-size: 13px;
-            height: 555px;
-            margin: 0 auto;
-            padding: 35px 5px 30px 25px;
-            width: 100%;
-            h4 {
-              color: #2c8249;
-              padding: 0 5px;
-              font-size: 14px;
-              margin-top: 15px;
-              text-align: left;
-            }
-            .content-page {
-              padding: 0 5px;
-            }
-          }
-          .page5 {
-            position: relative;
-            display: block;
-            font-size: 13px;
-            height: 555px;
-            margin: 0 auto;
-            padding: 5px 5px 30px 25px;
-            width: 100%;
-            .title-normal {
-              line-height: 30px;
-              text-align: left;
-              font-size: 20px;
-            }
-            .divide {
-              margin: 15px 0;
-            }
-            .content-page {
-              padding: 2px 0 15px;
-            }
-          }
-          .page6 {
-            position: relative;
-            display: block;
-            font-size: 13px;
-            height: 555px;
-            margin: 0 auto;
-            padding: 35px 5px 30px 25px;
-            width: 100%;
-            .content-page {
-              padding: 5px 0 10px;
-            }
-          }
-          .page7 {
-            position: relative;
-            font-size: 13px;
-            height: 555px;
-            margin: 0 auto;
-            padding: 25px 5px 30px 25px;
-            width: 100%;
-            .title-large {
-              line-height: 30px;
-              margin-bottom: 5px;
-            }
-            .content-page {
-              line-height: 19px;
-              padding: 10px 0;
-            }
-          }
-          .page8 {
-            position: relative;
-            font-size: 13px;
-            height: 555px;
-            margin: 0 auto;
-            padding: 35px 5px 30px 25px;
-            width: 100%;
           }
           span.number-page {
+            font-family: @import-font;
             position: absolute;
-            left: 287px;
-            bottom: 35px;
+            left: 50%;
+            bottom: 25px;
+            margin-left: -13px;
             display: block;
-            width: 30px;
-            height: 30px;
+            width: 26px;
+            height: 26px;
             border: 2px solid #2c8249;
             .border-radius(50%);
             font-size: 20px;
             text-align: center;
-            line-height: 20px;
+            line-height: 15px;
             vertical-align: middle;
             color: #2c8249;
+            @media (max-width: 448px) {
+              bottom: 10px;
+            }
           }
         }
       }

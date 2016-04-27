@@ -144,28 +144,24 @@ $(document).ready(function () {
       {
         breakpoint: 770,
         settings: {
-          arrows: false,
           slidesToShow: 1
         }
       },
       {
         breakpoint: 480,
         settings: {
-          arrows: false,
           slidesToShow: 1
         }
       },
       {
         breakpoint: 360,
         settings: {
-          arrows: false,
           slidesToShow: 1
         }
       },
       {
         breakpoint: 320,
         settings: {
-          arrows: false,
           slidesToShow: 1
         }
       }
