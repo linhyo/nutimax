@@ -1184,7 +1184,7 @@ textarea.has-error:-ms-input-placeholder {
 }
 @media (max-width: 480px) {
   #book-view {
-    padding: 25px 0 65px;
+    padding: 10px 0 65px;
   }
 }
 #book-view .note-book {
