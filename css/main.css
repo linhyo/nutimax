@@ -1861,6 +1861,11 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   background: transparent url("../images/golden-stage/fruit-bg.png") no-repeat;
   background-size: cover;
   position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 @media (min-width: 992px) {
   #landing-food {
@@ -1870,6 +1875,9 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   }
 }
 @media (max-width: 991px) {
+  #landing-food {
+    height: auto;
+  }
   #landing-food:after {
     content: '';
     position: absolute;
@@ -1883,13 +1891,11 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 @media (min-width: 768px) and (max-width: 991px) {
   #landing-food {
     background-position: left center;
-    height: 880px;
     padding: 30px 0;
   }
 }
 @media (max-width: 767px) {
   #landing-food {
-    min-height: 800px;
     background-position: 10% 15%;
     padding: 10px 0;
   }
@@ -1972,18 +1978,13 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 }
 @media (min-width: 992px) {
   #landing-food .gs-box {
-    background-color: rgba(255, 255, 255, 0.6);
-  }
-}
-@media (min-width: 768px) {
-  #landing-food .gs-box {
     min-height: 880px;
+    background-color: rgba(255, 255, 255, 0.6);
     padding: 50px 0 20px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   #landing-food .gs-box {
-    min-height: 600px;
     padding: 30px 0;
   }
 }
