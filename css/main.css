@@ -1182,9 +1182,9 @@ textarea.has-error:-ms-input-placeholder {
   background: url("../images/golden-stage/video.jpg") no-repeat center center / cover;
   /* Booklet jQuery Plugin Style*/
 }
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   #book-view {
-    padding: 35px 0 65px;
+    padding: 25px 0 65px;
   }
 }
 #book-view .note-book {
