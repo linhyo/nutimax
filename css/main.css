@@ -1457,14 +1457,14 @@ textarea.has-error:-ms-input-placeholder {
   #book-view .book_wrapper-mobile {
     display: block;
     margin: 0 auto;
-    padding-top: 15px;
+    padding: 15px 0;
     width: 100%;
     height: 100%;
     position: relative;
   }
   #book-view .book_wrapper-mobile .milk-product {
     display: block;
-    bottom: 0;
+    bottom: 35px;
     left: 0;
     position: absolute;
   }
@@ -1541,7 +1541,7 @@ textarea.has-error:-ms-input-placeholder {
     width: 35px;
     height: 31px;
     cursor: pointer;
-    bottom: -45px;
+    bottom: -10px;
     z-index: 99;
     left: 50%;
   }
@@ -1557,7 +1557,7 @@ textarea.has-error:-ms-input-placeholder {
     display: block;
     position: absolute;
     cursor: pointer;
-    bottom: -70px;
+    bottom: -35px;
     z-index: 99;
     left: 0;
     width: 100%;
@@ -1569,7 +1569,7 @@ textarea.has-error:-ms-input-placeholder {
     font-weight: 300;
   }
   #book-view .book_wrapper-mobile #bookMobile .page-content {
-    padding: 0 20px;
+    padding: 0 10px;
     width: 100%;
     height: 100%;
     position: relative;
@@ -1639,6 +1639,11 @@ textarea.has-error:-ms-input-placeholder {
     animation: mymove-mobile 1.2s infinite;
   }
 }
+@media (max-width: 1185px) and (max-width: 480px) {
+  #book-view .book_wrapper-mobile .title-mobile {
+    bottom: -55px;
+  }
+}
 @media (max-width: 1185px) and (max-width: 448px) {
   #book-view .book_wrapper-mobile #bookMobile .page-content span.number-page {
     bottom: 10px;
@@ -1679,9 +1684,136 @@ textarea.has-error:-ms-input-placeholder {
   -o-object-fit: cover;
   height: 100%;
 }
+body[page='golden-stage'] .header {
+  height: 125px;
+}
+@media (max-width: 768px) {
+  body[page='golden-stage'] .header {
+    height: 85px;
+  }
+}
+@media (max-width: 480px) {
+  body[page='golden-stage'] .header {
+    height: 45px;
+  }
+}
+body[page='golden-stage'] .header .golden-state-block,
+body[page='golden-stage'] .header .gs-slogan-block,
+body[page='golden-stage'] .header .nuti-white-logo {
+  display: block;
+  height: 125px;
+  width: 100%;
+  position: relative;
+}
+@media (max-width: 768px) {
+  body[page='golden-stage'] .header .golden-state-block,
+  body[page='golden-stage'] .header .gs-slogan-block,
+  body[page='golden-stage'] .header .nuti-white-logo {
+    height: 85px;
+  }
+}
+@media (max-width: 480px) {
+  body[page='golden-stage'] .header .golden-state-block,
+  body[page='golden-stage'] .header .gs-slogan-block,
+  body[page='golden-stage'] .header .nuti-white-logo {
+    height: 45px;
+  }
+}
+body[page='golden-stage'] .header .golden-state-block a {
+  display: block;
+}
+body[page='golden-stage'] .header .golden-state-block a .icon-logo-golden-state {
+  display: block;
+  background: url("../images/golden-stage/logo.png") no-repeat;
+  width: 141px;
+  height: 125px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -62px;
+}
+@media (max-width: 768px) {
+  body[page='golden-stage'] .header .golden-state-block a .icon-logo-golden-state {
+    background: url("../images/golden-stage/logo-tablet.png") no-repeat;
+    width: 95px;
+    height: 84px;
+    margin-top: -42px;
+  }
+}
+@media (max-width: 480px) {
+  body[page='golden-stage'] .header .golden-state-block a .icon-logo-golden-state {
+    background: url("../images/golden-stage/logo-mobile.png") no-repeat;
+    width: 52px;
+    height: 46px;
+    margin-top: -23px;
+  }
+}
+body[page='golden-stage'] .header .gs-slogan-block .gs-slogan {
+  display: block;
+  background: url("../images/golden-stage/slogan.png") no-repeat;
+  width: 433px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -216px;
+  position: absolute;
+}
+@media (max-width: 768px) {
+  body[page='golden-stage'] .header .gs-slogan-block .gs-slogan {
+    background: url("../images/golden-stage/slogan-tablet.png") no-repeat;
+    width: 286px;
+    height: 48px;
+    margin-top: -24px;
+    margin-left: -143px;
+  }
+}
+@media (max-width: 480px) {
+  body[page='golden-stage'] .header .gs-slogan-block .gs-slogan {
+    background: url("../images/golden-stage/slogan-mobile.png") no-repeat;
+    width: 154px;
+    height: 26px;
+    margin-left: -77px;
+    margin-top: -13px;
+  }
+}
+body[page='golden-stage'] .header .nuti-white-logo a {
+  display: block;
+}
+body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
+  display: block;
+  background: url("../images/nutri-white.png") no-repeat;
+  height: 52px;
+  margin-top: -26px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 225px;
+}
+@media (max-width: 768px) {
+  body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
+    background: url("../images/golden-stage/nuti-white-tablet.png") no-repeat;
+    width: 94px;
+    height: 25px;
+    margin-top: -12px;
+  }
+}
+@media (max-width: 480px) {
+  body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
+    background: url("../images/golden-stage/nui-white-mobile.png") no-repeat;
+    width: 51px;
+    height: 13px;
+    margin-top: -6px;
+  }
+}
 .gs-slogan {
   display: inline-block;
   margin: 10px 0 0 20%;
+}
+@media (max-width: 767px) {
+  .gs-slogan {
+    margin: 5px auto;
+  }
 }
 #landing-landscape {
   position: relative;

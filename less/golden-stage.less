@@ -440,14 +440,14 @@
     .book_wrapper-mobile {
       display: block;
       margin: 0 auto;
-      padding-top: 15px;
+      padding: 15px 0;
       width: 100%;
       height: 100%;
       position: relative;
 
       .milk-product {
         display: block;
-        bottom: 0;
+        bottom: 35px;
         left: 0;
         position: absolute;
 
@@ -568,7 +568,7 @@
         width: 35px;
         height: 31px;
         cursor: pointer;
-        bottom: -45px;
+        bottom: -10px;
         z-index: 99;
         left: 50%;
       }
@@ -584,18 +584,21 @@
         display: block;
         position: absolute;
         cursor: pointer;
-        bottom: -70px;
+        bottom: -35px;
         z-index: 99;
         left: 0;
         width: 100%;
         text-align: center;
         font-family: @import-font;
+        @media (max-width: 480px) {
+          bottom: -55px;
+        }
       }
       #bookMobile {
         font-family: @import-font;
         font-weight: 300;
         .page-content {
-          padding: 0 20px;
+          padding: 0 10px;
           width: 100%;
           height: 100%;
           position: relative;
@@ -668,5 +671,109 @@
   }
 }
 
+body[page='golden-stage'] {
+  .header {
+    height: 125px;
+    @media (max-width: 768px) {
+      height: 85px;
+    }
+    @media (max-width: 480px) {
+      height: 45px;
+    }
+    .golden-state-block, .gs-slogan-block, .nuti-white-logo {
+      display: block;
+      height: 125px;
+      width: 100%;
+      position: relative;
+      @media (max-width: 768px) {
+        height: 85px;
+      }
+      @media (max-width: 480px) {
+        height: 45px;
+      }
+    }
+    .golden-state-block {
+      a{
+        display: block;
+        .icon-logo-golden-state {
+          display: block;
+          background: url("../images/golden-stage/logo.png") no-repeat;
+          width: 141px;
+          height: 125px;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          margin-top: -62px;
+          @media (max-width: 768px) {
+            background: url("../images/golden-stage/logo-tablet.png") no-repeat;
+            width: 95px;
+            height: 84px;
+            margin-top: -42px;
+          }
+          @media (max-width: 480px) {
+            background: url("../images/golden-stage/logo-mobile.png") no-repeat;
+            width: 52px;
+            height: 46px;
+            margin-top: -23px;
+          }
+        }
+      }
 
+    }
+    .gs-slogan-block {
+        .gs-slogan {
+          display: block;
+          background: url("../images/golden-stage/slogan.png") no-repeat;
+          width: 433px;
+          height: 100px;
+          top: 50%;
+          left: 50%;
+          margin-top: -50px;
+          margin-left: -216px;
+          position: absolute;
+          @media (max-width: 768px) {
+            background: url("../images/golden-stage/slogan-tablet.png") no-repeat;
+            width: 286px;
+            height: 48px;
+            margin-top: -24px;
+            margin-left: -143px;
+          }
+          @media (max-width: 480px) {
+            background: url("../images/golden-stage/slogan-mobile.png") no-repeat;
+            width: 154px;
+            height: 26px;
+            margin-left: -77px;
+            margin-top: -13px;
+          }
+        }
+    }
+    .nuti-white-logo {
+      a{
+        display: block;
+        .nuti-white {
+          display: block;
+          background: url("../images/nutri-white.png") no-repeat;
+          height: 52px;
+          margin-top: -26px;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          width: 225px;
+          @media (max-width: 768px) {
+            background: url("../images/golden-stage/nuti-white-tablet.png") no-repeat;
+            width: 94px;
+            height: 25px;
+            margin-top: -12px;
+          }
+          @media (max-width: 480px) {
+            background: url("../images/golden-stage/nui-white-mobile.png") no-repeat;
+            width: 51px;
+            height: 13px;
+            margin-top: -6px;
+          }
+        }
+      }
+    }
+  }
+}
 
