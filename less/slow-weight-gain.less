@@ -40,14 +40,32 @@
   }
 }
 
+#background-wrapper {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/golden-stage/fruit-bg.png') no-repeat;
+  background-size: cover;
+  @media (min-width: 992px) {
+    background-position: center center;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    background-position: left center;
+  }
+  @media (max-width: 767px) {
+    background-position: 10% 15%;
+  }
+}
+
 #landing-food {
   width: 100%;
-  background-size: cover;
-  background: transparent url("../images/golden-stage/fruit-bg.png") no-repeat fixed;
+  background-color: transparent;
   position: relative;
   .transition();
   @media (min-width: 992px) {
-    background-position: center center;
     min-height: 999px;
     padding: 100px 0;
   }
@@ -64,11 +82,9 @@
     }
   }
   @media (min-width: 768px) and (max-width: 991px) {
-    background-position: left center;
     padding: 30px 0;
   }
   @media (max-width: 767px) {
-    background-position: 10% 15%;
     padding: 10px 0;
   }
   .gs-block {
@@ -541,7 +557,138 @@
   }
 }
 
+#landing-event {
+  width: 100%;
+  height: 645px;
+  background: url('../images/golden-stage/event-banner.jpg') no-repeat center center / cover;
+}
 
+.landing-icon {
+  display: inline-block;
+  background: url('../images/golden-stage/landing-icon.png') no-repeat;
+  margin: 0 auto;
+  &.icon-1 {
+    .icon-sprite(-7px, -7px, 109px, 115px);
+  }
+  &.icon-2 {
+    .icon-sprite(-130px, -7px, 119px, 115px);
+  }
+  &.icon-3 {
+    .icon-sprite(-263px, -7px, 104px, 115px);
+  }
+  &.icon-4 {
+    .icon-sprite(-381px, -7px, 144px, 115px);
+  }
+  &.icon-5 {
+    .icon-sprite(-539px, -7px, 137px, 115px);
+  }
+  &.icon-6 {
+    .icon-sprite(-690px, -7px, 127px, 115px);
+  }
+}
+
+#landing-message {
+  position: relative;
+  background-color: #fff;
+  .btn-rule {
+    display: block;
+    background-color: #bf2a2e;
+    border: 1px solid transparent;
+    .border-radius(12px);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.42857143;
+    margin: 20px auto;
+    text-transform: uppercase;
+    padding: 5px 40px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    .user-select();
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    &:hover {
+      .opacity(0.8);
+    }
+  }
+  .col {
+    float: left;
+    @media (min-width: 992px) {
+      width: 33.33%;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      width: 50%;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+  .gs-message {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    &:before {
+      content: "";
+      display: block;
+      padding-top: 100%;
+    }
+    > div {
+      position:  absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      text-align: center;
+      padding-right: 10%;
+      padding-left: 10%;
+      &.message-1, &.message-4 {
+        padding-top: 15%;
+      }
+      &.message-2, &.message-3, &.message-5, &.message-6 {
+        padding-top: 12%;
+      }
+      &.message-1 {
+        background-color: #009639;
+      }
+      &.message-2 {
+        background-color: #07b248;
+      }
+      &.message-3 {
+        background-color: #14c959;
+      }
+      &.message-4 {
+        background-color: #eb0319;
+      }
+      &.message-5 {
+        background-color: #d80418;
+      }
+      &.message-6 {
+        background-color: #bf2a2e;
+      }
+    }
+    p {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 500;
+      margin: 20px 0 30px;
+    }
+    .btn-share {
+      color: #fff;
+      background-color: transparent;
+      border: 2px solid #fff;
+      .border-radius(8px);
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+      .transition();
+      &:hover {
+        background-color: rgba(225,255,255,0.2);
+      }
+    }
+  }
+}
 
 #page-banner {
   .nutrition-banner {
@@ -1066,10 +1213,15 @@
   }
 }
 
+.white-bg {
+  background-color: #fff;
+}
+
 .nutifood-label {
   position: relative;
   display: block;
   width: 100%;
+  //background-color: #fff;
   clear: both;
   padding-bottom: 40px;
   &:before {

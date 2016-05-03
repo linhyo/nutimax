@@ -1856,10 +1856,34 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
     border-bottom: 3px solid #ebebeb ;
   }
 }
+#background-wrapper {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/golden-stage/fruit-bg.png') no-repeat;
+  background-size: cover;
+}
+@media (min-width: 992px) {
+  #background-wrapper {
+    background-position: center center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #background-wrapper {
+    background-position: left center;
+  }
+}
+@media (max-width: 767px) {
+  #background-wrapper {
+    background-position: 10% 15%;
+  }
+}
 #landing-food {
   width: 100%;
-  background-size: cover;
-  background: transparent url("../images/golden-stage/fruit-bg.png") no-repeat fixed;
+  background-color: transparent;
   position: relative;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -1869,7 +1893,6 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 }
 @media (min-width: 992px) {
   #landing-food {
-    background-position: center center;
     min-height: 999px;
     padding: 100px 0;
   }
@@ -1890,13 +1913,11 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #landing-food {
-    background-position: left center;
     padding: 30px 0;
   }
 }
 @media (max-width: 767px) {
   #landing-food {
-    background-position: 10% 15%;
     padding: 10px 0;
   }
 }
@@ -2493,6 +2514,182 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
     height: 28px;
   }
 }
+#landing-event {
+  width: 100%;
+  height: 645px;
+  background: url('../images/golden-stage/event-banner.jpg') no-repeat center center / cover;
+}
+.landing-icon {
+  display: inline-block;
+  background: url('../images/golden-stage/landing-icon.png') no-repeat;
+  margin: 0 auto;
+}
+.landing-icon.icon-1 {
+  background-position: -7px -7px;
+  width: 109px;
+  height: 115px;
+}
+.landing-icon.icon-2 {
+  background-position: -130px -7px;
+  width: 119px;
+  height: 115px;
+}
+.landing-icon.icon-3 {
+  background-position: -263px -7px;
+  width: 104px;
+  height: 115px;
+}
+.landing-icon.icon-4 {
+  background-position: -381px -7px;
+  width: 144px;
+  height: 115px;
+}
+.landing-icon.icon-5 {
+  background-position: -539px -7px;
+  width: 137px;
+  height: 115px;
+}
+.landing-icon.icon-6 {
+  background-position: -690px -7px;
+  width: 127px;
+  height: 115px;
+}
+#landing-message {
+  position: relative;
+  background-color: #fff;
+}
+#landing-message .btn-rule {
+  display: block;
+  background-color: #bf2a2e;
+  border: 1px solid transparent;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  border-radius: 12px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.42857143;
+  margin: 20px auto;
+  text-transform: uppercase;
+  padding: 5px 40px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+#landing-message .btn-rule:hover {
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+  filter: alpha(opacity=80);
+}
+#landing-message .col {
+  float: left;
+}
+@media (min-width: 992px) {
+  #landing-message .col {
+    width: 33.33%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #landing-message .col {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  #landing-message .col {
+    width: 100%;
+  }
+}
+#landing-message .gs-message {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+#landing-message .gs-message:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+#landing-message .gs-message > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+#landing-message .gs-message > div.message-1,
+#landing-message .gs-message > div.message-4 {
+  padding-top: 15%;
+}
+#landing-message .gs-message > div.message-2,
+#landing-message .gs-message > div.message-3,
+#landing-message .gs-message > div.message-5,
+#landing-message .gs-message > div.message-6 {
+  padding-top: 12%;
+}
+#landing-message .gs-message > div.message-1 {
+  background-color: #009639;
+}
+#landing-message .gs-message > div.message-2 {
+  background-color: #07b248;
+}
+#landing-message .gs-message > div.message-3 {
+  background-color: #14c959;
+}
+#landing-message .gs-message > div.message-4 {
+  background-color: #eb0319;
+}
+#landing-message .gs-message > div.message-5 {
+  background-color: #d80418;
+}
+#landing-message .gs-message > div.message-6 {
+  background-color: #bf2a2e;
+}
+#landing-message .gs-message p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 20px 0 30px;
+}
+#landing-message .gs-message .btn-share {
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#landing-message .gs-message .btn-share:hover {
+  background-color: rgba(225, 255, 255, 0.2);
+}
 #page-banner .nutrition-banner {
   position: relative;
   width: 100%;
@@ -3061,6 +3258,9 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 #slow-weight-gain-page .divider.dark {
   border-bottom-color: #959595;
   margin: 5px 0;
+}
+.white-bg {
+  background-color: #fff;
 }
 .nutifood-label {
   position: relative;
