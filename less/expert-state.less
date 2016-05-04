@@ -12,7 +12,7 @@
     font-size: 16px;
     position: relative;
     background-color: @green-expert;
-    &.no-border{
+    &.no-border {
       border-bottom: 0;
     }
     .wrap-title {
@@ -316,6 +316,7 @@
             .border-radius-custom(20px, 20px, 0, 0);
             .transition();
             color: white;
+            font-weight: 700;
             text-transform: uppercase;
             font-size: 15px;
             border: 0;
@@ -395,7 +396,14 @@
         position: relative;
         margin: 3px 10px;
         box-shadow: 1px 1px 2px #b7b7b7;
+        overflow: hidden;
+        &:hover {
+          img {
+            .scale(1.05);
+          }
+        }
         img {
+          .transition();
           width: 100%;
           display: block;
           .border-radius(4px);
@@ -439,7 +447,7 @@
             border: 1px solid @green;
             font-weight: 600;
             padding: 2px 12px;
-            span{
+            span {
               font-size: 15px;
               line-height: 12px;
             }
@@ -452,7 +460,7 @@
         }
       }
     }
-    .list-expert{
+    .list-expert {
       position: relative;
       width: 100%;
       margin: 50px 0;
@@ -478,11 +486,11 @@
         margin-top: -17px;
         z-index: 1;
       }
-      .expert{
-        .expert-profile{
+      .expert {
+        .expert-profile {
           display: table;
           padding: 0 30px;
-          .ava-expert{
+          .ava-expert {
             display: table-cell;
             width: 185px;
             vertical-align: middle;
@@ -491,7 +499,7 @@
             @media (max-width: 480px) {
               width: 90px;
             }
-            .avatar{
+            .avatar {
               width: 185px;
               height: 185px;
               .border-radius(50%);
@@ -504,16 +512,16 @@
               }
             }
           }
-          .detail-expert{
+          .detail-expert {
             display: table-cell;
             vertical-align: middle;
-            .wrap-expert{
+            .wrap-expert {
               background-color: white;
               padding: 15px;
               margin-left: 10px;
               .border-radius(8px);
               border: 1px solid #ccc;
-              .expert-name{
+              .expert-name {
                 font-size: 16px;
                 font-weight: 500;
                 color: @green-expert;
@@ -566,7 +574,7 @@
         background-color: #02a94f;
       }
     }
-    .box-question{
+    .box-question {
       padding: 20px;
       height: 260px;
       width: 100%;
@@ -574,27 +582,30 @@
       .border-radius(2px);
       border: 1px solid #ccc;
       margin-bottom: 20px;
-      .divide-state{
+      @media (max-width: 767px) {
+        height: 100%;
+      }
+      .divide-state {
         height: 1px;
         margin-top: 10px;
         width: 100%;
         background-color: @green-expert;
       }
-      .title-box{
+      .title-box {
         text-transform: uppercase;
         font-size: 16px;
         margin-bottom: 15px;
-        a{
+        a {
           color: @green-expert;
           display: block;
           width: 100%;
         }
       }
-      .content-box{
+      .content-box {
         margin-top: 15px;
       }
     }
-    .question-slider{
+    .question-slider {
       position: relative;
       width: 100%;
       height: 100%;
@@ -620,14 +631,142 @@
         margin-top: 0;
         z-index: 1;
       }
-      .list-question{
+      .list-question {
         margin: 0;
-        .slick-prev, .slick-next{
+        .slick-prev, .slick-next {
           display: none !important;
         }
       }
     }
   }
+}
+
+.step6 {
+  padding: 40px 0;
+  width: 100%;
+  display: block;
+  background: url("../images/expert-state/step6.jpg") no-repeat top center / cover;
+  .title-step6 {
+    font-weight: 700;
+    color: @green-expert;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      width: 45px;
+      height: 4px;
+      background-color: @green-expert;
+      bottom: -10px;
+      left: 0;
+    }
+  }
+  .list-event {
+    position: relative;
+    display: block;
+    width: 100%;
+    .topic-pre-slider {
+      background: url("../images/expert-state/left-click.png") no-repeat;
+      width: 21px;
+      height: 34px;
+      position: absolute;
+      left: -11px;
+      top: 50%;
+      margin-top: -17px;
+      cursor: pointer;
+      z-index: 1;
+    }
+    .topic-next-slider {
+      background: url("../images/expert-state/right-click.png") no-repeat;
+      width: 21px;
+      cursor: pointer;
+      height: 34px;
+      position: absolute;
+      right: -11px;
+      top: 50%;
+      margin-top: -17px;
+      z-index: 1;
+    }
+    .slick-slider {
+      margin-bottom: 0;
+    }
+    .slick-dots {
+      bottom: -25px;
+    }
+  }
+  .list-topic {
+    position: relative;
+    display: block;
+    width: 100%;
+    .topic {
+      padding: 5px;
+      height: auto;
+      display: block;
+      opacity: 0;
+      margin: 0 -35px;
+      background-color: @green-expert;
+      .border-radius(8px);
+      .background-topic {
+        width: 100%;
+        position: relative;
+        margin-bottom: 25px;
+        &:after {
+          display: block;
+          content: '';
+          position: absolute;
+          background: url("../images/expert-state/star.png") no-repeat left top / 100% auto;
+          width: 100%;
+          height: 14px;
+          bottom: -20px;
+          left: 0;
+        }
+      }
+      .title-topic {
+        font-family: @import-font;
+        color: white;
+        font-size: 14px;
+        text-overflow: ellipsis;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-bottom: 10px;
+      }
+      &.slick-active {
+        display: block;
+        .scale(0.8);
+        opacity: 1;
+        .transition();
+        &.slick-center {
+          .scale(1);
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
+
+.slick-dots li {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  border: 2px solid @green-expert;
+  background: white;
+  .border-radius(50%);
+  &.slick-active {
+    background: @green-expert;
+    border: 0;
+  }
+}
+
+.slick-dots li button {
+  width: 10px;
+  height: 10px;
+}
+
+.slick-dots li button::before {
+  display: none;
 }
 
 .step8 {

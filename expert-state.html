@@ -116,6 +116,7 @@
               </div>
               <div class="col-lg-6 col-md-6">
                 <input type="text" name="name" placeholder="Họ và tên phụ huynh" class="cmd-form">
+                <input type="text" name="address" placeholder="Địa chỉ" class="cmd-form">
                 <input type="text" name="phone" placeholder="Số điện thoại" class="cmd-form">
                 <input type="text" name="email" placeholder="Email" class="cmd-form">
                 <button type="submit" class="submit-check-form" style="border:none">Kiểm tra ngay</button>
@@ -200,7 +201,7 @@
           <div class="container">
             <div class="wrap-title">
               <i class="icon-dot"></i>
-              Kiểm tra tình trạng của con yêu
+              Kiến thức hữu ích cho trẻ chậm tăng cân
             </div>
           </div>
         </h2>
@@ -261,7 +262,7 @@
           <div class="container">
             <div class="wrap-title">
               <i class="icon-dot"></i>
-              Kiểm tra tình trạng của con yêu
+              Kiến thức hữu ích cho trẻ chậm tăng cân
             </div>
           </div>
         </h2>
@@ -276,7 +277,7 @@
       <div class="container">
         <div class="wrap-title">
           <i class="icon-step5"></i>
-          Tư vấn cùng chuyên gia ở vấn đề chậm tăng cân ở trẻ
+          Tư vấn cùng chuyên gia về vấn đề chậm tăng cân ở trẻ
         </div>
       </div>
     </h2>
@@ -376,6 +377,7 @@
           <div class="question-slider">
             <span class="pre-nav"></span>
             <span class="next-nav"></span>
+
             <div class="list-question">
               <div class="box-question">
                 <h2 class="title-box">
@@ -544,6 +546,74 @@
   </div>
 </main>
 
+<div class="step6">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="title-step6">Tư vấn theo chủ đề</h2>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <div class="list-event">
+        <span class="topic-pre-slider"></span>
+        <span class="topic-next-slider"></span>
+
+        <div class="list-topic">
+          <div class="topic">
+            <div class="background-topic">
+              <img src="images/expert-state/topic1.jpg" alt=""/>
+            </div>
+            <h2 class="title-topic">
+              Chủ đề 2: giai đoạn vàng của trẻ và những điều cha mẹ nên biết
+            </h2>
+          </div>
+          <div class="topic">
+            <div class="background-topic">
+              <img src="images/expert-state/topic1.jpg" alt=""/>
+            </div>
+            <h2 class="title-topic">
+              Chủ đề 2: giai đoạn vàng của trẻ và những điều cha mẹ nên biết
+            </h2>
+          </div>
+          <div class="topic">
+            <div class="background-topic">
+              <img src="images/expert-state/topic1.jpg" alt=""/>
+            </div>
+            <h2 class="title-topic">
+              Chủ đề 2: giai đoạn vàng của trẻ và những điều cha mẹ nên biết
+            </h2>
+          </div>
+          <div class="topic">
+            <div class="background-topic">
+              <img src="images/expert-state/topic1.jpg" alt=""/>
+            </div>
+            <h2 class="title-topic">
+              Chủ đề 2: giai đoạn vàng của trẻ và những điều cha mẹ nên biết
+            </h2>
+          </div>
+          <div class="topic">
+            <div class="background-topic">
+              <img src="images/expert-state/topic1.jpg" alt=""/>
+            </div>
+            <h2 class="title-topic">
+              Chủ đề 2: giai đoạn vàng của trẻ và những điều cha mẹ nên biết
+            </h2>
+          </div>
+          <div class="topic">
+            <div class="background-topic">
+              <img src="images/expert-state/topic1.jpg" alt=""/>
+            </div>
+            <h2 class="title-topic">
+              Chủ đề 2: giai đoạn vàng của trẻ và những điều cha mẹ nên biết
+            </h2>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="step8 img-responsive">
   <div class="container">
     <img src="images/expert-state/step8.jpg" alt=""/>
@@ -679,6 +749,43 @@
         breakpoint: 1024,
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+  $('.list-topic').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    centerMode: true,
+    slidesToShow: 3,
+    prevArrow: $('.topic-pre-slider'),
+    nextArrow: $('.topic-next-slider'),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
           dots: true
