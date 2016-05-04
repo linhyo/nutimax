@@ -4338,7 +4338,508 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   display: none;
 }
 .step8 {
-  margin: 0 auto;
+  margin: 20px auto;
   display: block;
   text-align: center;
+}
+.step8 .mt-sm {
+  margin-top: 10px;
+}
+.step8 .relative {
+  position: relative;
+}
+.step8 .form-header {
+  color: #009639;
+  font-size: 24px;
+  text-align: left;
+}
+.step8 .form-header .fa-question {
+  border: 2px solid #009439;
+  border-radius: 50%;
+  font-weight: 300;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+  width: 30px;
+}
+.step8 .input-group {
+  border-radius: 1px;
+  box-shadow: none;
+}
+.step8 .btn-primary {
+  background-color: #009439 !important;
+  border: 0 none;
+  border-radius: 2px;
+  bottom: 10px;
+  color: #ffffff;
+  padding: 5px 20px;
+  position: absolute;
+  right: 15px;
+}
+.step8 .form-control {
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  color: #545454;
+  display: block;
+  font-size: 14px;
+  height: 34px;
+  line-height: 1.42857;
+  padding: 6px 12px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  width: 100%;
+}
+.step8 textarea {
+  border-radius: 1px;
+  box-shadow: none;
+  height: 121px !important;
+  padding-bottom: 45px;
+}
+.step8 .form-tutorial {
+  text-align: left;
+}
+.step8 .form-tutorial p {
+  color: #009439;
+}
+#topic-state {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+#topic-state .title-step {
+  text-transform: uppercase;
+  color: white;
+  border-bottom: 1px solid white;
+  font-size: 16px;
+  position: relative;
+  background-color: #02a94f;
+}
+#topic-state .title-step.no-border {
+  border-bottom: 0;
+}
+#topic-state .title-step .wrap-title {
+  padding: 10px 0 10px 65px;
+  position: relative;
+}
+#topic-state .title-step .wrap-title .icon-check-healthy {
+  background: #ffffff url("../images/expert-state/heart.png") no-repeat center;
+  width: 55px;
+  height: 55px;
+  top: -8px;
+  left: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  position: absolute;
+  border: 1px solid #02a94f;
+}
+#topic-state .title-step .wrap-title .icon-dot {
+  background: #ffffff url("../images/expert-state/doc.png") no-repeat center;
+  width: 55px;
+  height: 55px;
+  top: -8px;
+  left: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  position: absolute;
+  border: 1px solid #02a94f;
+}
+#topic-state .title-step .wrap-title .icon-step5 {
+  background: #ffffff url("../images/expert-state/step5-title.png") no-repeat center / 80%;
+  width: 55px;
+  height: 55px;
+  top: -8px;
+  left: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  position: absolute;
+  border: 1px solid #02a94f;
+}
+#topic-state .step1 {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#topic-state .step2 {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  display: block;
+  margin-top: 55px;
+}
+@media (max-width: 1024px) {
+  #topic-state .step2 {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 768px) {
+  #topic-state .step2 {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 480px) {
+  #topic-state .step2 {
+    margin-top: 10px;
+  }
+}
+#topic-state .step2 .topic1 {
+  width: 100%;
+  height: 100%;
+  color: white;
+  margin-top: 0;
+  position: relative;
+}
+#topic-state .step2 .topic1 .toppic-content {
+  -webkit-border-radius: 0 0 8px 8px;
+  -moz-border-radius: 0 0 8px 8px;
+  border-radius: 0 0 8px 8px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  width: 100%;
+  height: 100%;
+  padding: 25px 20px;
+  background: #02a94f url("../images/topic-state/topic1.png") repeat;
+}
+#topic-state .step2 .topic1 .toppic-content .title-topic1 {
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+#topic-state .step2 .topic1 .toppic-content .topic-wrapper {
+  color: white;
+  display: block;
+}
+#topic-state .step2 .topic1:after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  content: '';
+  height: 107px;
+  top: -85px;
+  background: url("../images/topic-state/step2.png") no-repeat center top / 100% auto;
+}
+@media (max-width: 1024px) {
+  #topic-state .step2 .topic1:after {
+    top: -65px;
+  }
+}
+@media (max-width: 768px) {
+  #topic-state .step2 .topic1:after {
+    top: -50px;
+  }
+}
+@media (max-width: 480px) {
+  #topic-state .step2 .topic1:after {
+    top: -20px;
+  }
+}
+#topic-state .step5 {
+  background: url("../images/expert-state/step5.jpg") no-repeat center / cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+}
+#topic-state .step5 .swg-pagination {
+  text-align: right;
+  margin-bottom: 20px;
+}
+#topic-state .step5 .swg-pagination .pagination {
+  margin: 0;
+}
+#topic-state .step5 .swg-pagination .pagination > li {
+  display: inline-block;
+}
+#topic-state .step5 .swg-pagination .pagination > li:first-child > a,
+#topic-state .step5 .swg-pagination .pagination > li:last-child > a {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#topic-state .step5 .swg-pagination .pagination > li > a {
+  color: #fff;
+  background-color: #009639;
+  border: 1px solid #009639;
+  font-weight: 600;
+  padding: 2px 12px;
+}
+#topic-state .step5 .swg-pagination .pagination > li > a span {
+  font-size: 15px;
+  line-height: 12px;
+}
+#topic-state .step5 .swg-pagination .pagination > li.active > a,
+#topic-state .step5 .swg-pagination .pagination > li a:focus,
+#topic-state .step5 .swg-pagination .pagination > li a:hover {
+  background-color: #939393;
+  border-color: #939393;
+  font-weight: 500;
+}
+#topic-state .step5 .list-expert {
+  position: relative;
+  width: 100%;
+  margin: 50px 0;
+}
+#topic-state .step5 .list-expert .pre-slider {
+  background: url("../images/expert-state/left-click.png") no-repeat;
+  width: 21px;
+  height: 34px;
+  position: absolute;
+  left: -11px;
+  top: 50%;
+  margin-top: -17px;
+  cursor: pointer;
+  z-index: 1;
+}
+#topic-state .step5 .list-expert .next-slider {
+  background: url("../images/expert-state/right-click.png") no-repeat;
+  width: 21px;
+  cursor: pointer;
+  height: 34px;
+  position: absolute;
+  right: -11px;
+  top: 50%;
+  margin-top: -17px;
+  z-index: 1;
+}
+#topic-state .step5 .list-expert .expert .expert-profile {
+  display: table;
+  padding: 0 30px;
+}
+#topic-state .step5 .list-expert .expert .expert-profile .ava-expert {
+  display: table-cell;
+  width: 185px;
+  vertical-align: middle;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  margin-right: 20px;
+}
+@media (max-width: 480px) {
+  #topic-state .step5 .list-expert .expert .expert-profile .ava-expert {
+    width: 90px;
+  }
+}
+#topic-state .step5 .list-expert .expert .expert-profile .ava-expert .avatar {
+  width: 185px;
+  height: 185px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 480px) {
+  #topic-state .step5 .list-expert .expert .expert-profile .ava-expert .avatar {
+    width: 90px;
+    height: 90px;
+  }
+}
+#topic-state .step5 .list-expert .expert .expert-profile .detail-expert {
+  display: table-cell;
+  vertical-align: middle;
+}
+#topic-state .step5 .list-expert .expert .expert-profile .detail-expert .wrap-expert {
+  background-color: white;
+  padding: 15px;
+  margin-left: 10px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+}
+#topic-state .step5 .list-expert .expert .expert-profile .detail-expert .wrap-expert .expert-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #02a94f;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+#topic-state .step5 .selector {
+  background: #ffffff url("../images/expert-state/dropdown.png") no-repeat scroll right 8px top 12px padding-box;
+  margin-bottom: 20px;
+  overflow: hidden;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  width: 100%;
+  height: 38px;
+}
+#topic-state .step5 .selector select {
+  color: #02a94f;
+  font-weight: 500;
+  -moz-appearance: none;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  border: medium none;
+  box-shadow: none;
+  margin: 0;
+  height: 100%;
+  padding: 7px 15px;
+  width: 100%;
+}
+#topic-state .step5 .cmd-filter {
+  margin-bottom: 20px;
+  background-color: #02a94f;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #ffffff;
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  height: 38px;
+  line-height: 22px;
+  padding: 8px 15px;
+  border: 0;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+}
+#topic-state .step5 .cmd-filter:hover {
+  background-color: #02a94f;
+}
+#topic-state .step5 .box-question {
+  padding: 20px;
+  height: 260px;
+  width: 100%;
+  background-color: white;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  #topic-state .step5 .box-question {
+    height: 100%;
+  }
+}
+#topic-state .step5 .box-question .divide-state {
+  height: 1px;
+  margin-top: 10px;
+  width: 100%;
+  background-color: #02a94f;
+}
+#topic-state .step5 .box-question .title-box {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+#topic-state .step5 .box-question .title-box a {
+  color: #02a94f;
+  display: block;
+  width: 100%;
+}
+#topic-state .step5 .box-question .content-box {
+  margin-top: 15px;
+}
+#topic-state .step5 .question-slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#topic-state .step5 .question-slider .pre-nav {
+  background: url("../images/expert-state/nav-left.png") no-repeat;
+  width: 30px;
+  height: 26px;
+  position: absolute;
+  right: 31px;
+  bottom: 20px;
+  margin-top: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+#topic-state .step5 .question-slider .next-nav {
+  background: url("../images/expert-state/nav-right.png") no-repeat;
+  width: 30px;
+  cursor: pointer;
+  height: 26px;
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  margin-top: 0;
+  z-index: 1;
+}
+#topic-state .step5 .question-slider .list-question {
+  margin: 0;
+}
+#topic-state .step5 .question-slider .list-question .slick-prev,
+#topic-state .step5 .question-slider .list-question .slick-next {
+  display: none !important;
+}
+.video-topic {
+  background-color: #02a94f;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 10px 10px 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.video-topic .title-video {
+  margin-top: 15px;
+  color: #ffffff;
+  font-family: "Nabila", sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
 }
