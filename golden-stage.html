@@ -1462,6 +1462,11 @@
 </section>
 
 <section id="landing-event">
+  <div class="left-img wow slideInLeft" data-wow-duration="1s"></div>
+  <div class="right-img wow slideInRight" data-wow-duration="1s"></div>
+  <a data-scroll href="#join-now">
+    <button class="btn-join wow bounceInDown">Tham gia ngay</button>
+  </a>
 </section>
 
 <section id="landing-message">
@@ -1472,12 +1477,12 @@
       </div>
     </div>
 
-    <div class="row">
+    <div id="join-now" class="row message-row">
       <div class="col">
         <div class="gs-message">
           <div class="message-1">
-            <i class="landing-icon icon-1"></i>
-            <p class="text-justify">“Giai đoạn vàng” là nền tảng cho sự phát triển hoàn thiện của con</p>
+            <i class="landing-icon icon-1 wow swing"></i>
+            <p class="text-center">“Giai đoạn vàng” là nền tảng cho sự phát triển hoàn thiện của con</p>
             <button class="btn btn-share">Xem và chia sẻ</button>
           </div>
         </div>
@@ -1486,8 +1491,8 @@
       <div class="col">
         <div class="gs-message">
           <div class="message-2">
-            <i class="landing-icon icon-2"></i>
-            <p class="text-justify">Chậm tăng cân trong “giai đoạn vàng” là bước đầu dẫn đến nguy cơ suy dinh dưỡng,
+            <i class="landing-icon icon-2 wow swing"></i>
+            <p class="text-center">Chậm tăng cân trong “giai đoạn vàng” là bước đầu dẫn đến nguy cơ suy dinh dưỡng,
             thấp còi</p>
             <button class="btn btn-share">Xem và chia sẻ</button>
           </div>
@@ -1497,8 +1502,8 @@
       <div class="col">
         <div class="gs-message">
           <div class="message-3">
-            <i class="landing-icon icon-3"></i>
-            <p class="text-justify">Hãy chăm sóc dinh dưỡng đúng cách và hiệu quả để tối ưu tiềm năng phát triển của
+            <i class="landing-icon icon-3 wow swing"></i>
+            <p class="text-center">Hãy chăm sóc dinh dưỡng đúng cách và hiệu quả để tối ưu tiềm năng phát triển của
             trẻ trong "Giai đoạn vàng"</p>
             <button class="btn btn-share">Xem và chia sẻ</button>
           </div>
@@ -1508,8 +1513,8 @@
       <div class="col">
         <div class="gs-message">
           <div class="message-4">
-            <i class="landing-icon icon-4"></i>
-            <p class="text-justify">Cân nặng và chiều cao, những chỉ số phản ánh sự phát triển của trẻ</p>
+            <i class="landing-icon icon-4 wow swing"></i>
+            <p class="text-center">Cân nặng và chiều cao, những chỉ số phản ánh sự phát triển của trẻ</p>
             <button class="btn btn-share">Xem và chia sẻ</button>
           </div>
         </div>
@@ -1518,8 +1523,8 @@
       <div class="col">
         <div class="gs-message">
           <div class="message-5">
-            <i class="landing-icon icon-5"></i>
-            <p class="text-justify">Suy dinh dưỡng trong “giai đoạn vàng” khó cải thiện và ảnh hưởng nghiêm trọng đến
+            <i class="landing-icon icon-5 wow swing"></i>
+            <p class="text-center">Suy dinh dưỡng trong “giai đoạn vàng” khó cải thiện và ảnh hưởng nghiêm trọng đến
             sự phát triển về sau của trẻ</p>
             <button class="btn btn-share">Xem và chia sẻ</button>
           </div>
@@ -1529,8 +1534,8 @@
       <div class="col">
         <div class="gs-message">
           <div class="message-6">
-            <i class="landing-icon icon-6"></i>
-            <p class="text-justify">GrowPLUS+, dinh dưỡng hiệu quả giúp trẻ tăng cân, thoát khỏi suy dinh dưỡng, thấp
+            <i class="landing-icon icon-6 wow swing"></i>
+            <p class="text-center">GrowPLUS+, dinh dưỡng hiệu quả giúp trẻ tăng cân, thoát khỏi suy dinh dưỡng, thấp
             còi trong "Giai đoạn vàng"</p>
             <button class="btn btn-share">Xem và chia sẻ</button>
           </div>
@@ -1659,7 +1664,12 @@
 <script type="text/javascript" src="js/lib/wow.min.js"></script>
 <script type="text/javascript" src="js/old.js"></script>
 <script type="text/javascript" src="js/lib/slick.min.js"></script>
-
+<script type="text/javascript" src="js/lib/smooth-scroll.min.js"></script>
+<script>
+  smoothScroll.init({
+    speed: 1000
+  });
+</script>
 <script type="text/javascript" src="js/golden-stage.js"></script>
 <script type="text/javascript" src="js/slow-weight-gain.js"></script>
 </body>

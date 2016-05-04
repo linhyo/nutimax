@@ -557,17 +557,79 @@
   }
 }
 
-#landing-event {  width: 100%;
-
-  background: url('../images/golden-stage/event-banner.png') no-repeat center center / cover;
+#landing-event {
+  position: relative;
+  width: 100%;
+  background: url('../images/golden-stage/prize-banner.png') no-repeat center center / cover;
   @media (min-width: 992px) {
-    height: 645px;
+    height: 720px;
   }
   @media (min-width: 481px) and (max-width: 991px) {
     height: 350px;
   }
   @media (max-width: 480px) {
     height: 190px;
+  }
+  .left-img {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    background: url('../images/golden-stage/ms-expert.png') no-repeat center center / 100% auto;
+    @media (min-width: 992px) {
+      width: 400px;
+      height: 470px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      width: 336px;
+      height: 396px;
+    }
+    @media (max-width: 767px) {
+      width: 252px;
+      height: 297px;
+    }
+  }
+  .right-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url('../images/golden-stage/mom-and-kid.png') no-repeat center center / 100% auto;
+    @media (min-width: 992px) {
+      width: 380px;
+      height: 380px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      width: 300px;
+      height: 300px;
+    }
+    @media (max-width: 767px) {
+      width: 230px;
+      height: 230px;
+    }
+  }
+  .btn-join {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    margin-left: -110px;
+    display: block;
+    background-color: #bf2a2e;
+    border: 2px solid #fff;
+    .border-radius(12px);
+    color: #fff;
+    font-family: @import-font;
+    font-size: 20px;
+    line-height: 1.42857143;
+    padding: 8px 40px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    .user-select();
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    &:hover {
+      background-color: #db2b2f;
+    }
   }
 }
 
@@ -633,6 +695,9 @@
       width: 100%;
     }
   }
+  .message-row {
+    padding: 0 8.33%;
+  }
   .gs-message {
     position: relative;
     width: 100%;
@@ -649,14 +714,7 @@
       bottom: 0;
       right: 0;
       text-align: center;
-      padding-right: 10%;
-      padding-left: 10%;
-      &.message-1, &.message-4 {
-        padding-top: 15%;
-      }
-      &.message-2, &.message-3, &.message-5, &.message-6 {
-        padding-top: 12%;
-      }
+      padding: 8%;
       &.message-1 {
         background-color: #009639;
       }
@@ -675,12 +733,26 @@
       &.message-6 {
         background-color: #bf2a2e;
       }
+      &.message-1, &.message-4 {
+        p {
+          margin: 25px 0 38px;
+        }
+      }
+      &.message-2 {
+        p {
+          margin: 12px 0 26px;
+        }
+      }
+      &.message-3, &.message-5, &.message-6 {
+        p {
+          margin: 0 0 12px;
+        }
+      }
     }
     p {
       color: #fff;
       font-size: 18px;
       font-weight: 500;
-      margin: 20px 0 30px;
     }
     .btn-share {
       color: #fff;

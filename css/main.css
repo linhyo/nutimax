@@ -2515,12 +2515,13 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   }
 }
 #landing-event {
+  position: relative;
   width: 100%;
-  background: url('../images/golden-stage/event-banner.png') no-repeat center center / cover;
+  background: url('../images/golden-stage/prize-banner.png') no-repeat center center / cover;
 }
 @media (min-width: 992px) {
   #landing-event {
-    height: 645px;
+    height: 720px;
   }
 }
 @media (min-width: 481px) and (max-width: 991px) {
@@ -2532,6 +2533,88 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   #landing-event {
     height: 190px;
   }
+}
+#landing-event .left-img {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  background: url('../images/golden-stage/ms-expert.png') no-repeat center center / 100% auto;
+}
+@media (min-width: 992px) {
+  #landing-event .left-img {
+    width: 400px;
+    height: 470px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #landing-event .left-img {
+    width: 336px;
+    height: 396px;
+  }
+}
+@media (max-width: 767px) {
+  #landing-event .left-img {
+    width: 252px;
+    height: 297px;
+  }
+}
+#landing-event .right-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url('../images/golden-stage/mom-and-kid.png') no-repeat center center / 100% auto;
+}
+@media (min-width: 992px) {
+  #landing-event .right-img {
+    width: 380px;
+    height: 380px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #landing-event .right-img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 767px) {
+  #landing-event .right-img {
+    width: 230px;
+    height: 230px;
+  }
+}
+#landing-event .btn-join {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  margin-left: -110px;
+  display: block;
+  background-color: #bf2a2e;
+  border: 2px solid #fff;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  border-radius: 12px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #fff;
+  font-family: 'Nabila', sans-serif;
+  font-size: 20px;
+  line-height: 1.42857143;
+  padding: 8px 40px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+#landing-event .btn-join:hover {
+  background-color: #db2b2f;
 }
 .landing-icon {
   display: inline-block;
@@ -2627,6 +2710,9 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
     width: 100%;
   }
 }
+#landing-message .message-row {
+  padding: 0 8.33%;
+}
 #landing-message .gs-message {
   position: relative;
   width: 100%;
@@ -2644,18 +2730,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   bottom: 0;
   right: 0;
   text-align: center;
-  padding-right: 10%;
-  padding-left: 10%;
-}
-#landing-message .gs-message > div.message-1,
-#landing-message .gs-message > div.message-4 {
-  padding-top: 15%;
-}
-#landing-message .gs-message > div.message-2,
-#landing-message .gs-message > div.message-3,
-#landing-message .gs-message > div.message-5,
-#landing-message .gs-message > div.message-6 {
-  padding-top: 12%;
+  padding: 8%;
 }
 #landing-message .gs-message > div.message-1 {
   background-color: #009639;
@@ -2675,11 +2750,22 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 #landing-message .gs-message > div.message-6 {
   background-color: #bf2a2e;
 }
+#landing-message .gs-message > div.message-1 p,
+#landing-message .gs-message > div.message-4 p {
+  margin: 25px 0 38px;
+}
+#landing-message .gs-message > div.message-2 p {
+  margin: 12px 0 26px;
+}
+#landing-message .gs-message > div.message-3 p,
+#landing-message .gs-message > div.message-5 p,
+#landing-message .gs-message > div.message-6 p {
+  margin: 0 0 12px;
+}
 #landing-message .gs-message p {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
-  margin: 20px 0 30px;
 }
 #landing-message .gs-message .btn-share {
   color: #fff;
