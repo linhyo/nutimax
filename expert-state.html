@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+<head lang="vi">
+  <title>Nutifood - Suy dưỡng, thấp còi</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="cleartype" content="on">
+
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link
+    href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900,100italic,300italic,400italic,500italic,700italic,900italic&subset=latin,vietnamese'
+    rel='stylesheet' type='text/css'>
+  <!-- CSS Styles -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+  <link href="js/booklet/jquery.booklet.1.1.0.css" type="text/css" rel="stylesheet" media="screen"/>
+  <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <!-- If use old header-footer, dont need attach this file -->
+  <link rel="stylesheet" type="text/css" href="css/header-footer.css"/>
+
+</head>
+<body>
+<header id="home" class="header" role="banner">
+  <div class="content">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+                  data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand wow slideInLeft" data-wow-duration="1s" href="http://www.nutifood.com.vn/"><i
+            class="icon-homepage icon-logo1"></i></a>
+        </div>
+        <!--/.navbar-header-->
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav wow slideInDown" data-wow-duration="1s">
+            <li class="active"><a href="http://www.nutifood.com.vn/">Trang chủ</a></li>
+            <li><a href="#">Kiến thức</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Dinh dưỡng</a></li>
+            <li><a href="#">Góc chuyên gia</a></li>
+            <li><a href="#">Tin tức - sự kiện</a></li>
+            <li><a href="#">Liên hệ</a></li>
+          </ul>
+          <div class="social-icons">
+            <a href="http://www.nutifood.com.vn/suy-dinh-duong/" class="wow slideInRight"
+               data-wow-duration="1s">
+              <img src="images/nutri-white.png" alt=""/></a>
+          </div>
+        </div>
+        <!--/.navbar-collapse-->
+        <!--/.navbar-->
+      </div>
+    </nav>
+  </div>
+</header>
+<div class="clearfix"></div>
+
+<main id="expert-state">
+  <div class="step1 img-responsive wow slideInDown" data-wow-duration="1s">
+    <img src="images/expert-state/step1.jpg" alt=""/>
+  </div>
+  <div class="step2">
+    <h2 class="title-step">
+      <div class="container">
+        <div class="wrap-title">
+          <i class="icon-check-healthy"></i>
+          Kiểm tra tình trạng của con yêu
+        </div>
+      </div>
+    </h2>
+    <div class="container">
+      <div class="row step2-content">
+        <div class="col-lg-3">
+          <div class="img-responsive">
+            <img class="wow slideInLeft" data-wow-duration="1s" src="images/expert-state/step2-img1.png" alt=""/>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <form class="form-step" action="">
+            <p class="title-form-step">
+              Con bạn cũng có thể chậm tăng cân, Suy dinh dưỡng - thấp còi mà có thể bạn không biết. Hãy điền những
+              thông tin sau để kiểm tra tình trạng con của bạn và nhận những thông tin tư vấn hữu ích từ chuyên gia
+            </p>
+
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                <div class="selector">
+                  <select id="age" name="age">
+                    <option value="0">0 tháng</option>
+                    <option value="1">1 tháng</option>
+                  </select>
+                </div>
+                <div class="selector">
+                  <select id="sex" name="sex">
+                    <option value="male">Bé trai</option>
+                    <option value="female">Bé gái</option>
+                  </select>
+                </div>
+                <input type="text" id="weight" name="weight" placeholder="Cân nặng - Ví dụ: 7,6kg" class="cmd-form">
+                <input type="text" id="height" name="height" placeholder="Chiều cao - Ví dụ: 90cm" class="cmd-form">
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <input type="text" name="name" placeholder="Họ và tên phụ huynh" class="cmd-form">
+                <input type="text" name="phone" placeholder="Số điện thoại" class="cmd-form">
+                <input type="text" name="email" placeholder="Email" class="cmd-form">
+                <button type="submit" class="submit-check-form" style="border:none">Kiểm tra ngay</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-3">
+          <div class="img-responsive">
+            <img class="product-step wow slideInRight" data-wow-duration="1s" src="images/expert-state/step2-img2.png"
+                 alt=""/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="step3 active">
+    <div class="container">
+      <div class="step-value">
+        <div class="value">
+          <img src="images/expert-state/value1.png" alt=""/>
+        </div>
+        <div class="value">
+          <img src="images/expert-state/value2.png" alt=""/>
+        </div>
+        <div class="value active">
+          <img src="images/expert-state/value3.png" alt=""/>
+        </div>
+        <div class="value">
+          <img src="images/expert-state/value4.png" alt=""/>
+        </div>
+        <div class="value">
+          <img src="images/expert-state/value5.png" alt=""/>
+        </div>
+        <div class="detail-value">
+          <div class="detail-people">
+            <h2 class="detail-title">BMI: 23</h2>
+
+            <p class="detail-content">Tình trạng: Thiếu cân độ 1</p>
+          </div>
+          <a class="cmd-view-detail" href="#">Xem chi tiết kết quả</a>
+        </div>
+      </div>
+    </div>
+    <div class="step-dot">
+      <div class="container">
+        <div class="dot-value">
+          <span class="dot"></span>
+        </div>
+        <div class="dot-value">
+          <span class="dot"></span>
+        </div>
+        <div class="dot-value">
+          <span class="dot active"></span>
+        </div>
+        <div class="dot-value">
+          <span class="dot"></span>
+        </div>
+        <div class="dot-value">
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="step4">
+    <div class="tab-header">
+      <div class="container">
+        <ul class="nav nav-tabs slider-tab" role="tablist">
+          <li role="presentation" class="active">
+            <a href="#item1" aria-controls="reason" role="tab" data-toggle="tab">Suy dinh dưỡng, thấp còi</a>
+          </li>
+          <li role="presentation">
+            <a href="#item2" aria-controls="influence" role="tab" data-toggle="tab">Chậm tăng cân</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tab-content swg-content">
+      <div role="tabpanel" class="tab-pane fade in active" id="item1">
+        <h2 class="title-step">
+          <div class="container">
+            <div class="wrap-title">
+              <i class="icon-dot"></i>
+              Kiểm tra tình trạng của con yêu
+            </div>
+          </div>
+        </h2>
+        <div class="container">
+          <div class="slider-step">
+            <span class="pre-slider slider-pre1"></span>
+            <span class="next-slider slider-next1"></span>
+            <a href="#" class="view-all">Xem tất cả</a>
+
+            <div class="slide1">
+              <div class="item-step">
+                <img src="images/expert-state/ex1.jpg" alt=""/>
+
+                <h2 class="title-slider">7 dấu hiệu trẻ bị suy dinh dưỡng</h2>
+              </div>
+              <div class="item-step">
+                <img src="images/expert-state/ex1.jpg" alt=""/>
+
+                <h2 class="title-slider">7 dấu hiệu trẻ bị suy dinh dưỡng</h2>
+              </div>
+              <div class="item-step">
+                <img src="images/expert-state/ex1.jpg" alt=""/>
+
+                <h2 class="title-slider">7 dấu hiệu trẻ bị suy dinh dưỡng</h2>
+              </div>
+              <div class="item-step">
+                <img src="images/expert-state/ex1.jpg" alt=""/>
+
+                <h2 class="title-slider">7 dấu hiệu trẻ bị suy dinh dưỡng</h2>
+              </div>
+              <div class="item-step">
+                <img src="images/expert-state/ex1.jpg" alt=""/>
+
+                <h2 class="title-slider">7 dấu hiệu trẻ bị suy dinh dưỡng</h2>
+              </div>
+              <div class="item-step">
+                <img src="images/expert-state/ex1.jpg" alt=""/>
+
+                <h2 class="title-slider">7 dấu hiệu trẻ bị suy dinh dưỡng</h2>
+              </div>
+              <div class="item-step">
+                <img src="images/expert-state/ex1.jpg" alt=""/>
+
+                <h2 class="title-slider">7 dấu hiệu trẻ bị suy dinh dưỡng</h2>
+              </div>
+              <div class="item-step">
+                <img src="images/expert-state/ex1.jpg" alt=""/>
+
+                <h2 class="title-slider">7 dấu hiệu trẻ bị suy dinh dưỡng</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div role="tabpanel" class="tab-pane fade" id="item2">
+        <h2 class="title-step">
+          <div class="container">
+            <div class="wrap-title">
+              <i class="icon-dot"></i>
+              Kiểm tra tình trạng của con yêu
+            </div>
+          </div>
+        </h2>
+        <div class="container">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="step5">
+    <h2 class="title-step no-border">
+      <div class="container">
+        <div class="wrap-title">
+          <i class="icon-step5"></i>
+          Tư vấn cùng chuyên gia ở vấn đề chậm tăng cân ở trẻ
+        </div>
+      </div>
+    </h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="list-expert">
+            <span class="pre-slider expert-pre"></span>
+            <span class="next-slider expert-next"></span>
+
+            <div class="expert">
+              <div class="expert-profile">
+                <div class="ava-expert">
+                  <div class="avatar" style="background-image: url(images/expert-state/bs1.jpg)"></div>
+                </div>
+                <div class="detail-expert">
+                  <div class="wrap-expert">
+                    <h2 class="expert-name">BS Trần thị hằng</h2>
+
+                    <p class="expert-content">
+                      Object containing breakpoints and settings objects (see demo). Enables settings sets at given
+                      screen width. Set settings to "unslick" instead of an object to disable slick at a given
+                      breakpoint.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="expert-profile">
+                <div class="ava-expert">
+                  <div class="avatar" style="background-image: url(images/expert-state/bs1.jpg)"></div>
+                </div>
+                <div class="detail-expert">
+                  <div class="wrap-expert">
+                    <h2 class="expert-name">BS Trần thị hằng</h2>
+
+                    <p class="expert-content">
+                      Object containing breakpoints and settings objects (see demo). Enables settings sets at given
+                      screen width. Set settings to "unslick" instead of an object to disable slick at a given
+                      breakpoint.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="expert-profile">
+                <div class="ava-expert">
+                  <div class="avatar" style="background-image: url(images/expert-state/bs1.jpg)"></div>
+                </div>
+                <div class="detail-expert">
+                  <div class="wrap-expert">
+                    <h2 class="expert-name">BS Trần thị hằng</h2>
+
+                    <p class="expert-content">
+                      Object containing breakpoints and settings objects (see demo). Enables settings sets at given
+                      screen width. Set settings to "unslick" instead of an object to disable slick at a given
+                      breakpoint.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="expert-profile">
+                <div class="ava-expert">
+                  <div class="avatar" style="background-image: url(images/expert-state/bs1.jpg)"></div>
+                </div>
+                <div class="detail-expert">
+                  <div class="wrap-expert">
+                    <h2 class="expert-name">BS Trần thị hằng</h2>
+
+                    <p class="expert-content">
+                      Object containing breakpoints and settings objects (see demo). Enables settings sets at given
+                      screen width. Set settings to "unslick" instead of an object to disable slick at a given
+                      breakpoint.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <form action="">
+          <div class="col-lg-9">
+            <div class="selector">
+              <select id="filterQuestion" name="age">
+                <option value="0">0 tháng</option>
+                <option value="1">1 tháng</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <button class="cmd-filter" type="submit">Lọc câu hỏi</button>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="question-slider">
+            <span class="pre-nav"></span>
+            <span class="next-nav"></span>
+            <div class="list-question">
+              <div class="box-question">
+                <h2 class="title-box">
+                  <a href="#">Bé chậm tăng cân và chiều cao 4 tháng không tăng?</a>
+                </h2>
+
+                <h3 class="question-name">Bởi Hiển Đỗ</h3>
+
+                <p class="content-box">
+                  Object containing breakpoints and settings objects (see demo). Enables settings sets at given screen
+                  width. Set settings to "unslick" instead of an object to disable slick at a given breakpoint.
+                </p>
+
+                <div class="divide-state"></div>
+                <p class="content-box">
+                  Object containing breakpoints and settings objects (see demo). Enables settings sets at given screen
+                  width. Set settings to "unslick" instead of an object to disable slick at a given breakpoint.
+                </p>
+              </div>
+              <div class="box-question">
+                <h2 class="title-box">
+                  <a href="#">Bé chậm tăng cân và chiều cao 4 tháng không tăng?</a>
+                </h2>
+
+                <h3 class="question-name">Bởi Hiển Đỗ</h3>
+
+                <p class="content-box">
+                  Object containing breakpoints and settings objects (see demo). Enables settings sets at given screen
+                  width. Set settings to "unslick" instead of an object to disable slick at a given breakpoint.
+                </p>
+
+                <div class="divide-state"></div>
+                <p class="content-box">
+                  Object containing breakpoints and settings objects (see demo). Enables settings sets at given screen
+                  width. Set settings to "unslick" instead of an object to disable slick at a given breakpoint.
+                </p>
+              </div>
+              <div class="box-question">
+                <h2 class="title-box">
+                  <a href="#">Bé chậm tăng cân và chiều cao 4 tháng không tăng?</a>
+                </h2>
+
+                <h3 class="question-name">Bởi Hiển Đỗ</h3>
+
+                <p class="content-box">
+                  Object containing breakpoints and settings objects (see demo). Enables settings sets at given screen
+                  width. Set settings to "unslick" instead of an object to disable slick at a given breakpoint.
+                </p>
+
+                <div class="divide-state"></div>
+                <p class="content-box">
+                  Object containing breakpoints and settings objects (see demo). Enables settings sets at given screen
+                  width. Set settings to "unslick" instead of an object to disable slick at a given breakpoint.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <div class="box-question">
+            <h2 class="title-box">
+              <a href="#">Bé chậm tăng cân và chiều cao 4 tháng không tăng?</a>
+            </h2>
+
+            <h3 class="question-name">Bởi Hiển Đỗ</h3>
+
+            <p class="content-box">
+              Object containing breakpoints and settings objects (see demo). Enables settings sets at given screen
+              width. Set settings to "unslick" instead of an object to disable slick at a given breakpoint.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <div class="box-question">
+            <h2 class="title-box">
+              <a href="#">Bé chậm tăng cân và chiều cao 4 tháng không tăng?</a>
+            </h2>
+
+            <h3 class="question-name">Bởi Hiển Đỗ</h3>
+
+            <p class="content-box">
+              Object containing breakpoints and settings objects (see demo). Enables settings sets at given screen
+              width. Set settings to "unslick" instead of an object to disable slick at a given breakpoint.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <div class="box-question">
+            <h2 class="title-box">
+              <a href="#">Bé chậm tăng cân và chiều cao 4 tháng không tăng?</a>
+            </h2>
+
+            <h3 class="question-name">Bởi Hiển Đỗ</h3>
+
+            <p class="content-box">
+              Object containing breakpoints and settings objects (see demo). Enables settings sets at given screen
+              width. Set settings to "unslick" instead of an object to disable slick at a given breakpoint.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <div class="box-question">
+            <h2 class="title-box">
+              <a href="#">Bé chậm tăng cân và chiều cao 4 tháng không tăng?</a>
+            </h2>
+
+            <h3 class="question-name">Bởi Hiển Đỗ</h3>
+
+            <p class="content-box">
+              Object containing breakpoints and settings objects (see demo). Enables settings sets at given screen
+              width. Set settings to "unslick" instead of an object to disable slick at a given breakpoint.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <div class="box-question">
+            <h2 class="title-box">
+              <a href="#">Bé chậm tăng cân và chiều cao 4 tháng không tăng?</a>
+            </h2>
+
+            <h3 class="question-name">Bởi Hiển Đỗ</h3>
+
+            <p class="content-box">
+              Object containing breakpoints and settings objects (see demo). Enables settings sets at given screen
+              width. Set settings to "unslick" instead of an object to disable slick at a given breakpoint.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <div class="box-question">
+            <h2 class="title-box">
+              <a href="#">Bé chậm tăng cân và chiều cao 4 tháng không tăng?</a>
+            </h2>
+
+            <h3 class="question-name">Bởi Hiển Đỗ</h3>
+
+            <p class="content-box">
+              Object containing breakpoints and settings objects (see demo). Enables settings sets at given screen
+              width. Set settings to "unslick" instead of an object to disable slick at a given breakpoint.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <nav class="swg-pagination">
+            <ul class="pagination ">
+              <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+              <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li>
+                <a href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div class="step8 img-responsive">
+  <div class="container">
+    <img src="images/expert-state/step8.jpg" alt=""/>
+  </div>
+</div>
+
+<section class="nutifood-label"></section>
+<footer class="footer" role="contentinfo">
+  <div class="bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="title-footer"><img src="images/giaiphap.png" alt=""/></h3>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-footer wow slideInUp" data-wow-duration="1s">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-4">
+            <h5>Copyright 2015 NutiFood Corp. All rights reserved</h5>
+          </div>
+          <div class="col-lg-7 col-md-8">
+            <ul class="sub-menu">
+              <li class="active"><a href="http://www.nutifood.com.vn/">Trang chủ</a></li>
+              <li><a href="#">Kiến thức</a></li>
+              <li><a href="#">Sản phẩm</a></li>
+              <li><a href="#">Dinh dưỡng</a></li>
+              <li><a href="#">Góc nhìn chuyên gia</a></li>
+              <li><a href="#">Tin tức - Sự kiên</a></li>
+              <li><a href="#">Liên hệ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="js/lib/jquery-1.12.1.min.js"></script>
+<script src="js/booklet/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="js/booklet/jquery.booklet.1.1.0.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/lib/lightslider.min.js"></script>
+<script type="text/javascript" src="js/lib/wow.min.js"></script>
+<script type="text/javascript" src="js/old.js"></script>
+<script type="text/javascript" src="js/lib/slick.min.js"></script>
+
+<script type="text/javascript" src="js/golden-stage.js"></script>
+<script type="text/javascript" src="js/slow-weight-gain.js"></script>
+<script>
+  $('.slide1').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    nextArrow: $('.slider-pre1'),
+    prevArrow: $('.slider-next1'),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+  $('.expert').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 2,
+    nextArrow: $('.expert-next'),
+    prevArrow: $('.expert-pre'),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+  $('.list-question').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    nextArrow: $('.pre-nav'),
+    prevArrow: $('.next-nav'),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+</script>
+</body>
+</html>

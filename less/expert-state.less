@@ -1,0 +1,637 @@
+@green-expert: #02a94f;
+
+#expert-state {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  .title-step {
+    text-transform: uppercase;
+    color: white;
+    border-bottom: 1px solid white;
+    font-size: 16px;
+    position: relative;
+    background-color: @green-expert;
+    &.no-border{
+      border-bottom: 0;
+    }
+    .wrap-title {
+      padding: 10px 0 10px 65px;
+      position: relative;
+      .icon-check-healthy {
+        background: white url("../images/expert-state/heart.png") no-repeat center;
+        width: 55px;
+        height: 55px;
+        top: -8px;
+        left: 0;
+        .border-radius(50%);
+        position: absolute;
+        border: 1px solid @green-expert;
+      }
+      .icon-dot {
+        background: white url("../images/expert-state/doc.png") no-repeat center;
+        width: 55px;
+        height: 55px;
+        top: -8px;
+        left: 0;
+        .border-radius(50%);
+        position: absolute;
+        border: 1px solid @green-expert;
+      }
+      .icon-step5 {
+        background: white url("../images/expert-state/step5-title.png") no-repeat center / 80%;
+        width: 55px;
+        height: 55px;
+        top: -8px;
+        left: 0;
+        .border-radius(50%);
+        position: absolute;
+        border: 1px solid @green-expert;
+      }
+    }
+  }
+  .step1 {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+  .step2 {
+    background-color: @green-expert;
+    width: 100%;
+    border-top: 20px solid white;
+    .step2-content {
+      padding-top: 25px;
+      position: relative;
+      .form-step {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        .selector {
+          background: hsl(0, 3%, 92%) url("../images/expert-state/selecter.jpg") no-repeat scroll 98% 50%;
+          border: 1px solid hsl(148, 97%, 28%);
+          border-radius: 3px;
+          margin-bottom: 10px;
+          overflow: hidden;
+          width: 100%;
+          height: 38px;
+          select {
+            -moz-appearance: none;
+            background-color: hsla(0, 0%, 0%, 0);
+            background-image: none;
+            border: medium none;
+            box-shadow: none;
+            margin: 0;
+            height: 100%;
+            padding: 7px 15px;
+            width: 100%;
+          }
+        }
+        .cmd-form {
+          background-color: hsl(0, 3%, 92%);
+          border: 1px solid hsl(148, 97%, 28%) !important;
+          border-radius: 3px;
+          display: block;
+          margin-bottom: 10px;
+          padding: 8px 15px;
+          width: 100%;
+          height: 38px;
+        }
+        .submit-check-form {
+          background-color: hsl(359, 82%, 51%);
+          border-radius: 3px;
+          color: hsl(0, 0%, 100%);
+          display: block;
+          font-size: 16px;
+          font-weight: 700;
+          height: 38px;
+          line-height: 22px;
+          padding: 8px 15px;
+          text-align: center;
+          text-decoration: none;
+          transition: all 0.5s ease 0s;
+          width: 100%;
+          &:hover {
+            background-color: hsla(359, 82%, 51%, 0.9);
+          }
+        }
+        .title-form-step {
+          color: white;
+          display: block;
+          font-size: 14px;
+          margin-bottom: 25px;
+        }
+      }
+    }
+    .img-responsive {
+      width: 100%;
+      height: 100%;
+      min-height: 340px;
+      position: relative;
+      img {
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        &.product-step {
+          bottom: -35px;
+          z-index: 1;
+        }
+      }
+    }
+  }
+  .step3 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    background-color: #d7d7d7;
+    position: relative;
+    @media (max-width: 480px) {
+      padding: 20px 0 50px;
+    }
+    &.active {
+      background: #d7d7d7 url("../images/expert-state/step3.png") no-repeat center top/100%;
+    }
+    .step-value {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      position: relative;
+      .value {
+        width: 18%;
+        height: auto;
+        opacity: 0.4;
+        display: inline-block;
+        &.active {
+          opacity: 1;
+        }
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      }
+      .detail-value {
+        position: absolute;
+        width: 270px;
+        height: 140px;
+        background-color: white;
+        left: 50%;
+        top: 50%;
+        margin-left: 135px;
+        margin-top: -70px;
+        .border-radius(4px);
+        padding: 20px 25px;
+        text-align: left;
+        color: @green-expert;
+        .cmd-view-detail {
+          position: absolute;
+          display: block;
+          color: white;
+          font-weight: 500;
+          background-color: #bb001f;
+          padding: 5px 15px;
+          bottom: 25px;
+          left: 20px;
+          &.active {
+            background-color: hsla(350, 100%, 37%, 0.8);
+          }
+        }
+        .detail-people {
+          display: block;
+          position: relative;
+          .detail-title {
+            font-weight: 500;
+            font-size: 23px;
+            color: @green-expert;
+          }
+          .detail-content {
+            font-weight: 500;
+            color: @green-expert;
+          }
+
+        }
+      }
+    }
+    .step-dot {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: white;
+      text-align: center;
+      bottom: 25px;
+      @media (max-width: 480px) {
+        height: 2px;
+      }
+      .dot-value {
+        display: inline-block;
+        height: 30px;
+        left: 0;
+        position: relative;
+        text-align: center;
+        top: -15px;
+        width: 18%;
+        .dot {
+          background-clip: padding-box;
+          background-color: hsl(0, 0%, 100%);
+          display: block;
+          height: 15px;
+          left: 50%;
+          margin-left: -8px;
+          margin-top: 10px;
+          position: relative;
+          top: 0;
+          width: 15px;
+          .border-radius(50%);
+          @media (max-width: 480px) {
+            height: 10px;
+            width: 10px;
+            margin-top: 11px;
+          }
+          &.active {
+            background-color: @green-expert;
+            width: 28px;
+            height: 28px;
+            margin-left: -15px;
+            margin-top: 2px;
+            border: 2px solid white;
+            @media (max-width: 480px) {
+              height: 15px;
+              width: 15px;
+              margin-top: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .step4 {
+    .tab-header {
+      min-height: 300px;
+      width: 100%;
+      background: url("../images/expert-state/step4.jpg") no-repeat center / cover;
+      margin-bottom: 35px;
+      position: relative;
+      height: 100%;
+      &:after {
+        position: absolute;
+        content: '';
+        background: url("../images/expert-state/caption-step4.png") no-repeat center / 100%;
+        width: 771px;
+        height: 96px;
+        top: 50%;
+        left: 50%;
+        margin-top: -48px;
+        margin-left: -365px;
+        @media (max-width: 768px) {
+          background: url("../images/expert-state/caption-step4.png") no-repeat center / 70%;
+          width: 768px;
+          height: 84px;
+          margin-top: -42px;
+          margin-left: -384px;
+        }
+        @media (max-width: 480px) {
+          background: url("../images/expert-state/caption-step4.png") no-repeat center / 70%;
+          width: 480px;
+          height: 64px;
+          margin-top: -32px;
+          margin-left: -240px;
+        }
+      }
+      .slider-tab {
+        border: 0 none;
+        bottom: 0;
+        display: block;
+        left: 50%;
+        margin-left: -45%;
+        position: absolute;
+        text-align: center;
+        width: 85%;
+        li {
+          display: inline-block;
+          a {
+            background-color: #a4a1a1;
+            .border-radius-custom(20px, 20px, 0, 0);
+            .transition();
+            color: white;
+            text-transform: uppercase;
+            font-size: 15px;
+            border: 0;
+            border-bottom: 1px solid white;
+            @media (max-width: 768px) {
+              .border-radius(0);
+            }
+          }
+          &.active, :hover {
+            a {
+              color: @green-expert;
+              .border-radius-custom(20px, 20px, 0, 0);
+              background: white;
+              @media (max-width: 768px) {
+                .border-radius(0);
+              }
+            }
+          }
+
+          &:first-child {
+            width: 49%;
+            margin-right: 1%;
+            @media (max-width: 768px) {
+              width: 100%;
+              margin: 0;
+            }
+          }
+          &:last-child {
+            width: 49%;
+            margin-left: 1%;
+            @media (max-width: 768px) {
+              width: 100%;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+    .slider-step {
+      padding: 50px 0;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      .view-all {
+        background-color: hsl(350, 100%, 37%);
+        bottom: 35px;
+        color: hsl(0, 0%, 100%);
+        display: block;
+        font-weight: 500;
+        right: 10px;
+        padding: 5px 15px;
+        position: absolute;
+
+      }
+      .pre-slider {
+        background: url("../images/expert-state/left-click.png") no-repeat;
+        width: 21px;
+        height: 34px;
+        position: absolute;
+        left: -21px;
+        top: 50%;
+        margin-top: -42px;
+        cursor: pointer;
+      }
+      .next-slider {
+        background: url("../images/expert-state/right-click.png") no-repeat;
+        width: 21px;
+        cursor: pointer;
+        height: 34px;
+        position: absolute;
+        right: -21px;
+        top: 50%;
+        margin-top: -42px;
+      }
+      .item-step {
+        .border-radius(4px);
+        position: relative;
+        margin: 3px 10px;
+        box-shadow: 1px 1px 2px #b7b7b7;
+        img {
+          width: 100%;
+          display: block;
+          .border-radius(4px);
+        }
+        .title-slider {
+          .border-radius-custom(0, 0, 4px, 4px);
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-color: @green-expert;
+          color: white;
+          overflow: hidden;
+          white-space: nowrap;
+          width: 100%;
+          padding: 10px 15px;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+  .step5 {
+    background: url("../images/expert-state/step5.jpg") no-repeat center/ cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    .swg-pagination {
+      text-align: right;
+      margin-bottom: 20px;
+      .pagination {
+        margin: 0;
+        > li {
+          display: inline-block;
+          &:first-child, &:last-child {
+            > a {
+              .border-radius(0px);
+            }
+          }
+          > a {
+            color: #fff;
+            background-color: @green;
+            border: 1px solid @green;
+            font-weight: 600;
+            padding: 2px 12px;
+            span{
+              font-size: 15px;
+              line-height: 12px;
+            }
+          }
+          &.active > a, a:focus, a:hover {
+            background-color: #939393;
+            border-color: #939393;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .list-expert{
+      position: relative;
+      width: 100%;
+      margin: 50px 0;
+      .pre-slider {
+        background: url("../images/expert-state/left-click.png") no-repeat;
+        width: 21px;
+        height: 34px;
+        position: absolute;
+        left: -11px;
+        top: 50%;
+        margin-top: -17px;
+        cursor: pointer;
+        z-index: 1;
+      }
+      .next-slider {
+        background: url("../images/expert-state/right-click.png") no-repeat;
+        width: 21px;
+        cursor: pointer;
+        height: 34px;
+        position: absolute;
+        right: -11px;
+        top: 50%;
+        margin-top: -17px;
+        z-index: 1;
+      }
+      .expert{
+        .expert-profile{
+          display: table;
+          padding: 0 30px;
+          .ava-expert{
+            display: table-cell;
+            width: 185px;
+            vertical-align: middle;
+            .border-radius(50%);
+            margin-right: 20px;
+            @media (max-width: 480px) {
+              width: 90px;
+            }
+            .avatar{
+              width: 185px;
+              height: 185px;
+              .border-radius(50%);
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+              @media (max-width: 480px) {
+                width: 90px;
+                height: 90px;
+              }
+            }
+          }
+          .detail-expert{
+            display: table-cell;
+            vertical-align: middle;
+            .wrap-expert{
+              background-color: white;
+              padding: 15px;
+              margin-left: 10px;
+              .border-radius(8px);
+              border: 1px solid #ccc;
+              .expert-name{
+                font-size: 16px;
+                font-weight: 500;
+                color: @green-expert;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .selector {
+      background: hsl(0, 0%, 100%) url("../images/expert-state/dropdown.png") no-repeat scroll right 8px top 12px padding-box;
+      margin-bottom: 20px;
+      overflow: hidden;
+      .border-radius(2px);
+      width: 100%;
+      height: 38px;
+      select {
+        color: @green-expert;
+        font-weight: 500;
+        -moz-appearance: none;
+        background-color: hsla(0, 0%, 0%, 0);
+        background-image: none;
+        border: medium none;
+        box-shadow: none;
+        margin: 0;
+        height: 100%;
+        padding: 7px 15px;
+        width: 100%;
+      }
+    }
+    .cmd-filter {
+      margin-bottom: 20px;
+      background-color: #02a94f;
+      .border-radius(2px);
+      color: hsl(0, 0%, 100%);
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      height: 38px;
+      line-height: 22px;
+      padding: 8px 15px;
+      border: 0;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.5s ease 0s;
+      width: 100%;
+      &:hover {
+        background-color: #02a94f;
+      }
+    }
+    .box-question{
+      padding: 20px;
+      height: 260px;
+      width: 100%;
+      background-color: white;
+      .border-radius(2px);
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      .divide-state{
+        height: 1px;
+        margin-top: 10px;
+        width: 100%;
+        background-color: @green-expert;
+      }
+      .title-box{
+        text-transform: uppercase;
+        font-size: 16px;
+        margin-bottom: 15px;
+        a{
+          color: @green-expert;
+          display: block;
+          width: 100%;
+        }
+      }
+      .content-box{
+        margin-top: 15px;
+      }
+    }
+    .question-slider{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      .pre-nav {
+        background: url("../images/expert-state/nav-left.png") no-repeat;
+        width: 30px;
+        height: 26px;
+        position: absolute;
+        right: 31px;
+        bottom: 20px;
+        margin-top: 0;
+        cursor: pointer;
+        z-index: 1;
+      }
+      .next-nav {
+        background: url("../images/expert-state/nav-right.png") no-repeat;
+        width: 30px;
+        cursor: pointer;
+        height: 26px;
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+        margin-top: 0;
+        z-index: 1;
+      }
+      .list-question{
+        margin: 0;
+        .slick-prev, .slick-next{
+          display: none !important;
+        }
+      }
+    }
+  }
+}
+
+.step8 {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
