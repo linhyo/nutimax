@@ -2422,22 +2422,24 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 #landing-question {
   position: relative;
   display: none;
-  background-color: #07a94e;
   overflow: hidden;
 }
 @media (max-width: 991px) {
   #landing-question {
     display: block !important;
+    width: 100%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #landing-question {
     min-height: 400px;
+    background: transparent url("../images/golden-stage/people-tablet.png") no-repeat center center / cover;
   }
 }
 @media (max-width: 767px) {
   #landing-question {
     min-height: 215px;
+    background: transparent url("../images/golden-stage/people-mobile.png") no-repeat center center / cover;
   }
 }
 #landing-question .gs-expert {
