@@ -1477,67 +1477,113 @@
   .dialog-header {
     position: relative;
     width: 100%;
-    min-height: 370px;
-    background: url("../images/golden-stage/cartoon-bg.png") repeat center top / 100% auto;
+    background: url("../images/golden-stage/cartoon-bg.png") center top / 100% auto;
     padding: 20px;
+    @media (min-width: 992px) {
+      min-height: 370px;
+      background-repeat: no-repeat;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      min-height: 420px;
+      background-repeat: no-repeat;
+    }
+    @media (max-width: 767px) {
+      min-height: 380px;
+      background-repeat: repeat-y;
+    }
     &:after {
       display: block;
       content: '';
       position: absolute;
-      bottom: -40px;
       left: 0;
       width: 100%;
       height: 135px;
-      background: url("../images/golden-stage/wave.png") repeat center top / 100% auto;
+      background: url("../images/golden-stage/wave.png") no-repeat center top / 100% auto;
+      @media (min-width: 768px) {
+        bottom: -40px;
+      }
+      @media (max-width: 767px) {
+        bottom: -80px;
+      }
     }
   }
   .dialog-logo {
     width: 121px;
     height: 28px;
     background: transparent url("../images/golden-stage/nuti-white-desktop.png") no-repeat center center;
+    @media (max-width: 767px) {
+      margin-top: 30px;
+      margin-left: 70px;
+    }
   }
   .dialog-expert {
     position: absolute;
-    bottom: 0;
     left: 20px;
+    width: 220px;
+    height: 289px;
     background: url('../images/golden-stage/ms-expert-dialog.png') no-repeat center center / 100% auto;
     @media (min-width: 992px) {
-      width: 220px;
-      height: 289px;
+      bottom: 0;
     }
     @media (min-width: 768px) and (max-width: 991px) {
-      width: 220px;
-      height: 260px;
+      bottom: 35px;
     }
     @media (max-width: 767px) {
-      width: 220px;
-      height: 260px;
+      display: none;
     }
   }
   .golden-logo {
     position: absolute;
     top: 20px;
-    right: 20px;
     width: 70px;
     height: 80px;
     background: transparent url("../images/golden-stage/golden-logo.png") no-repeat center center;
     z-index: 1;
+    @media (min-width: 768px) {
+      right: 20px;
+    }
+    @media (max-width: 767px) {
+      right: 70px;
+    }
   }
   .header-heading {
-    margin-top: 7%;
-    margin-left: 38%;
+    @media (min-width: 992px) {
+      margin-top: 7%;
+      margin-left: 38%;
+    }
+    @media (min-width: 768px) and (max-width: 991px)  {
+      margin-top: 10%;
+      margin-left: 40%;
+    }
+    @media (max-width: 767px) {
+      margin-top: 10%;
+    }
   }
   .header-text {
     color: #fff;
     font-size: 15px;
     text-align: justify;
     margin-top: 10px;
-    margin-left: 39%;
-    width: 52%;
+    @media (min-width: 992px) {
+      width: 52%;
+      margin-left: 39%;
+    }
+    @media (min-width: 768px) and (max-width: 991px)  {
+      width: 58%;
+      margin-left: 41%;
+    }
   }
   .dialog-body {
-    margin-top: 10px;
-    padding: 30px;
+    @media (min-width: 992px) {
+      margin-top: 10px;
+      padding: 30px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      padding: 10px 20px 30px;
+    }
+    @media (max-width: 767px) {
+      padding: 20px 20px 30px;
+    }
   }
   .body-heading {
     color: @green;
@@ -1546,6 +1592,12 @@
     line-height: 24px;
     text-align: center;
     margin-bottom: 30px;
+    @media (min-width: 768px) {
+      font-size: 22px;
+    }
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
   }
   .dialog-form {
     width: 100%;
