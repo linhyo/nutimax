@@ -2686,7 +2686,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 #landing-message .btn-rule {
   display: block;
   background-color: #bf2a2e;
-  border: 1px solid transparent;
+  border: 2px solid #fff;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
@@ -2695,12 +2695,11 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
   color: #fff;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 500;
   line-height: 1.42857143;
   margin: 20px auto;
-  text-transform: uppercase;
-  padding: 5px 40px;
+  padding: 8px 60px;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -2713,12 +2712,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   cursor: pointer;
 }
 #landing-message .btn-rule:hover {
-  -moz-opacity: 0.8;
-  -khtml-opacity: 0.8;
-  -webkit-opacity: 0.8;
-  opacity: 0.8;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
-  filter: alpha(opacity=80);
+  background-color: #db2b2f;
 }
 #landing-message .col {
   float: left;
@@ -3509,6 +3503,12 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 #viewRules table thead > tr > th,
 #viewRules table tbody > tr > td {
   font-size: 15px;
+}
+#viewRules table thead > tr > th:first-child,
+#viewRules table tbody > tr > td:first-child,
+#viewRules table thead > tr > th:last-child,
+#viewRules table tbody > tr > td:last-child {
+  text-align: center;
 }
 @media (min-width: 992px) {
   #viewAndShare .modal-dialog {

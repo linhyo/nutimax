@@ -692,15 +692,14 @@
   .btn-rule {
     display: block;
     background-color: #bf2a2e;
-    border: 1px solid transparent;
+    border: 2px solid #fff;
     .border-radius(12px);
     color: #fff;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
     line-height: 1.42857143;
     margin: 20px auto;
-    text-transform: uppercase;
-    padding: 5px 40px;
+    padding: 8px 60px;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -709,7 +708,7 @@
     touch-action: manipulation;
     cursor: pointer;
     &:hover {
-      .opacity(0.8);
+      background-color: #db2b2f;
     }
   }
   .col {
@@ -1449,6 +1448,9 @@
   table {
     thead > tr > th, tbody > tr > td {
       font-size: 15px;
+      &:first-child, &:last-child {
+        text-align: center;
+      }
     }
   }
 }
