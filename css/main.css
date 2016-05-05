@@ -2682,6 +2682,13 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   width: 127px;
   height: 115px;
 }
+.scale-icon {
+  width: 106px;
+  height: 115px;
+  display: inline-block;
+  background: url('../images/golden-stage/scale-icon.png') no-repeat;
+  margin: 0 auto;
+}
 #landing-message {
   position: relative;
   background-color: #fff;
@@ -3571,8 +3578,17 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 }
 @media (max-width: 767px) {
   #viewAndShare .dialog-header {
-    min-height: 380px;
     background-repeat: repeat-y;
+  }
+}
+@media (min-width: 414px) and (max-width: 767px) {
+  #viewAndShare .dialog-header {
+    min-height: 380px;
+  }
+}
+@media (max-width: 413px) {
+  #viewAndShare .dialog-header {
+    min-height: 400px;
   }
 }
 #viewAndShare .dialog-header:after {
@@ -3595,14 +3611,23 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   }
 }
 #viewAndShare .dialog-logo {
-  width: 121px;
-  height: 28px;
+  width: 124px;
+  height: 32px;
   background: transparent url("../images/golden-stage/nuti-white-desktop.png") no-repeat center center;
 }
 @media (max-width: 767px) {
   #viewAndShare .dialog-logo {
     margin-top: 30px;
+  }
+}
+@media (min-width: 414px) and (max-width: 767px) {
+  #viewAndShare .dialog-logo {
     margin-left: 70px;
+  }
+}
+@media (max-width: 413px) {
+  #viewAndShare .dialog-logo {
+    margin-left: 15%;
   }
 }
 #viewAndShare .dialog-expert {
@@ -3640,9 +3665,14 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
     right: 20px;
   }
 }
-@media (max-width: 767px) {
+@media (min-width: 414px) and (max-width: 767px) {
   #viewAndShare .golden-logo {
     right: 70px;
+  }
+}
+@media (max-width: 413px) {
+  #viewAndShare .golden-logo {
+    right: 15%;
   }
 }
 @media (min-width: 992px) {

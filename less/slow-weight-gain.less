@@ -689,6 +689,14 @@
   }
 }
 
+.scale-icon {
+  width: 106px;
+  height: 115px;
+  display: inline-block;
+  background: url('../images/golden-stage/scale-icon.png') no-repeat;
+  margin: 0 auto;
+}
+
 #landing-message {
   position: relative;
   background-color: #fff;
@@ -1499,8 +1507,13 @@
       background-repeat: no-repeat;
     }
     @media (max-width: 767px) {
-      min-height: 380px;
       background-repeat: repeat-y;
+    }
+    @media (min-width: 414px) and (max-width: 767px) {
+      min-height: 380px;
+    }
+    @media (max-width: 413px) {
+      min-height: 400px;
     }
     &:after {
       display: block;
@@ -1519,12 +1532,17 @@
     }
   }
   .dialog-logo {
-    width: 121px;
-    height: 28px;
+    width: 124px;
+    height: 32px;
     background: transparent url("../images/golden-stage/nuti-white-desktop.png") no-repeat center center;
     @media (max-width: 767px) {
       margin-top: 30px;
+    }
+    @media (min-width: 414px) and (max-width: 767px) {
       margin-left: 70px;
+    }
+    @media (max-width: 413px) {
+      margin-left: 15%;
     }
   }
   .dialog-expert {
@@ -1553,8 +1571,11 @@
     @media (min-width: 768px) {
       right: 20px;
     }
-    @media (max-width: 767px) {
+    @media (min-width: 414px) and (max-width: 767px) {
       right: 70px;
+    }
+    @media (max-width: 413px) {
+      right: 15%;
     }
   }
   .header-heading {
