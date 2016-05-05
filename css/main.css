@@ -3475,6 +3475,171 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 #viewRules table tbody > tr > td {
   font-size: 15px;
 }
+@media (min-width: 992px) {
+  #viewAndShare .modal-dialog {
+    width: 800px;
+  }
+}
+#viewAndShare .modal-close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 40px;
+  height: 39px;
+  background: transparent url("../images/golden-stage/close-button.png") no-repeat center center;
+  border: none;
+  z-index: 10;
+}
+#viewAndShare .modal-content {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#viewAndShare .dialog-header {
+  position: relative;
+  width: 100%;
+  min-height: 370px;
+  background: url("../images/golden-stage/cartoon-bg.png") repeat center top / 100% auto;
+  padding: 20px;
+}
+#viewAndShare .dialog-header:after {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  height: 135px;
+  background: url("../images/golden-stage/wave.png") repeat center top / 100% auto;
+}
+#viewAndShare .dialog-logo {
+  width: 121px;
+  height: 28px;
+  background: transparent url("../images/golden-stage/nuti-white-desktop.png") no-repeat center center;
+}
+#viewAndShare .dialog-expert {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  background: url('../images/golden-stage/ms-expert-dialog.png') no-repeat center center / 100% auto;
+}
+@media (min-width: 992px) {
+  #viewAndShare .dialog-expert {
+    width: 220px;
+    height: 289px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #viewAndShare .dialog-expert {
+    width: 220px;
+    height: 260px;
+  }
+}
+@media (max-width: 767px) {
+  #viewAndShare .dialog-expert {
+    width: 220px;
+    height: 260px;
+  }
+}
+#viewAndShare .golden-logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 70px;
+  height: 80px;
+  background: transparent url("../images/golden-stage/golden-logo.png") no-repeat center center;
+  z-index: 1;
+}
+#viewAndShare .header-heading {
+  margin-top: 7%;
+  margin-left: 38%;
+}
+#viewAndShare .header-text {
+  color: #fff;
+  font-size: 15px;
+  text-align: justify;
+  margin-top: 10px;
+  margin-left: 39%;
+  width: 52%;
+}
+#viewAndShare .dialog-body {
+  margin-top: 10px;
+  padding: 30px;
+}
+#viewAndShare .body-heading {
+  color: #009639;
+  font-family: 'Nabila', sans-serif;
+  font-size: 22px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#viewAndShare .dialog-form {
+  width: 100%;
+}
+#viewAndShare .dialog-form:before,
+#viewAndShare .dialog-form:after {
+  display: table;
+  content: " ";
+}
+#viewAndShare .dialog-form:after {
+  clear: both;
+}
+#viewAndShare .dialog-form .form-group {
+  float: left;
+}
+@media (min-width: 768px) {
+  #viewAndShare .dialog-form .form-group {
+    width: 33.33%;
+  }
+  #viewAndShare .dialog-form .form-group:first-child,
+  #viewAndShare .dialog-form .form-group:nth-child(3n + 1) {
+    padding-right: 14px;
+  }
+  #viewAndShare .dialog-form .form-group:nth-child(2),
+  #viewAndShare .dialog-form .form-group:nth-child(3n + 2) {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  #viewAndShare .dialog-form .form-group:nth-child(3n) {
+    padding-left: 14px;
+  }
+}
+@media (max-width: 767px) {
+  #viewAndShare .dialog-form .form-group {
+    width: 100%;
+  }
+}
+#viewAndShare .dialog-form .form-group .form-control {
+  width: 100%;
+  font-size: 15px;
+}
+#viewAndShare .dialog-form .form-group label {
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 15px;
+}
+#viewAndShare .btn-submit {
+  background-color: #009639;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 6px 34px;
+  margin-top: 15px;
+}
+#viewAndShare .btn-submit:hover {
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+  filter: alpha(opacity=80);
+}
 #expert-state {
   display: block;
   width: 100%;

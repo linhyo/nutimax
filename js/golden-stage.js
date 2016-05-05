@@ -239,6 +239,51 @@ $(function () {
     }).attr('src', source);
   });
 
+  $('#viewAndShare').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget); // Button that triggered the modal
+    var type = button.data('type'); // Extract info from data-* attributes
+    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+    var modal = $(this);
+    var text1 = 'Trẻ từ 1-3 tuổi là giai đoạn phát triển vượt bậc về thể chất, trí não và nhận thức. Nếu ba mẹ biết cách ' +
+      'vun đắp cho con trong "Giai đoạn vàng", chúng ta hoàn toàn có thể cho bé một nền tảng phát triển thể chất trí tuệ tốt. ' +
+      'Nếu chúng ta bỏ lỡ cơ hội này, thì có nỗ lực đến đâu cũng khó có thể bù đắp được.';
+    var text2 = 'Trẻ từ 1-3 tuổi có chỉ số cân nặng phát triển chậm, ba mẹ thường bỏ qua và không theo dõi chặt chẽ ' +
+      'sự phát triển của con. Chậm tăng cân kéo dài có thể dẫn đến suy dinh dưỡng, thấp còi. Trẻ bị suy dinh dưỡng, thấp còi, ' +
+      'đặc biệt là trong "Giai đoạn vàng" khó có thể cải thiện, ảnh hưởng nghiêm trọng đến sức khỏe, trí tuệ, và tương lai trẻ.';
+    var text3 = 'Giai đoạn vàng không những thời điểm trẻ dễ dàng và nhanh chóng hấp thu dinh dưỡng nhất mà còn là bước ' +
+      'đầu tiên trẻ tiếp xúc với thế giới xung quanh.' + '<br>' + 'Mẹ hãy có chế độ chăm sóc dinh dưỡng tích cực để trẻ ' +
+      'phát triển toàn diện.';
+    var text4 = 'Giai đoạn 1 - 3 tuổi là thời điểm bé bắt đầu khám phá thế giới, và cũng là giai đoạn thay đổi trong chế độ ' +
+      'dinh dưỡng của trẻ. Để có thể phát triển khỏe mạnh, trẻ cần được mẹ quan tâm, chăm sóc, với nguồn dinh dưỡng tối ưu. ' +
+      'Chỉ số về cân nặng và chiều cao phản ánh sự tăng trưởng của con, mẹ đừng bỏ qua nhé.';
+    var text5 = 'Suy dinh dưỡng bản thân nó đã khó cải thiện nếu mẹ không có chế độ dinh dưỡng đúng cách, đặc biệt là trong ' +
+      '"Giai đoạn vàng". Ngay từ bây giờ, mẹ hãy tìm hiểu và áp dụng những chăm sóc dinh dưỡng khoa học, đúng cách và ' +
+      'hiệu quả để giúp con bước qua giai đoạn vàng với sự phát triển hoàn thiện.';
+    var text6 = 'GrowPLUS+ của NutiFood với công thức Weight Pro+, giúp trẻ tăng cân, tăng chiều cao tốt, giúp giảm tình trạng ' +
+      'biếng ăn, và phòng tránh suy dinh dưỡng, thấp còi trong "Giai đoạn vàng".';
+    if (type == 1) {
+      modal.find('.header-heading img').attr('src', 'images/golden-stage/text-1.png');
+      modal.find('.header-text').html(text1);
+    } else if (type == 2) {
+      modal.find('.header-heading img').attr('src', 'images/golden-stage/text-2.png');
+      modal.find('.header-text').html(text2);
+    } else if (type == 3) {
+      modal.find('.header-heading img').attr('src', 'images/golden-stage/text-3.png');
+      modal.find('.header-text').html(text3);
+    } else if (type == 4) {
+      modal.find('.header-heading img').attr('src', 'images/golden-stage/text-4.png');
+      modal.find('.header-text').html(text4);
+    } else if (type == 5) {
+      modal.find('.header-heading img').attr('src', 'images/golden-stage/text-5.png');
+      modal.find('.header-text').html(text5);
+    } else {
+      modal.find('.header-heading img').attr('src', 'images/golden-stage/text-6.png');
+      modal.find('.header-text').html(text6);
+    }
+
+  });
+
 
   var wow = new WOW(
     {

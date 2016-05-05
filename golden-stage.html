@@ -1465,11 +1465,8 @@
   <div class="left-img wow slideInLeft" data-wow-duration="1s"></div>
   <div class="right-img wow slideInRight" data-wow-duration="1s"></div>
   <a data-scroll href="#join-now">
-    <!-- Button trigger modal -->
     <button class="btn-join wow bounceInDown">Tham gia ngay</button>
   </a>
-
-
 </section>
 
 <section id="landing-message">
@@ -1486,7 +1483,7 @@
           <div class="message-1">
             <i class="landing-icon icon-1 wow swing"></i>
             <p class="text-center">“Giai đoạn vàng” là nền tảng cho sự phát triển hoàn thiện của con</p>
-            <button class="btn btn-share">Xem và chia sẻ</button>
+            <button class="btn btn-share" data-toggle="modal" data-target="#viewAndShare" data-type="1">Xem và chia sẻ</button>
           </div>
         </div>
       </div>
@@ -1497,7 +1494,7 @@
             <i class="landing-icon icon-2 wow swing"></i>
             <p class="text-center">Chậm tăng cân trong “giai đoạn vàng” là bước đầu dẫn đến nguy cơ suy dinh dưỡng,
             thấp còi</p>
-            <button class="btn btn-share">Xem và chia sẻ</button>
+            <button class="btn btn-share" data-toggle="modal" data-target="#viewAndShare" data-type="2">Xem và chia sẻ</button>
           </div>
         </div>
       </div>
@@ -1508,7 +1505,7 @@
             <i class="landing-icon icon-3 wow swing"></i>
             <p class="text-center">Hãy chăm sóc dinh dưỡng đúng cách và hiệu quả để tối ưu tiềm năng phát triển của
             trẻ trong "Giai đoạn vàng"</p>
-            <button class="btn btn-share">Xem và chia sẻ</button>
+            <button class="btn btn-share" data-toggle="modal" data-target="#viewAndShare" data-type="3">Xem và chia sẻ</button>
           </div>
         </div>
       </div>
@@ -1518,7 +1515,7 @@
           <div class="message-4">
             <i class="landing-icon icon-4 wow swing"></i>
             <p class="text-center">Cân nặng và chiều cao, những chỉ số phản ánh sự phát triển của trẻ</p>
-            <button class="btn btn-share">Xem và chia sẻ</button>
+            <button class="btn btn-share" data-toggle="modal" data-target="#viewAndShare" data-type="4">Xem và chia sẻ</button>
           </div>
         </div>
       </div>
@@ -1529,7 +1526,7 @@
             <i class="landing-icon icon-5 wow swing"></i>
             <p class="text-center">Suy dinh dưỡng trong “giai đoạn vàng” khó cải thiện và ảnh hưởng nghiêm trọng đến
             sự phát triển về sau của trẻ</p>
-            <button class="btn btn-share">Xem và chia sẻ</button>
+            <button class="btn btn-share" data-toggle="modal" data-target="#viewAndShare" data-type="5">Xem và chia sẻ</button>
           </div>
         </div>
       </div>
@@ -1540,7 +1537,7 @@
             <i class="landing-icon icon-6 wow swing"></i>
             <p class="text-center">GrowPLUS+, dinh dưỡng hiệu quả giúp trẻ tăng cân, thoát khỏi suy dinh dưỡng, thấp
             còi trong "Giai đoạn vàng"</p>
-            <button class="btn btn-share">Xem và chia sẻ</button>
+            <button class="btn btn-share" data-toggle="modal" data-target="#viewAndShare" data-type="6">Xem và chia sẻ</button>
           </div>
         </div>
       </div>
@@ -1770,6 +1767,62 @@
         <p style="text-align: right">Trân trọng,<br>
           <span class="bold-italic">BTC nhãn hàng GrowPLUS+ của NutiFood</span>
         </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="viewAndShare" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <button type="button" class="modal-close" data-dismiss="modal"></button>
+
+    <div class="modal-content">
+      <div class="dialog-header">
+        <div class="dialog-logo"></div>
+        <div class="dialog-expert"></div>
+        <div class="golden-logo"></div>
+        <h2 class="header-heading">
+          <img class="img-responsive" src="">
+        </h2>
+        <p class="header-text">
+          <!--“Trẻ từ 1-3 tuổi là giai đoạn phát triển vượt bậc về thể chất, trí não và nhận thức. Nếu ba mẹ biết cách vun-->
+          <!--đắp cho con trong "Giai đoạn vàng", chúng ta hoàn toàn có thể cho bé một nền tảng phát triển thể chất trí tuệ-->
+          <!--tốt. Nếu chúng ta bỏ lỡ cơ hội này, thì có nỗ lực đến đâu cũng khó có thể bù đắp được".-->
+        </p>
+      </div>
+      <div class="dialog-body">
+        <h2 class="body-heading">
+          Cùng tham gia chia sẻ thông điệp và nhận nhiều phần quà hấp dẫn
+        </h2>
+        <form role="form" class="dialog-form">
+          <div class="form-group">
+            <label for="mom-name">Họ tên mẹ</label>
+            <input type="text" class="form-control" id="mom-name">
+          </div>
+          <div class="form-group">
+            <label for="kid-name">Họ tên bé</label>
+            <input type="text" class="form-control" id="kid-name">
+          </div>
+          <div class="form-group">
+            <label for="kid-year">Năm sinh của bé</label>
+            <input type="text" class="form-control" id="kid-year">
+          </div>
+          <div class="form-group">
+            <label for="phone">Điện thoại</label>
+            <input type="text" class="form-control" id="phone">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label for="address">Địa chỉ</label>
+            <input type="text" class="form-control" id="address">
+          </div>
+          <div class="form-submit text-center">
+            <button class="btn btn-submit" type="submit">Chia sẻ và nhận thưởng</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>

@@ -1416,4 +1416,146 @@
   }
 }
 
-
+#viewAndShare {
+  .modal-dialog {
+    @media (min-width: 992px) {
+      width: 800px;
+    }
+  }
+  .modal-close {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 40px;
+    height: 39px;
+    background: transparent url("../images/golden-stage/close-button.png") no-repeat center center;
+    border: none;
+    z-index: 10;
+  }
+  .modal-content {
+    .border-radius(0);
+  }
+  .dialog-header {
+    position: relative;
+    width: 100%;
+    min-height: 370px;
+    background: url("../images/golden-stage/cartoon-bg.png") repeat center top / 100% auto;
+    padding: 20px;
+    &:after {
+      display: block;
+      content: '';
+      position: absolute;
+      bottom: -40px;
+      left: 0;
+      width: 100%;
+      height: 135px;
+      background: url("../images/golden-stage/wave.png") repeat center top / 100% auto;
+    }
+  }
+  .dialog-logo {
+    width: 121px;
+    height: 28px;
+    background: transparent url("../images/golden-stage/nuti-white-desktop.png") no-repeat center center;
+  }
+  .dialog-expert {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    background: url('../images/golden-stage/ms-expert-dialog.png') no-repeat center center / 100% auto;
+    @media (min-width: 992px) {
+      width: 220px;
+      height: 289px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      width: 220px;
+      height: 260px;
+    }
+    @media (max-width: 767px) {
+      width: 220px;
+      height: 260px;
+    }
+  }
+  .golden-logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 70px;
+    height: 80px;
+    background: transparent url("../images/golden-stage/golden-logo.png") no-repeat center center;
+    z-index: 1;
+  }
+  .header-heading {
+    margin-top: 7%;
+    margin-left: 38%;
+  }
+  .header-text {
+    color: #fff;
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 10px;
+    margin-left: 39%;
+    width: 52%;
+  }
+  .dialog-body {
+    margin-top: 10px;
+    padding: 30px;
+  }
+  .body-heading {
+    color: @green;
+    font-family: @import-font;
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .dialog-form {
+    width: 100%;
+    &:before, &:after {
+      display: table;
+      content: " ";
+    }
+    &:after {
+      clear: both;
+    }
+    .form-group {
+      float: left;
+      @media (min-width: 768px) {
+        width: 33.33%;
+        &:first-child, &:nth-child(3n + 1) {
+          padding-right: 14px;
+        }
+        &:nth-child(2), &:nth-child(3n + 2) {
+          padding-left: 7px;
+          padding-right: 7px;
+        }
+        &:nth-child(3n){
+          padding-left: 14px;
+        }
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+      .form-control {
+        width: 100%;
+        font-size: 15px;
+      }
+      label {
+        font-weight: 500;
+        line-height: 24px;
+        font-size: 15px;
+      }
+    }
+  }
+  .btn-submit {
+    background-color: @green;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 6px 34px;
+    margin-top: 15px;
+    &:hover {
+      .opacity(0.8);
+    }
+  }
+}
