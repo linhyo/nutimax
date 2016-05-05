@@ -2514,77 +2514,95 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
     height: 28px;
   }
 }
-#landing-event {
-  position: relative;
-  width: 100%;
-  background: url('../images/golden-stage/prize-banner.png') no-repeat center center / cover;
-}
 @media (min-width: 992px) {
-  #landing-event {
+  #landing-event .tablet-banner,
+  #landing-event .mobile-banner {
+    display: none;
+  }
+  #landing-event .desktop-banner {
+    display: block;
+    position: relative;
+    width: 100%;
     height: 720px;
+    background: url('../images/golden-stage/prize-desktop.png') no-repeat center center / cover;
+  }
+  #landing-event .left-img {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    background: url('../images/golden-stage/ms-expert.png') no-repeat center center / 100% auto;
+  }
+  #landing-event .right-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url('../images/golden-stage/mom-and-kid.png') no-repeat center center / 100% auto;
   }
 }
-@media (min-width: 481px) and (max-width: 991px) {
-  #landing-event {
-    height: 350px;
-  }
-}
-@media (max-width: 480px) {
-  #landing-event {
-    height: 190px;
-  }
-}
-#landing-event .left-img {
-  position: absolute;
-  bottom: 0;
-  left: 20px;
-  background: url('../images/golden-stage/ms-expert.png') no-repeat center center / 100% auto;
-}
-@media (min-width: 992px) {
+@media (min-width: 992px) and (min-width: 992px) {
   #landing-event .left-img {
     width: 400px;
     height: 470px;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 992px) and (min-width: 768px) and (max-width: 991px) {
   #landing-event .left-img {
     width: 336px;
     height: 396px;
   }
 }
-@media (max-width: 767px) {
+@media (min-width: 992px) and (max-width: 767px) {
   #landing-event .left-img {
     width: 252px;
     height: 297px;
   }
 }
-#landing-event .right-img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background: url('../images/golden-stage/mom-and-kid.png') no-repeat center center / 100% auto;
-}
-@media (min-width: 992px) {
+@media (min-width: 992px) and (min-width: 992px) {
   #landing-event .right-img {
     width: 380px;
     height: 380px;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 992px) and (min-width: 768px) and (max-width: 991px) {
   #landing-event .right-img {
     width: 300px;
     height: 300px;
   }
 }
-@media (max-width: 767px) {
+@media (min-width: 992px) and (max-width: 767px) {
   #landing-event .right-img {
     width: 230px;
     height: 230px;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  #landing-event .desktop-banner,
+  #landing-event .mobile-banner {
+    display: none;
+  }
+  #landing-event .tablet-banner {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 1091px;
+    background: url('../images/golden-stage/prize-ipad.png') no-repeat center center / cover;
+  }
+}
+@media (max-width: 767px) {
+  #landing-event .desktop-banner,
+  #landing-event .tablet-banner {
+    display: none;
+  }
+  #landing-event .mobile-banner {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 588px;
+    background: url('../images/golden-stage/prize-mobile.png') no-repeat center center / cover;
+  }
+}
 #landing-event .btn-join {
   position: absolute;
-  top: 38%;
   left: 50%;
   margin-left: -110px;
   display: block;
@@ -2612,6 +2630,16 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   -ms-touch-action: manipulation;
   touch-action: manipulation;
   cursor: pointer;
+}
+@media (min-width: 992px) {
+  #landing-event .btn-join {
+    top: 38%;
+  }
+}
+@media (max-width: 991px) {
+  #landing-event .btn-join {
+    top: 50%;
+  }
 }
 #landing-event .btn-join:hover {
   background-color: #db2b2f;
@@ -2750,8 +2778,15 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 #landing-message .gs-message > div.message-6 {
   background-color: #bf2a2e;
 }
-#landing-message .gs-message > div.message-1 p,
 #landing-message .gs-message > div.message-4 p {
+  margin: 25px 0 38px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #landing-message .gs-message > div.message-4 p {
+    margin: 12px 0 26px !important;
+  }
+}
+#landing-message .gs-message > div.message-1 p {
   margin: 25px 0 38px;
 }
 #landing-message .gs-message > div.message-2 p {
@@ -3011,7 +3046,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 #slow-weight-gain-page .swg-feature .swg-content:after {
   clear: both;
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
   #slow-weight-gain-page .swg-feature .swg-content .tab-pane > div {
     padding: 0 10px;
   }

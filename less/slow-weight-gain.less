@@ -558,57 +558,80 @@
 }
 
 #landing-event {
-  position: relative;
-  width: 100%;
-  background: url('../images/golden-stage/prize-banner.png') no-repeat center center / cover;
   @media (min-width: 992px) {
-    height: 720px;
+    .tablet-banner, .mobile-banner {
+      display: none;
+    }
+    .desktop-banner {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 720px;
+      background: url('../images/golden-stage/prize-desktop.png') no-repeat center center / cover;
+    }
+    .left-img {
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      background: url('../images/golden-stage/ms-expert.png') no-repeat center center / 100% auto;
+      @media (min-width: 992px) {
+        width: 400px;
+        height: 470px;
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        width: 336px;
+        height: 396px;
+      }
+      @media (max-width: 767px) {
+        width: 252px;
+        height: 297px;
+      }
+    }
+    .right-img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: url('../images/golden-stage/mom-and-kid.png') no-repeat center center / 100% auto;
+      @media (min-width: 992px) {
+        width: 380px;
+        height: 380px;
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        width: 300px;
+        height: 300px;
+      }
+      @media (max-width: 767px) {
+        width: 230px;
+        height: 230px;
+      }
+    }
   }
-  @media (min-width: 481px) and (max-width: 991px) {
-    height: 350px;
-  }
-  @media (max-width: 480px) {
-    height: 190px;
-  }
-  .left-img {
-    position: absolute;
-    bottom: 0;
-    left: 20px;
-    background: url('../images/golden-stage/ms-expert.png') no-repeat center center / 100% auto;
-    @media (min-width: 992px) {
-      width: 400px;
-      height: 470px;
+  @media (min-width: 768px) and (max-width: 991px) {
+    .desktop-banner, .mobile-banner {
+      display: none;
     }
-    @media (min-width: 768px) and (max-width: 991px) {
-      width: 336px;
-      height: 396px;
-    }
-    @media (max-width: 767px) {
-      width: 252px;
-      height: 297px;
+    .tablet-banner {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 1091px;
+      background: url('../images/golden-stage/prize-ipad.png') no-repeat center center / cover;
     }
   }
-  .right-img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background: url('../images/golden-stage/mom-and-kid.png') no-repeat center center / 100% auto;
-    @media (min-width: 992px) {
-      width: 380px;
-      height: 380px;
+  @media (max-width: 767px) {
+    .desktop-banner, .tablet-banner {
+      display: none;
     }
-    @media (min-width: 768px) and (max-width: 991px) {
-      width: 300px;
-      height: 300px;
-    }
-    @media (max-width: 767px) {
-      width: 230px;
-      height: 230px;
+    .mobile-banner {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 588px;
+      background: url('../images/golden-stage/prize-mobile.png') no-repeat center center / cover;
     }
   }
   .btn-join {
     position: absolute;
-    top: 38%;
     left: 50%;
     margin-left: -110px;
     display: block;
@@ -627,6 +650,12 @@
     -ms-touch-action: manipulation;
     touch-action: manipulation;
     cursor: pointer;
+    @media (min-width: 992px) {
+      top: 38%;
+    }
+    @media (max-width: 991px) {
+      top: 50%;
+    }
     &:hover {
       background-color: #db2b2f;
     }
@@ -733,7 +762,15 @@
       &.message-6 {
         background-color: #bf2a2e;
       }
-      &.message-1, &.message-4 {
+      &.message-4 {
+        p {
+          margin: 25px 0 38px;
+          @media (min-width: 768px) and (max-width: 991px) {
+            margin: 12px 0 26px !important;
+          }
+        }
+      }
+      &.message-1 {
         p {
           margin: 25px 0 38px;
         }
@@ -998,7 +1035,7 @@
       &:after {
         clear: both;
       }
-      @media (min-width: 768px) and (max-width: 992px) {
+      @media (min-width: 768px) and (max-width: 991px) {
         .tab-pane > div {
           padding: 0 10px;
         }
