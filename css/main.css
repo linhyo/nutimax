@@ -3957,6 +3957,16 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   min-height: 340px;
   position: relative;
 }
+@media (max-width: 768px) {
+  #expert-state .step2 .img-responsive {
+    min-height: 380px;
+  }
+}
+@media (max-width: 768px) {
+  #expert-state .step2 .img-responsive {
+    min-height: 380px;
+  }
+}
 #expert-state .step2 .img-responsive img {
   position: absolute;
   bottom: -1px;
@@ -3967,21 +3977,20 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   bottom: -35px;
   z-index: 1;
   text-align: right;
-  right: 0;
+  left: 0;
 }
 @media (max-width: 768px) {
   #expert-state .step2 .img-responsive img.product-step {
-    position: relative;
+    left: 50%;
     bottom: 0;
-    right: 50%;
-    margin-left: 220px;
-    margin-top: 15px;
-    text-align: center;
+    margin-left: -140px;
   }
 }
 @media (max-width: 768px) {
   #expert-state .step2 .img-responsive img.product-step {
-    margin-left: 25px;
+    left: 50%;
+    bottom: 0;
+    margin-left: -140px;
   }
 }
 #expert-state .step3 {
@@ -3999,6 +4008,16 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 }
 #expert-state .step3.active {
   background: #d7d7d7 url("../images/expert-state/step3.png") no-repeat center top / 100%;
+}
+@media (max-width: 480px) {
+  #expert-state .step3.active {
+    background-color: #d7d7d7;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#ffffff));
+    background-image: -webkit-linear-gradient(top, #d7d7d7, #ffffff);
+    background-image: -moz-linear-gradient(top, #d7d7d7, #ffffff);
+    background-image: -ms-linear-gradient(top, #d7d7d7, #ffffff);
+    background-image: -o-linear-gradient(top, #d7d7d7, #ffffff);
+  }
 }
 #expert-state .step3 .step-value {
   display: block;
@@ -4167,6 +4186,11 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   margin-bottom: 35px;
   position: relative;
   height: 100%;
+}
+@media (max-width: 480px) {
+  #expert-state .step4 .tab-header {
+    min-height: 220px;
+  }
 }
 #expert-state .step4 .tab-header:after {
   position: absolute;
