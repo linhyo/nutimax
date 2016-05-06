@@ -3979,6 +3979,11 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
     text-align: center;
   }
 }
+@media (max-width: 768px) {
+  #expert-state .step2 .img-responsive img.product-step {
+    margin-left: 25px;
+  }
+}
 #expert-state .step3 {
   display: block;
   width: 100%;
@@ -4200,7 +4205,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   margin-left: -45%;
   position: absolute;
   text-align: center;
-  width: 85%;
+  width: 90%;
 }
 #expert-state .step4 .tab-header .slider-tab li {
   display: inline-block;
