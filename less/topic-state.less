@@ -412,3 +412,48 @@
     width: 100%;
   }
 }
+
+.header {
+  .navbar-default {
+    .social-icons{
+      float: none;
+      margin-top: 0;
+      margin-right: 0;
+      position: absolute;
+      right: 0;
+      top: 10px;
+    }
+  }
+  .navbar {
+    .social-icons {
+      float: none;
+      margin-top: 0;
+      margin-right: 0;
+      position: absolute;
+      right: 0;
+      top: 10px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header .navbar-default .navbar-collapse .social-icons, .header .navbar .navbar-collapse .social-icons{
+    position: absolute;
+    margin-top: 0;
+    right: 0;
+    top: 65px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .navbar-default .navbar-collapse .social-icons, .header .navbar .navbar-collapse .social-icons{
+    position: relative;
+    margin-top: -65px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .navbar-default .navbar-collapse .social-icons, .header .navbar .navbar-collapse .social-icons{
+    position: relative;
+  }
+}
