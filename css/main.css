@@ -4011,7 +4011,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   left: 50%;
   top: 50%;
   margin-left: 135px;
-  margin-top: -70px;
+  margin-top: -90px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -4022,6 +4022,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   padding: 20px 25px;
   text-align: left;
   color: #02a94f;
+  box-shadow: 1px 1px 2px #555555;
 }
 #expert-state .step3 .step-value .detail-value .cmd-view-detail {
   position: absolute;
@@ -4708,6 +4709,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   -ms-transform: scale(1);
   -o-transform: scale(1);
   z-index: 1;
+  position: relative;
 }
 .slick-dots li {
   width: 10px;
@@ -4915,6 +4917,8 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   width: 100%;
   height: 100%;
   padding: 25px 20px;
+  position: relative;
+  z-index: 1;
   background: #02a94f url("../images/topic-state/topic1.png") repeat;
 }
 #topic-state .step2 .topic1 .toppic-content .title-topic1 {
@@ -4935,6 +4939,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   content: '';
   height: 107px;
   top: -85px;
+  z-index: 0;
   background: url("../images/topic-state/step2.png") no-repeat center top / 100% auto;
 }
 @media (max-width: 1024px) {
