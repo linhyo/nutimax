@@ -62,11 +62,14 @@
     position: relative;
     height: 100%;
     display: block;
-    margin-top: 55px;
+    margin-top: 50px;
     @media (max-width: 1024px) {
       margin-top: 40px;
     }
     @media (max-width: 768px) {
+      margin-top: 30px;
+    }
+    @media (max-width: 640px) {
       margin-top: 30px;
     }
     @media (max-width: 480px) {
@@ -85,7 +88,18 @@
         padding: 25px 20px;
         position: relative;
         z-index: 1;
+        margin-top: 0;
         background: @green-expert url("../images/topic-state/topic1.png") repeat;
+
+        @media (max-width: 1024px) {
+          margin: -1px;
+        }
+        @media (max-width: 640px) {
+          margin: -4px;
+        }
+        @media (max-width: 480px) {
+          margin: 2px;
+        }
         .title-topic1{
           font-size: 18px;
           width: 100%;
@@ -104,17 +118,32 @@
         width: 100%;
         content: '';
         height: 107px;
-        top: -85px;
+        top: -78px;
         z-index: 0;
-        background: url("../images/topic-state/step2.png") no-repeat center top / 100% auto;
+        background: url("../images/topic-state/step2.png") no-repeat center top / 70% auto;
+        @media (max-width: 1560px) {
+          top: -79px;
+          background: url("../images/topic-state/step2.png") no-repeat center top / 80% auto;
+        }
+        @media (max-width: 1440px) {
+          top: -79px;
+          background: url("../images/topic-state/step2.png") no-repeat center top / 89% auto;
+        }
         @media (max-width: 1024px) {
           top: -65px;
+          background: url("../images/topic-state/step2.png") no-repeat center top / 95% auto;
         }
         @media (max-width: 768px) {
           top: -50px;
+          background: url("../images/topic-state/step2.png") no-repeat center top / 98% auto;
+        }
+        @media (max-width: 640px) {
+          background: hsla(0, 0%, 0%, 0) url("../images/topic-state/step2.png") no-repeat scroll center top / 98% auto;
+          top: -45px;
         }
         @media (max-width: 480px) {
           top: -20px;
+          background: url("../images/topic-state/step2.png") no-repeat center top / 94% auto;
         }
       }
     }
@@ -272,7 +301,7 @@
     }
     .box-question {
       padding: 20px;
-      height: 260px;
+      height: 235px;
       width: 100%;
       background-color: white;
       .border-radius(2px);

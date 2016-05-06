@@ -4883,7 +4883,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   position: relative;
   height: 100%;
   display: block;
-  margin-top: 55px;
+  margin-top: 50px;
 }
 @media (max-width: 1024px) {
   #topic-state .step2 {
@@ -4891,6 +4891,11 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   }
 }
 @media (max-width: 768px) {
+  #topic-state .step2 {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 640px) {
   #topic-state .step2 {
     margin-top: 30px;
   }
@@ -4919,7 +4924,23 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   padding: 25px 20px;
   position: relative;
   z-index: 1;
+  margin-top: 0;
   background: #02a94f url("../images/topic-state/topic1.png") repeat;
+}
+@media (max-width: 1024px) {
+  #topic-state .step2 .topic1 .toppic-content {
+    margin: -1px;
+  }
+}
+@media (max-width: 640px) {
+  #topic-state .step2 .topic1 .toppic-content {
+    margin: -4px;
+  }
+}
+@media (max-width: 480px) {
+  #topic-state .step2 .topic1 .toppic-content {
+    margin: 2px;
+  }
 }
 #topic-state .step2 .topic1 .toppic-content .title-topic1 {
   font-size: 18px;
@@ -4938,23 +4959,44 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   width: 100%;
   content: '';
   height: 107px;
-  top: -85px;
+  top: -78px;
   z-index: 0;
-  background: url("../images/topic-state/step2.png") no-repeat center top / 100% auto;
+  background: url("../images/topic-state/step2.png") no-repeat center top / 70% auto;
+}
+@media (max-width: 1560px) {
+  #topic-state .step2 .topic1:after {
+    top: -79px;
+    background: url("../images/topic-state/step2.png") no-repeat center top / 80% auto;
+  }
+}
+@media (max-width: 1440px) {
+  #topic-state .step2 .topic1:after {
+    top: -79px;
+    background: url("../images/topic-state/step2.png") no-repeat center top / 89% auto;
+  }
 }
 @media (max-width: 1024px) {
   #topic-state .step2 .topic1:after {
     top: -65px;
+    background: url("../images/topic-state/step2.png") no-repeat center top / 95% auto;
   }
 }
 @media (max-width: 768px) {
   #topic-state .step2 .topic1:after {
     top: -50px;
+    background: url("../images/topic-state/step2.png") no-repeat center top / 98% auto;
+  }
+}
+@media (max-width: 640px) {
+  #topic-state .step2 .topic1:after {
+    background: rgba(0, 0, 0, 0) url("../images/topic-state/step2.png") no-repeat scroll center top / 98% auto;
+    top: -45px;
   }
 }
 @media (max-width: 480px) {
   #topic-state .step2 .topic1:after {
     top: -20px;
+    background: url("../images/topic-state/step2.png") no-repeat center top / 94% auto;
   }
 }
 #topic-state .step5 {
@@ -5150,7 +5192,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 }
 #topic-state .step5 .box-question {
   padding: 20px;
-  height: 260px;
+  height: 235px;
   width: 100%;
   background-color: white;
   -webkit-border-radius: 2px;
