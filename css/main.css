@@ -4925,6 +4925,38 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   height: 100%;
   text-align: center;
 }
+#topic-state .step1 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 480px) {
+  #topic-state .step1 {
+    display: none;
+  }
+}
+#topic-state .step1-mobile {
+  margin: 0 auto;
+  display: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#topic-state .step1-mobile a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#topic-state .step1-mobile a img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 480px) {
+  #topic-state .step1-mobile {
+    display: block;
+  }
+}
 #topic-state .step2 {
   width: 100%;
   position: relative;
@@ -4986,7 +5018,12 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 }
 @media (max-width: 480px) {
   #topic-state .step2 .topic1 .toppic-content {
-    margin: 2px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
   }
 }
 #topic-state .step2 .topic1 .toppic-content .title-topic1 {
@@ -5008,6 +5045,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   height: 107px;
   top: -78px;
   z-index: 0;
+  display: block;
   background: url("../images/topic-state/step2.png") no-repeat center top / 70% auto;
 }
 @media (max-width: 1560px) {
@@ -5042,8 +5080,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 }
 @media (max-width: 480px) {
   #topic-state .step2 .topic1:after {
-    top: -20px;
-    background: url("../images/topic-state/step2.png") no-repeat center top / 94% auto;
+    display: none;
   }
 }
 #topic-state .step5 {
