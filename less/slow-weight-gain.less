@@ -1475,6 +1475,56 @@
   }
 }
 
+#shareSuccess {
+  .modal-dialog {
+    @media (min-width: 992px) {
+      width: 600px;
+    }
+  }
+  .modal-content {
+    min-height: 400px;
+    background: url("../images/golden-stage/cartoon-bg.png") center center / 100% auto;
+    border: 3px solid #fff;
+    .border-radius(0);
+    padding: 50px;
+  }
+  .dialog-title {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 35px 0 15px;
+  }
+  p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .btn-close {
+    display: block;
+    background-color: #bf2a2e;
+    border: 2px solid #fff;
+    .border-radius(12px);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.42857143;
+    padding: 4px 50px;
+    margin-top: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    vertical-align: middle;
+    .user-select();
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    z-index: 100;
+  }
+}
+
 #viewAndShare {
   .modal-dialog {
     @media (min-width: 992px) {

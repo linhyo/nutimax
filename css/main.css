@@ -3537,6 +3537,68 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   text-align: center;
 }
 @media (min-width: 992px) {
+  #shareSuccess .modal-dialog {
+    width: 600px;
+  }
+}
+#shareSuccess .modal-content {
+  min-height: 400px;
+  background: url("../images/golden-stage/cartoon-bg.png") center center / 100% auto;
+  border: 3px solid #fff;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 50px;
+}
+#shareSuccess .dialog-title {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 35px 0 15px;
+}
+#shareSuccess p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+}
+#shareSuccess .btn-close {
+  display: block;
+  background-color: #bf2a2e;
+  border: 2px solid #fff;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  border-radius: 12px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.42857143;
+  padding: 4px 50px;
+  margin-top: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  z-index: 100;
+}
+@media (min-width: 992px) {
   #viewAndShare .modal-dialog {
     width: 800px;
   }
