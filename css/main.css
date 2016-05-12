@@ -4929,7 +4929,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   color: #545454;
   display: block;
   font-size: 14px;
-  height: 34px;
+  height: 30px;
   line-height: 1.42857;
   padding: 6px 12px;
   transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
@@ -5458,7 +5458,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
-  padding: 10px 10px 10px;
+  padding: 18px 10px;
   position: relative;
   margin-bottom: 10px;
 }
