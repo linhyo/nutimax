@@ -5106,7 +5106,18 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   position: relative;
   z-index: 1;
   margin-top: 0;
-  background: #02a94f url("../images/topic-state/topic1.png") repeat;
+  background-color: #02a94f;
+}
+#topic-state .step2 .topic1 .toppic-content :before {
+  z-index: 0;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.25;
+  background: url("../images/topic-state/topic1.png") repeat;
 }
 @media (max-width: 1024px) {
   #topic-state .step2 .topic1 .toppic-content {
@@ -5131,17 +5142,16 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 #topic-state .step2 .topic1 .toppic-content .title-topic1 {
   font-size: 18px;
   width: 100%;
-  font-weight: 500;
   height: 100%;
+  font-weight: 700;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 #topic-state .step2 .topic1 .toppic-content .topic-wrapper {
-  font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   color: white;
+  font-weight: 500;
   display: block;
-  margin-bottom: 10px;
 }
 #topic-state .step2 .topic1:after {
   position: absolute;
