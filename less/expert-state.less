@@ -98,7 +98,7 @@
           height: 38px;
         }
         .submit-check-form {
-          background-color: hsl(359, 82%, 51%);
+          background-color: #cc0e10;
           border-radius: 3px;
           color: hsl(0, 0%, 100%);
           display: block;
@@ -842,15 +842,26 @@
     color: #009639;
     font-size: 24px;
     text-align: left;
-    .fa-question {
-      border: 2px solid hsl(143, 100%, 29%);
-      border-radius: 50%;
-      font-weight: 300;
-      height: 30px;
-      line-height: 28px;
-      text-align: center;
-      width: 30px;
+    .title-form-question{
+      display: block;
+      width: 100%;
+      padding-left: 50px;
+      position: relative;
+      .question-icon {
+        background: url("../images/expert-state/question-icon.png") no-repeat center center;
+        width: 35px;
+        height: 35px;
+        left: 0;
+        top: -5px;
+        position: absolute;
+        display: inline-block;
+      }
+      .title-form{
+        font-weight: 500;
+        display: inline-block;
+      }
     }
+
   }
   .input-group {
     border-radius: 1px;
@@ -866,6 +877,7 @@
     padding: 5px 20px;
     position: absolute;
     right: 15px;
+    text-transform: uppercase;
   }
   .form-control {
     background-color: hsl(0, 0%, 100%);

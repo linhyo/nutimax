@@ -86,20 +86,21 @@
     </h2>
     <div class="container">
       <div class="row step2-content">
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-3 col-sm-6">
           <div class="img-responsive">
             <img class="wow slideInLeft" data-wow-duration="1s" src="images/expert-state/step2-img1.png" alt=""/>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-md-6 col-sm-6">
           <form class="form-step" action="">
             <p class="title-form-step">
-              Con bạn cũng có thể chậm tăng cân, Suy dinh dưỡng - thấp còi mà có thể bạn không biết. Hãy điền những
-              thông tin sau để kiểm tra tình trạng con của bạn và nhận những thông tin tư vấn hữu ích từ chuyên gia
+              Con bạn cũng có thể chậm tăng cân hoặc suy dinh dưỡng thấp còi mà có thể bạn không biết. Hãy điền những
+              thông tin sau để kiểm tra tình trạng của con bạn ngay
             </p>
 
             <div class="row">
               <div class="col-lg-6 col-md-6">
+                <input type="text" id="babyName" name="weight" placeholder="Họ và tên bé" class="cmd-form">
                 <div class="selector">
                   <select id="age" name="age">
                     <option value="0">0 tháng</option>
@@ -125,7 +126,7 @@
             </div>
           </form>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-3 col-sm-12">
           <div class="img-responsive">
             <img class="product-step wow slideInRight" data-wow-duration="1s" src="images/expert-state/step2-img2.png"
                  alt=""/>
@@ -670,8 +671,7 @@
         <div class="row">
           <div class="col-md-5 col-sm-5 col-xs-12">
             <a class="contact-expert" href="http://www.nutifood.com.vn/suy-dinh-duong/doctor/">
-              <img class="img-responsive"
-                   src="http://www.nutifood.com.vn/suy-dinh-duong//web/frontend/img/seo/sub-banner-chuyen-gia.png">
+              <img class="img-responsive" src="images/expert-state/question.jpg">
             </a>
 
           </div>
@@ -679,42 +679,52 @@
           <div class="col-md-7 col-sm-7 col-xs-12">
             <div class="row">
               <div class="form-header col-md-12">
-                <h3 class="mt-none"><i class="fa fa-question"></i> <strong>ĐẶT CÂU HỎI CHO CHUYÊN GIA NGAY</strong></h3>
+                <h3 class="mt-none title-form-question"><i class="question-icon"></i> <strong class="title-form">ĐẶT CÂU HỎI CHO CHUYÊN GIA NGAY</strong></h3>
               </div>
               <form method="post" class="consultant-box consultant-form v-seo"
                     action="http://www.nutifood.com.vn/suy-dinh-duong/gui-tu-van.html">
-                <div class="col-md-4">
+                <div class="col-md-6">
                   <div class="clearfix mt-sm">
-                    <input name="name" placeholder="*Họ và tên" class="input-group form-control">
+                    <input name="name" placeholder="*Họ và tên phụ huynh" class="input-group form-control">
                   </div>
                   <div class="clearfix mt-sm">
-                    <input name="email" placeholder="*Email vidu@example.com" class="input-group form-control">
+                    <input name="phoneNumber" placeholder="*Số điện thoại" class="input-group form-control">
                   </div>
                   <div class="clearfix mt-sm">
-                    <input name="phone" placeholder="*Số điện thoại" class="input-group form-control">
+                    <input name="babyName" placeholder="*Họ và tên của bé" class="input-group form-control">
                   </div>
                   <div class="clearfix mt-sm">
                     <input name="title" placeholder="*Tiêu đề câu hỏi" class="input-group form-control">
                   </div>
 
                 </div>
-                <div class="col-md-8">
-                  <div class="clearfix mt-sm relative">
-                    <textarea name="question" placeholder="*Nội dung câu hỏi" rows="5" class="form-control"></textarea>
-                    <button class="btn btn-primary v-seo btn-absolute" type="submit">Gửi câu hỏi</button>
+                <div class="col-md-6">
+                  <div class="clearfix mt-sm">
+                    <input name="email" placeholder="*Email vidu@example.com" class="input-group form-control">
+                  </div>
+                  <div class="clearfix mt-sm">
+                    <input name="address" placeholder="*Địa chỉ" class="input-group form-control">
+                  </div>
+                  <div class="clearfix mt-sm">
+                    <input name="babyDOB" placeholder="*Ngày sinh của bé (vd: 20/10/2015)" class="input-group form-control">
                   </div>
                   <div class="clearfix mt-sm">
                     <div class="col-md-8 col-sm-12 col-xs-12 no-padding-right">
                       <div class="row">
                         <input type="text" name="captcha" placeholder="*Mã xác nhận" class="input-group form-control">
                       </div>
-
                     </div>
                     <div class="col-md-4 col-sm-12 col-xs-12 text-right no-padding-right">
                       <div class="clearfix text-right captcha">
                         <img class="img-responsive" src="http://www.nutifood.com.vn/suy-dinh-duong/captcha.html">
                       </div>
                     </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="clearfix mt-sm relative">
+                    <textarea name="question" placeholder="*Nội dung câu hỏi" rows="5" class="form-control"></textarea>
+                    <button class="btn btn-primary v-seo btn-absolute" type="submit">Gửi câu hỏi</button>
                   </div>
                 </div>
               </form>

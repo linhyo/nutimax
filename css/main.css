@@ -3990,7 +3990,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   height: 38px;
 }
 #expert-state .step2 .step2-content .form-step .submit-check-form {
-  background-color: #e91c1f;
+  background-color: #cc0e10;
   border-radius: 3px;
   color: #ffffff;
   display: block;
@@ -4886,14 +4886,24 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   font-size: 24px;
   text-align: left;
 }
-.step8 .form-header .fa-question {
-  border: 2px solid #009439;
-  border-radius: 50%;
-  font-weight: 300;
-  height: 30px;
-  line-height: 28px;
-  text-align: center;
-  width: 30px;
+.step8 .form-header .title-form-question {
+  display: block;
+  width: 100%;
+  padding-left: 50px;
+  position: relative;
+}
+.step8 .form-header .title-form-question .question-icon {
+  background: url("../images/expert-state/question-icon.png") no-repeat center center;
+  width: 35px;
+  height: 35px;
+  left: 0;
+  top: -5px;
+  position: absolute;
+  display: inline-block;
+}
+.step8 .form-header .title-form-question .title-form {
+  font-weight: 500;
+  display: inline-block;
 }
 .step8 .input-group {
   border-radius: 1px;
@@ -4908,6 +4918,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   padding: 5px 20px;
   position: absolute;
   right: 15px;
+  text-transform: uppercase;
 }
 .step8 .form-control {
   background-color: #ffffff;
