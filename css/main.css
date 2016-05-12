@@ -5131,13 +5131,17 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 #topic-state .step2 .topic1 .toppic-content .title-topic1 {
   font-size: 18px;
   width: 100%;
+  font-weight: 500;
   height: 100%;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 #topic-state .step2 .topic1 .toppic-content .topic-wrapper {
+  font-weight: 400;
+  font-size: 14px;
   color: white;
   display: block;
+  margin-bottom: 10px;
 }
 #topic-state .step2 .topic1:after {
   position: absolute;
