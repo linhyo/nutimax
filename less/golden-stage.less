@@ -777,3 +777,80 @@ body[page='golden-stage'] {
   }
 }
 
+
+  .mini-game-dialog{
+    background: url("../images/bg-popup.png") no-repeat center / 100% auto;
+    bottom: 20px;
+    display: block;
+    height: 110px;
+    position: absolute;
+    right: 190px;
+    width: 244px;
+    z-index: 10;
+    .title-game{
+      background: url("../images/text-popup.png") no-repeat center / 100% auto;
+      height: 48px;
+      left: 50%;
+      margin-left: -96px;
+      position: absolute;
+      top: 15px;
+      width: 193px;
+    }
+    .description-game{
+      background: url("../images/text-popup1.png") no-repeat center / 100% auto;
+      bottom: 10px;
+      height: 22px;
+      left: 15px;
+      position: absolute;
+      width: 114px;
+    }
+    .open-dialog-nimigame{
+      background: url("../images/text-popup2.png") no-repeat center / 100% auto;
+      border: 0;
+      bottom: 8px;
+      height: 28px;
+      right: 15px;
+      position: absolute;
+      width: 98px;
+    }
+  }
+
+
+  .inputfile{
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 0.1px;
+    z-index: -1;
+  }
+
+  .edit-inputfile{
+    background-color: hsl(0, 0%, 92%);
+    border-color: hsl(0, 0%, 90%);
+    .border-radius(4px);
+    box-shadow: none;
+    font-size: 15px;
+    height: 50px;
+    padding: 15px 52px 15px 15px;
+    width: 100%;
+    position: relative;
+    span{
+      text-overflow: ellipsis;
+      display: block;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+    }
+    .icon-inputfile{
+      background: url("../images/input-file.png") no-repeat center /100% auto;
+      height: 35px;
+      position: absolute;
+      right: 7px;
+      top: 7px;
+      width: 35px;
+      &:hover{
+        opacity: 0.8;
+      }
+    }
+  }

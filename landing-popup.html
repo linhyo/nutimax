@@ -14,8 +14,8 @@
 
   <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
   <link
-      href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900,100italic,300italic,400italic,500italic,700italic,900italic&subset=latin,vietnamese'
-      rel='stylesheet' type='text/css'>
+    href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900,100italic,300italic,400italic,500italic,700italic,900italic&subset=latin,vietnamese'
+    rel='stylesheet' type='text/css'>
 
 
   <!-- CSS Styles -->
@@ -80,7 +80,9 @@
                       <img class="img-responsive center-block" src="images/golden-stage/minigame-title.png"
                            alt="Cùng GrowPLUS+ chia sẻ 'Khoảnh khắc vàng' của bé">
                     </h1>
-                    <p class="minigame-greeting">Hãy cùng GrowPLUS+ chia sẻ hình ảnh những cột mốc đáng yêu của bé và có cơ hội
+
+                    <p class="minigame-greeting">Hãy cùng GrowPLUS+ chia sẻ hình ảnh những cột mốc đáng yêu của bé và có
+                      cơ hội
                       nhận được những phần quà thật hấp dẫn! </p>
                   </div>
                 </div>
@@ -88,7 +90,8 @@
               <div class="row">
                 <form role="form" class="minigame-form">
                   <div class="col-md-6 col-md-push-6 col-img">
-                    <div id="minigame-theme" class="minigame-frame" style="background-image: url('images/golden-stage/frame-1.png')">
+                    <div id="minigame-theme" class="minigame-frame"
+                         style="background-image: url('images/golden-stage/frame-1.png')">
                     </div>
                     <p class="minigame-invite">Mẹ hãy tải lên hình ảnh của mẹ kèm theo 4 bức hình đáng yêu của bé để
                       hoàn thiện bức tranh dễ thương này nhé!</p>
@@ -96,6 +99,7 @@
                   <div class="col-md-6 col-md-pull-6">
                     <div class="form-group">
                       <label class="sr-only" for="theme"></label>
+
                       <div id="theme" class="dropdown minigame-select">
                         <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
                           <span class="dropdown-hint">Chọn 1 trong 2 phông nền (theme)</span>
@@ -109,28 +113,42 @@
                     </div>
                     <div class="form-group">
                       <label class="sr-only" for="mom-name"></label>
-                      <input type="text" class="form-control" id="mom-name" placeholder="Tên của mẹ, dưới 7 ký tự (Ví dụ Lan, Lan Anh)">
+                      <input type="text" class="form-control" id="mom-name"
+                             placeholder="Tên của mẹ, dưới 7 ký tự (Ví dụ Lan, Lan Anh)">
                     </div>
                     <div class="form-group">
                       <label class="sr-only" for="kid-name"></label>
-                      <input type="text" class="form-control" id="kid-name" placeholder="Tên thường gọi của bé, dưới 7 ký tự (Ví dụ Bin, cu Bin)">
+                      <input type="text" class="form-control" id="kid-name"
+                             placeholder="Tên thường gọi của bé, dưới 7 ký tự (Ví dụ Bin, cu Bin)">
                     </div>
                   </div>
                   <div class="clearfix"></div>
                   <div class="col-xs-12 col-md-6">
                     <div class="form-group">
-                      <label class="sr-only" for="mom-image"></label>
-                      <input type="text" class="form-control" id="mom-image" placeholder="Hình ảnh của mẹ">
+                      <input type="file" multiple="" data-multiple-caption="{count} files selected"
+                             class="inputfile inputfile-6" id="file-1" name="file-1[]">
+                      <label class="edit-inputfile" for="file-1">
+                        <span>Hình ảnh của mẹ</span>
+                        <i class="icon-inputfile"></i>
+                      </label>
                     </div>
                     <div class="form-group">
-                      <label class="sr-only" for="kid-image"></label>
-                      <input type="text" class="form-control" id="kid-image" placeholder="3 Hình ảnh các giai đoạn của bé từ 1-3 tuổi">
+                      <input type="file" multiple="" data-multiple-caption="{count} files selected"
+                             class="inputfile inputfile-6" id="file-2" name="file-2[]">
+                      <label class="edit-inputfile" for="file-2">
+                        <span>3 Hình ảnh các giai đoạn của bé từ 1-3 tuổi</span>
+                        <i class="icon-inputfile"></i>
+                      </label>
                     </div>
                   </div>
                   <div class="col-xs-12 col-md-6">
                     <div class="form-group">
-                      <label class="sr-only" for="baby-image"></label>
-                      <input type="text" class="form-control" id="baby-image" placeholder="Hình ảnh sơ sinh của bé">
+                      <input type="file" multiple="" data-multiple-caption="{count} files selected"
+                             class="inputfile inputfile-6" id="file-2" name="file-2[]">
+                      <label class="edit-inputfile" for="file-2">
+                        <span>Hình ảnh sơ sinh của bé</span>
+                        <i class="icon-inputfile"></i>
+                      </label>
                     </div>
                     <div class="form-group">
                       <button class="btn minigame-button green" type="submit">Xem kết quả</button>
@@ -179,9 +197,10 @@
                 <img class="img-responsive center-block" src="images/golden-stage/minigame-congrat.png"
                      alt="Chúc mừng mẹ đã gửi bài thành công!">
               </h1>
+
               <p>Bài tham gia của mẹ sẽ được BTC duyệt và đăng tải lên Fanpage trong thời gian sớm nhất. Đừng quên
-              theo dõi thường xuyên trên Fanpage của GrowPLUS+ nhé!<br>
-              Cảm ơn mẹ đã tham gia chương trình!</p>
+                theo dõi thường xuyên trên Fanpage của GrowPLUS+ nhé!<br>
+                Cảm ơn mẹ đã tham gia chương trình!</p>
             </div>
           </div>
         </div>
