@@ -547,13 +547,8 @@ a {
 }
 input,
 textarea {
-  border-color: #8b9aa7 !important;
-  color: #8b9aa7 !important;
-  font-size: 13px !important;
-}
-input:focus,
-textarea:focus {
-  border-color: #66afe9 !important;
+  color: #8b9aa7;
+  font-size: 13px;
 }
 input,
 textarea,
@@ -3869,6 +3864,281 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   opacity: 0.8;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
   filter: alpha(opacity=80);
+}
+#startMinigame .modal-content {
+  padding: 20px 30px;
+}
+#endMinigame .modal-content {
+  padding: 20px 15px;
+}
+@media (min-width: 992px) {
+  #minigameSuccess .modal-dialog {
+    width: 540px;
+  }
+}
+#minigameSuccess .modal-close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 40px;
+  height: 39px;
+  background: transparent url("../images/golden-stage/close-button.png") no-repeat center center;
+  border: none;
+  z-index: 10;
+}
+#minigameSuccess .modal-content {
+  border: 5px solid transparent;
+  border-image: url('../images/golden-stage/diagonal.png') 10% round;
+  padding: 40px;
+}
+#minigameSuccess p {
+  color: #009639;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  margin: 30px auto 0;
+}
+@media (min-width: 992px) {
+  #startMinigame .modal-dialog,
+  #endMinigame .modal-dialog {
+    width: 930px;
+  }
+}
+#startMinigame .modal-close,
+#endMinigame .modal-close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 40px;
+  height: 39px;
+  background: transparent url("../images/golden-stage/close-button.png") no-repeat center center;
+  border: none;
+  z-index: 10;
+}
+#startMinigame .modal-content,
+#endMinigame .modal-content {
+  border: 5px solid transparent;
+  border-image: url('../images/golden-stage/diagonal.png') 10% round;
+}
+@media (min-width: 992px) {
+  #startMinigame .minigame-heading,
+  #endMinigame .minigame-heading {
+    padding-right: 50px;
+  }
+}
+#startMinigame .minigame-title,
+#endMinigame .minigame-title {
+  margin: 30px 0 10px;
+}
+#startMinigame .minigame-greeting,
+#endMinigame .minigame-greeting {
+  color: #009639;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+@media (max-width: 991px) {
+  #startMinigame .minigame-greeting,
+  #endMinigame .minigame-greeting {
+    text-align: center;
+  }
+}
+#startMinigame .minigame-form:after,
+#endMinigame .minigame-form:after,
+#startMinigame .minigame-form:before,
+#endMinigame .minigame-form:before {
+  display: table;
+  content: " ";
+}
+#startMinigame .minigame-form:after,
+#endMinigame .minigame-form:after {
+  clear: both;
+}
+#startMinigame .minigame-form .form-control,
+#endMinigame .minigame-form .form-control {
+  height: 50px;
+  background-color: #ebebeb;
+  border-color: #e6e6e6;
+  font-size: 15px;
+  box-shadow: none;
+}
+#startMinigame .minigame-form .form-control:focus,
+#endMinigame .minigame-form .form-control:focus {
+  background-color: #fff;
+  box-shadow: none;
+}
+#startMinigame .minigame-frame,
+#endMinigame .minigame-frame {
+  position: absolute;
+  background: transparent no-repeat center center / 100% auto;
+}
+@media (min-width: 992px) {
+  #startMinigame .minigame-frame,
+  #endMinigame .minigame-frame {
+    left: -44px;
+    bottom: 60px;
+    width: 490px;
+    height: 335px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #startMinigame .minigame-frame,
+  #endMinigame .minigame-frame {
+    left: 50%;
+    bottom: 70px;
+    margin-left: -265px;
+    width: 530px;
+    height: 362px;
+  }
+}
+@media (max-width: 767px) {
+  #startMinigame .minigame-frame,
+  #endMinigame .minigame-frame {
+    left: 50%;
+    bottom: 90px;
+    margin-left: -165px;
+    width: 330px;
+    height: 225px;
+  }
+}
+#startMinigame .minigame-invite,
+#endMinigame .minigame-invite {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  right: 15px;
+  color: #009639;
+  font-size: 15px;
+  font-style: italic;
+}
+#startMinigame .minigame-select .dropdown-toggle,
+#endMinigame .minigame-select .dropdown-toggle {
+  width: 100%;
+  height: 50px;
+  color: #555;
+  font-size: 15px;
+  box-shadow: none;
+  background-color: #ebebeb;
+  border-color: #e6e6e6;
+  text-align: left;
+}
+#startMinigame .minigame-select .dropdown-toggle:hover,
+#endMinigame .minigame-select .dropdown-toggle:hover,
+#startMinigame .minigame-select .dropdown-toggle:focus,
+#endMinigame .minigame-select .dropdown-toggle:focus {
+  box-shadow: none;
+}
+#startMinigame .minigame-select .dropdown-toggle:after,
+#endMinigame .minigame-select .dropdown-toggle:after {
+  content: '';
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  right: 16px;
+  top: 18px;
+  background: transparent url("../images/golden-stage/polygon-icon.png") no-repeat center center;
+}
+#startMinigame .minigame-select .dropdown-hint,
+#endMinigame .minigame-select .dropdown-hint {
+  color: #999;
+}
+#startMinigame .minigame-select .dropdown-menu,
+#endMinigame .minigame-select .dropdown-menu {
+  right: 0;
+  font-size: 15px;
+}
+#startMinigame .minigame-select .dropdown-menu > li.active > a,
+#endMinigame .minigame-select .dropdown-menu > li.active > a {
+  background-color: #009639;
+}
+#startMinigame .minigame-select .dropdown-menu > li > a,
+#endMinigame .minigame-select .dropdown-menu > li > a {
+  padding: 8px 20px;
+}
+#startMinigame .col-img,
+#endMinigame .col-img {
+  position: relative;
+  min-height: 195px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #startMinigame .col-img,
+  #endMinigame .col-img {
+    margin-top: 230px;
+  }
+}
+@media (max-width: 767px) {
+  #startMinigame .col-img,
+  #endMinigame .col-img {
+    margin-top: 120px;
+  }
+}
+#startMinigame .minigame-button,
+#endMinigame .minigame-button {
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#startMinigame .minigame-button.green,
+#endMinigame .minigame-button.green {
+  background-color: #009639;
+}
+#startMinigame .minigame-button.green:hover,
+#endMinigame .minigame-button.green:hover {
+  color: #009639;
+  background-color: #fff;
+  border-color: #009639;
+}
+#startMinigame .minigame-button.red,
+#endMinigame .minigame-button.red {
+  background-color: #ce0019;
+}
+#startMinigame .minigame-button.red:hover,
+#endMinigame .minigame-button.red:hover {
+  color: #ce0019;
+  background-color: #fff;
+  border-color: #ce0019;
+}
+#startMinigame .minigame-button.yellow,
+#endMinigame .minigame-button.yellow {
+  background-color: #f7b237;
+}
+#startMinigame .minigame-button.yellow:hover,
+#endMinigame .minigame-button.yellow:hover {
+  color: #f7b237;
+  background-color: #fff;
+  border-color: #f7b237;
+}
+@media (min-width: 992px) {
+  #startMinigame .minigame-control,
+  #endMinigame .minigame-control {
+    margin-top: 40%;
+  }
+}
+#startMinigame .minigame-control p,
+#endMinigame .minigame-control p {
+  color: #009639;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+@media (max-width: 991px) {
+  #startMinigame .minigame-control p,
+  #endMinigame .minigame-control p {
+    margin-top: 15px;
+    text-align: center;
+  }
+}
+#startMinigame .minigame-control button,
+#endMinigame .minigame-control button {
+  margin-bottom: 15px;
 }
 #expert-state {
   display: block;

@@ -284,6 +284,21 @@ $(function () {
 
   });
 
+  // Select event
+  $('.minigame-select .dropdown-menu > li > a').on('click', function (e) {
+    e.preventDefault();
+    var option = $(this).text();
+    var btnDropdown = $(this).parents('ul.dropdown-menu').prev();
+    btnDropdown.find('.dropdown-hint').remove();
+    btnDropdown.find('.selected-value').text(option);
+    $(this).parent().addClass('active');
+    $(this).parent().siblings().removeClass('active');
+
+    var type = $(this).attr('data-theme');
+    setTimeout(function() {
+      $('#minigame-theme').css('background-image', 'url(images/golden-stage/frame-'+ type +'.png)');
+    }, 100);
+  });
 
   var wow = new WOW(
     {

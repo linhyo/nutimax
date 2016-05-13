@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head lang="vi">
+  <title>Nutifood - Suy dưỡng, thấp còi</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="cleartype" content="on">
+
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link
+      href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900,100italic,300italic,400italic,500italic,700italic,900italic&subset=latin,vietnamese'
+      rel='stylesheet' type='text/css'>
+
+
+  <!-- CSS Styles -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+  <link href="js/booklet/jquery.booklet.1.1.0.css" type="text/css" rel="stylesheet" media="screen"/>
+  <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+  <!-- If use old header-footer, dont need attach this file -->
+  <link rel="stylesheet" type="text/css" href="css/header-footer.css"/>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+</head>
+<body page="golden-stage">
+<header id="home" class="header" role="banner">
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="wow slideInLeft golden-state-block">
+            <a data-wow-duration="1s" href="http://www.nutifood.com.vn/">
+              <i class="icon-logo-golden-state"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="wow slideInDown gs-slogan-block">
+            <i class="gs-slogan"></i>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="wow slideInRight nuti-white-logo">
+            <a href="http://www.nutifood.com.vn/suy-dinh-duong/"
+               data-wow-duration="1s">
+              <i class="nuti-white"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="clearfix"></div>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <!-- Popup 1 -->
+        <button class="btn btn-default" data-toggle="modal" data-target="#startMinigame">Start minigame popup</button>
+
+        <div class="modal fade" id="startMinigame" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <button type="button" class="modal-close" data-dismiss="modal"></button>
+
+            <div class="modal-content">
+              <div class="row">
+                <div class="col-xs-12 col-md-6">
+                  <div class="minigame-heading">
+                    <h1 class="minigame-title">
+                      <img class="img-responsive center-block" src="images/golden-stage/minigame-title.png"
+                           alt="Cùng GrowPLUS+ chia sẻ 'Khoảnh khắc vàng' của bé">
+                    </h1>
+                    <p class="minigame-greeting">Hãy cùng GrowPLUS+ chia sẻ hình ảnh những cột mốc đáng yêu của bé và có cơ hội
+                      nhận được những phần quà thật hấp dẫn! </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <form role="form" class="minigame-form">
+                  <div class="col-md-6 col-md-push-6 col-img">
+                    <div id="minigame-theme" class="minigame-frame" style="background-image: url('images/golden-stage/frame-1.png')">
+                    </div>
+                    <p class="minigame-invite">Mẹ hãy tải lên hình ảnh của mẹ kèm theo 4 bức hình đáng yêu của bé để
+                      hoàn thiện bức tranh dễ thương này nhé!</p>
+                  </div>
+                  <div class="col-md-6 col-md-pull-6">
+                    <div class="form-group">
+                      <label class="sr-only" for="theme"></label>
+                      <div id="theme" class="dropdown minigame-select">
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                          <span class="dropdown-hint">Chọn 1 trong 2 phông nền (theme)</span>
+                          <span class="selected-value"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a href="#" data-theme="1">Phông nền 1</a></li>
+                          <li><a href="#" data-theme="2">Phông nền 2</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="mom-name"></label>
+                      <input type="text" class="form-control" id="mom-name" placeholder="Tên của mẹ, dưới 7 ký tự (Ví dụ Lan, Lan Anh)">
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="kid-name"></label>
+                      <input type="text" class="form-control" id="kid-name" placeholder="Tên thường gọi của bé, dưới 7 ký tự (Ví dụ Bin, cu Bin)">
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="form-group">
+                      <label class="sr-only" for="mom-image"></label>
+                      <input type="text" class="form-control" id="mom-image" placeholder="Hình ảnh của mẹ">
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="kid-image"></label>
+                      <input type="text" class="form-control" id="kid-image" placeholder="3 Hình ảnh các giai đoạn của bé từ 1-3 tuổi">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="form-group">
+                      <label class="sr-only" for="baby-image"></label>
+                      <input type="text" class="form-control" id="baby-image" placeholder="Hình ảnh sơ sinh của bé">
+                    </div>
+                    <div class="form-group">
+                      <button class="btn minigame-button green" type="submit">Xem kết quả</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Popup 2 -->
+        <button class="btn btn-default" data-toggle="modal" data-target="#endMinigame">End minigame popup</button>
+
+        <div class="modal fade" id="endMinigame" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <button type="button" class="modal-close" data-dismiss="modal"></button>
+
+            <div class="modal-content">
+              <div class="row">
+                <div class="col-xs-12 col-md-7">
+                  <img class="img-responsive" src="images/golden-stage/final-frame-1.png">
+                </div>
+                <div class="col-xs-12 col-md-5">
+                  <div class="minigame-control">
+                    <p>Câu chuyện của bé đã được hoàn thành!</p>
+                    <button class="btn minigame-button red" type="button">Làm lại</button>
+                    <button class="btn minigame-button yellow" type="button">Lưu về máy</button>
+                    <button class="btn minigame-button green" type="button">Gửi bài và tham gia chương trình</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Popup 3 -->
+        <button class="btn btn-default" data-toggle="modal" data-target="#minigameSuccess">End minigame popup</button>
+
+        <div class="modal fade" id="minigameSuccess" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <button type="button" class="modal-close" data-dismiss="modal"></button>
+
+            <div class="modal-content">
+              <h1 class="minigame-title">
+                <img class="img-responsive center-block" src="images/golden-stage/minigame-congrat.png"
+                     alt="Chúc mừng mẹ đã gửi bài thành công!">
+              </h1>
+              <p>Bài tham gia của mẹ sẽ được BTC duyệt và đăng tải lên Fanpage trong thời gian sớm nhất. Đừng quên
+              theo dõi thường xuyên trên Fanpage của GrowPLUS+ nhé!<br>
+              Cảm ơn mẹ đã tham gia chương trình!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript" src="js/lib/jquery-1.12.1.min.js"></script>
+<script src="js/booklet/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="js/booklet/jquery.booklet.1.1.0.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/lib/lightslider.min.js"></script>
+<script type="text/javascript" src="js/lib/wow.min.js"></script>
+<script type="text/javascript" src="js/old.js"></script>
+<script type="text/javascript" src="js/lib/slick.min.js"></script>
+<script type="text/javascript" src="js/lib/smooth-scroll.min.js"></script>
+<script>
+  smoothScroll.init({
+    speed: 1000
+  });
+</script>
+<script type="text/javascript" src="js/golden-stage.js"></script>
+<script type="text/javascript" src="js/slow-weight-gain.js"></script>
+</body>
+</html>
