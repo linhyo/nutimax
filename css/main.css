@@ -1457,6 +1457,62 @@ textarea.has-error:-ms-input-placeholder {
     height: 100%;
     position: relative;
   }
+  #book-view .book_wrapper-mobile .mini-game-dialog-mobile {
+    width: 100%;
+    background-color: #b83b2e;
+    position: relative;
+    display: block;
+    padding: 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+    margin-bottom: 20px;
+  }
+  #book-view .book_wrapper-mobile .mini-game-dialog-mobile .border-dot {
+    border: 1px dashed whitesmoke;
+    padding: 15px;
+    margin: 0 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+  }
+  #book-view .book_wrapper-mobile .mini-game-dialog-mobile .border-dot .center {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  #book-view .book_wrapper-mobile .mini-game-dialog-mobile .border-dot .title-game {
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+    width: 100%;
+  }
+  #book-view .book_wrapper-mobile .mini-game-dialog-mobile .border-dot .title-game img {
+    text-align: center;
+    margin: 0 auto;
+  }
+  #book-view .book_wrapper-mobile .mini-game-dialog-mobile .border-dot .description-game {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  #book-view .book_wrapper-mobile .mini-game-dialog-mobile .border-dot .description-game img {
+    text-align: center;
+    margin: 0 auto;
+  }
+  #book-view .book_wrapper-mobile .mini-game-dialog-mobile .border-dot .open-dialog-nimigame {
+    border: 0;
+    background: none;
+  }
   #book-view .book_wrapper-mobile .milk-product {
     display: block;
     bottom: 35px;
@@ -1595,6 +1651,12 @@ textarea.has-error:-ms-input-placeholder {
     line-height: 15px;
     vertical-align: middle;
     color: #2c8249;
+  }
+}
+@media (max-width: 1185px) and (max-width: 480px) {
+  #book-view .book_wrapper-mobile .mini-game-dialog-mobile .border-dot {
+    padding: 10px;
+    margin: 0;
   }
 }
 @media (max-width: 1185px) and (max-width: 480px) {

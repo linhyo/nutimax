@@ -444,7 +444,54 @@
       width: 100%;
       height: 100%;
       position: relative;
-
+      .mini-game-dialog-mobile{
+        width: 100%;
+        background-color: #b83b2e;
+        position: relative;
+        display: block;
+        padding: 15px;
+        .border-radius(10px);
+        margin-bottom: 20px;
+        .border-dot{
+          border: 1px dashed whitesmoke;
+          padding: 15px;
+          margin: 0 5px;
+          .border-radius(5px);
+          @media (max-width: 480px) {
+            padding: 10px;
+            margin: 0;
+          }
+          .center{
+            display: block;
+            text-align: center;
+            width: 100%;
+          }
+          .title-game{
+            display: block;
+            margin-top: 5px;
+            text-align: center;
+            width: 100%;
+            img{
+              text-align: center;
+              margin: 0 auto;
+            }
+          }
+          .description-game{
+            display: block;
+            margin-bottom: 10px;
+            text-align: center;
+            width: 100%;
+            img{
+              text-align: center;
+              margin: 0 auto;
+            }
+          }
+          .open-dialog-nimigame{
+            border: 0;
+            background: none;
+          }
+        }
+      }
       .milk-product {
         display: block;
         bottom: 35px;
