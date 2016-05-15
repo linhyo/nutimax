@@ -1654,6 +1654,11 @@ textarea.has-error:-ms-input-placeholder {
   }
 }
 @media (max-width: 1185px) and (max-width: 480px) {
+  #book-view .book_wrapper-mobile .mini-game-dialog-mobile {
+    padding: 5px;
+  }
+}
+@media (max-width: 1185px) and (max-width: 480px) {
   #book-view .book_wrapper-mobile .mini-game-dialog-mobile .border-dot {
     padding: 10px;
     margin: 0;
