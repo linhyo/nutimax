@@ -4163,17 +4163,17 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 @media (min-width: 992px) {
   #startMinigame .minigame-frame,
   #endMinigame .minigame-frame {
-    left: -44px;
-    bottom: 60px;
-    width: 490px;
-    height: 335px;
+    left: -15px;
+    bottom: 100px;
+    width: 450px;
+    height: 307px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #startMinigame .minigame-frame,
   #endMinigame .minigame-frame {
     left: 50%;
-    bottom: 70px;
+    bottom: 80px;
     margin-left: -265px;
     width: 530px;
     height: 362px;
@@ -4183,7 +4183,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   #startMinigame .minigame-frame,
   #endMinigame .minigame-frame {
     left: 50%;
-    bottom: 90px;
+    bottom: 130px;
     margin-left: -165px;
     width: 330px;
     height: 225px;
@@ -4198,6 +4198,10 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   color: #009639;
   font-size: 15px;
   font-style: italic;
+}
+#startMinigame .minigame-invite span,
+#endMinigame .minigame-invite span {
+  color: #ce0019;
 }
 #startMinigame .minigame-select .dropdown-toggle,
 #endMinigame .minigame-select .dropdown-toggle {
@@ -4251,13 +4255,13 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 @media (min-width: 768px) and (max-width: 991px) {
   #startMinigame .col-img,
   #endMinigame .col-img {
-    margin-top: 230px;
+    margin-top: 240px;
   }
 }
 @media (max-width: 767px) {
   #startMinigame .col-img,
   #endMinigame .col-img {
-    margin-top: 120px;
+    margin-top: 150px;
   }
 }
 #startMinigame .minigame-button,
