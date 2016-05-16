@@ -1494,10 +1494,16 @@ textarea.has-error:-ms-input-placeholder {
     margin-top: 5px;
     text-align: center;
     width: 100%;
+    vertical-align: middle;
   }
-  #book-view .book_wrapper-mobile .mini-game-dialog-mobile .border-dot .title-game img {
-    text-align: center;
+  #book-view .book_wrapper-mobile .mini-game-dialog-mobile .border-dot .title-game .image-title-game {
     margin: 0 auto;
+    background: rgba(0, 0, 0, 0) url("../images/text-popup-tablet.png") no-repeat scroll 0 0;
+    background-size: 100% auto;
+    width: 379px;
+    text-align: center;
+    max-width: 100%;
+    height: 93px;
   }
   #book-view .book_wrapper-mobile .mini-game-dialog-mobile .border-dot .description-game {
     display: block;
@@ -1505,13 +1511,24 @@ textarea.has-error:-ms-input-placeholder {
     text-align: center;
     width: 100%;
   }
-  #book-view .book_wrapper-mobile .mini-game-dialog-mobile .border-dot .description-game img {
-    text-align: center;
+  #book-view .book_wrapper-mobile .mini-game-dialog-mobile .border-dot .description-game .image-title-game {
     margin: 0 auto;
+    background: rgba(0, 0, 0, 0) url("../images/text-popup1-tablet.png") no-repeat scroll 0 0;
+    background-size: 100% auto;
+    width: 212px;
+    text-align: center;
+    max-width: 100%;
+    height: 41px;
   }
   #book-view .book_wrapper-mobile .mini-game-dialog-mobile .border-dot .open-dialog-nimigame {
+    background: url("../images/text-popup2-tablet.png") no-repeat center / 100% auto;
     border: 0;
-    background: none;
+    max-width: 100%;
+    height: 53px;
+    right: 0;
+    bottom: 0;
+    position: relative;
+    width: 182px;
   }
   #book-view .book_wrapper-mobile .milk-product {
     display: block;
@@ -1662,6 +1679,31 @@ textarea.has-error:-ms-input-placeholder {
   #book-view .book_wrapper-mobile .mini-game-dialog-mobile .border-dot {
     padding: 10px;
     margin: 0;
+  }
+}
+@media (max-width: 1185px) and (max-width: 480px) {
+  #book-view .book_wrapper-mobile .mini-game-dialog-mobile .border-dot .title-game .image-title-game {
+    height: 50px;
+  }
+}
+@media (max-width: 1185px) and (max-width: 480px) {
+  #book-view .book_wrapper-mobile .mini-game-dialog-mobile .border-dot .description-game .image-title-game {
+    height: 22px;
+  }
+}
+@media (max-width: 1185px) and (max-width: 360px) {
+  #book-view .book_wrapper-mobile .mini-game-dialog-mobile .border-dot .description-game .image-title-game {
+    height: 15px;
+  }
+}
+@media (max-width: 1185px) and (max-width: 480px) {
+  #book-view .book_wrapper-mobile .mini-game-dialog-mobile .border-dot .open-dialog-nimigame {
+    height: 30px;
+  }
+}
+@media (max-width: 1185px) and (max-width: 360px) {
+  #book-view .book_wrapper-mobile .mini-game-dialog-mobile .border-dot .open-dialog-nimigame {
+    height: 25px;
   }
 }
 @media (max-width: 1185px) and (max-width: 480px) {
