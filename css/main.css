@@ -5299,6 +5299,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   overflow: hidden;
   white-space: nowrap;
   margin-bottom: 10px;
+  line-height: 20px;
 }
 .step6 .list-topic .topic.slick-active {
   display: block;
@@ -5904,6 +5905,8 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 }
 #topic-state .step5 .box-question .content-box {
   margin-top: 15px;
+  max-height: 95px;
+  overflow: hidden;
 }
 #topic-state .step5 .question-slider {
   position: relative;
