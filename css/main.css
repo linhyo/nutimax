@@ -5965,6 +5965,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 100%;
+  line-height: 22px;
 }
 .header .navbar-default .social-icons {
   float: none;
