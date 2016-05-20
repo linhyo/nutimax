@@ -1108,7 +1108,7 @@ textarea.has-error:-ms-input-placeholder {
 }
 .milk-product .milk {
   background: rgba(0, 0, 0, 0) url("../images/golden-stage/milk-product.png") no-repeat scroll center center / cover;
-  bottom: -40px;
+  bottom: -20px;
   height: 150px;
   left: -75px;
   width: 124px;
