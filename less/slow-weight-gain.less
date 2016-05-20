@@ -638,7 +638,7 @@
     left: 50%;
     margin-left: -110px;
     display: block;
-    background-color: #bf2a2e;
+    background-color: #f0a900;
     border: 2px solid #fff;
     .border-radius(12px);
     color: #fff;
@@ -654,6 +654,9 @@
     touch-action: manipulation;
     cursor: pointer;
     z-index: 100;
+
+    -webkit-animation: twinkle 0.5s alternate infinite;
+    animation: twinkle 0.5s alternate infinite;
     @media (min-width: 992px) {
       top: 38%;
     }
@@ -661,8 +664,26 @@
       top: 50%;
     }
     &:hover {
-      background-color: #db2b2f;
+      .opacity(1);
     }
+  }
+}
+
+@-webkit-keyframes twinkle {
+  0% {
+    .opacity(0.5);
+  }
+  100% {
+    .opacity(1);
+  }
+}
+
+@keyframes twinkle {
+  0% {
+    .opacity(0.5);
+  }
+  100% {
+    .opacity(1);
   }
 }
 
