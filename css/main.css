@@ -2720,7 +2720,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   #landing-event .right-img {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: -50px;
     background: url('../images/golden-stage/mom-and-kid.png') no-repeat center center / 100% auto;
   }
 }
@@ -2730,34 +2730,10 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
     height: 470px;
   }
 }
-@media (min-width: 992px) and (min-width: 768px) and (max-width: 991px) {
-  #landing-event .left-img {
-    width: 336px;
-    height: 396px;
-  }
-}
-@media (min-width: 992px) and (max-width: 767px) {
-  #landing-event .left-img {
-    width: 252px;
-    height: 297px;
-  }
-}
 @media (min-width: 992px) and (min-width: 992px) {
   #landing-event .right-img {
-    width: 380px;
-    height: 380px;
-  }
-}
-@media (min-width: 992px) and (min-width: 768px) and (max-width: 991px) {
-  #landing-event .right-img {
-    width: 300px;
-    height: 300px;
-  }
-}
-@media (min-width: 992px) and (max-width: 767px) {
-  #landing-event .right-img {
-    width: 230px;
-    height: 230px;
+    width: 400px;
+    height: 400px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2897,25 +2873,18 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 }
 .landing-icon.icon-4 {
   background-position: -381px -7px;
-  width: 144px;
+  width: 106px;
   height: 115px;
 }
 .landing-icon.icon-5 {
-  background-position: -539px -7px;
-  width: 137px;
-  height: 115px;
+  background-position: -501px -7px;
+  width: 115px;
+  height: 104px;
 }
 .landing-icon.icon-6 {
-  background-position: -690px -7px;
+  background-position: -630px -7px;
   width: 127px;
   height: 115px;
-}
-.scale-icon {
-  width: 106px;
-  height: 115px;
-  display: inline-block;
-  background: url('../images/golden-stage/scale-icon.png') no-repeat;
-  margin: 0 auto;
 }
 #landing-message {
   position: relative;
