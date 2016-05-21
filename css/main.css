@@ -4621,6 +4621,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   height: auto;
 }
 #expert-state .step3 .step-value .detail-value {
+  display: none;
   position: absolute;
   width: 270px;
   height: 140px;
@@ -4641,6 +4642,9 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   color: #02a94f;
   box-shadow: 1px 1px 2px #555555;
   z-index: 1;
+}
+#expert-state .step3 .step-value .detail-value.active {
+  display: block;
 }
 @media (max-width: 768px) {
   #expert-state .step3 .step-value .detail-value {

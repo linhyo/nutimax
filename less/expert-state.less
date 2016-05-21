@@ -204,6 +204,7 @@
         }
       }
       .detail-value {
+        display: none;
         position: absolute;
         width: 270px;
         height: 140px;
@@ -218,6 +219,9 @@
         color: @green-expert;
         box-shadow: 1px 1px 2px #555555;
         z-index: 1;
+        &.active{
+          display: block;
+        }
         @media (max-width: 768px) {
           margin-left: 70px;
         }
