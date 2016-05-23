@@ -1156,8 +1156,13 @@ textarea.has-error:-ms-input-placeholder {
     transform: translate3d(0, 0, 0);
   }
 }
-.modal-lg {
-  width: 1024px;
+@media (min-width: 992px) {
+  .modal-lg {
+    width: 1024px;
+  }
+  #bmi-result-box .btn {
+    white-space: normal;
+  }
 }
 .modal-dialog .view_full_button {
   right: 35px;
