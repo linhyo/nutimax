@@ -4575,12 +4575,12 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 }
 @media (max-width: 480px) {
   #expert-state .step3.active {
-    background-color: #d7d7d7;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#ffffff));
-    background-image: -webkit-linear-gradient(top, #d7d7d7, #ffffff);
-    background-image: -moz-linear-gradient(top, #d7d7d7, #ffffff);
-    background-image: -ms-linear-gradient(top, #d7d7d7, #ffffff);
-    background-image: -o-linear-gradient(top, #d7d7d7, #ffffff);
+    background-color: #ffffff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d7d7d7));
+    background-image: -webkit-linear-gradient(top, #ffffff, #d7d7d7);
+    background-image: -moz-linear-gradient(top, #ffffff, #d7d7d7);
+    background-image: -ms-linear-gradient(top, #ffffff, #d7d7d7);
+    background-image: -o-linear-gradient(top, #ffffff, #d7d7d7);
   }
 }
 #expert-state .step3 .step-value {
@@ -4602,14 +4602,26 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
     display: none;
   }
 }
+@media (max-width: 480px) {
+  #expert-state .step3 .step-value .value:nth-child(4) {
+    width: 80%;
+    display: block;
+    margin: 10px auto;
+  }
+}
 #expert-state .step3 .step-value .value.active {
   opacity: 1;
 }
 @media (max-width: 480px) {
   #expert-state .step3 .step-value .value.active {
-    display: block;
+    display: block!important;
     width: 80%;
     margin: 10px auto;
+  }
+}
+@media (max-width: 480px) {
+  #expert-state .step3 .step-value .value.active:nth-child(4) {
+    display: none;
   }
 }
 #expert-state .step3 .step-value .value img {
@@ -4618,15 +4630,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   height: auto;
 }
 #expert-state .step3 .step-value .detail-value {
-  display: none;
-  position: absolute;
-  width: 270px;
-  height: 140px;
-  background-color: white;
-  left: 50%;
-  top: 50%;
-  margin-left: 135px;
-  margin-top: -90px;
+  background-color: #ffffff;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -4634,10 +4638,18 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
-  padding: 20px 25px;
+  box-shadow: 1px 1px 2px #545454;
+  color: #02ac51;
+  display: none;
+  height: auto;
+  left: 50%;
+  margin-left: 135px;
+  margin-top: -90px;
+  padding: 20px 25px 65px;
+  position: absolute;
   text-align: left;
-  color: #02a94f;
-  box-shadow: 1px 1px 2px #555555;
+  top: 50%;
+  width: 270px;
   z-index: 1;
 }
 #expert-state .step3 .step-value .detail-value.active {

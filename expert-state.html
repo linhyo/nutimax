@@ -121,7 +121,9 @@
                 <input type="text" name="address" placeholder="Địa chỉ" class="cmd-form">
                 <input type="text" name="phone" placeholder="Số điện thoại" class="cmd-form">
                 <input type="text" name="email" placeholder="Email" class="cmd-form">
-                <button type="submit" class="submit-check-form" style="border:none">Kiểm tra ngay</button>
+                <a class="submit-check-form" data-scroll="" href="#step3">
+                  Kiểm tra ngay
+                </a>
               </div>
             </div>
           </form>
@@ -135,7 +137,7 @@
       </div>
     </div>
   </div>
-  <div class="step3 active">
+  <div id="step3" class="step3 wow fadeInUp" data-wow-duration="1s">
     <div class="container">
       <div class="step-value">
         <div class="detail-value">
@@ -153,7 +155,7 @@
         <div class="value">
           <img src="images/expert-state/value2.png" alt=""/>
         </div>
-        <div class="value active">
+        <div class="value">
           <img src="images/expert-state/value3.png" alt=""/>
         </div>
         <div class="value">
@@ -173,7 +175,7 @@
           <span class="dot"></span>
         </div>
         <div class="dot-value">
-          <span class="dot active"></span>
+          <span class="dot"></span>
         </div>
         <div class="dot-value">
           <span class="dot"></span>
@@ -867,12 +869,15 @@
 <script type="text/javascript" src="js/lib/wow.min.js"></script>
 <script type="text/javascript" src="js/old.js"></script>
 <script type="text/javascript" src="js/lib/slick.min.js"></script>
+<script type="text/javascript" src="js/lib/smooth-scroll.min.js"></script>
 
 <script type="text/javascript" src="js/golden-stage.js"></script>
 <script type="text/javascript" src="js/slow-weight-gain.js"></script>
 <script type="text/javascript" src="js/expert-state.js"></script>
 <script>
-
+  smoothScroll.init({
+    speed: 1000
+  });
 
   $('.list-topic').slick({
     dots: true,
