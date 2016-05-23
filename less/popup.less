@@ -100,29 +100,26 @@
 #shareSuccess {
   .modal-dialog {
     @media (min-width: 992px) {
-      width: 600px;
+      width: 550px;
     }
   }
   .modal-content {
-    min-height: 400px;
     background: url("../images/golden-stage/cartoon-bg.png") center center / 100% auto;
     border: 3px solid #fff;
     .border-radius(0);
-    padding: 50px;
-  }
-  .dialog-title {
-    color: #fff;
-    font-size: 30px;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 35px 0 15px;
+    padding: 40px;
   }
   p {
     color: #fff;
     font-size: 15px;
     line-height: 24px;
     text-align: center;
+    &:first-of-type {
+      margin: 30px 0 0;
+    }
+    &:last-of-type {
+      margin: 0 0 30px;
+    }
   }
   .btn-close {
     display: block;
@@ -133,12 +130,11 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 1.42857143;
-    padding: 4px 50px;
-    margin-top: 35px;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
     vertical-align: middle;
+    padding: 4px 50px;
     .user-select();
     -ms-touch-action: manipulation;
     touch-action: manipulation;
