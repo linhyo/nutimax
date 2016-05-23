@@ -24,38 +24,70 @@
     color: @green;
     font-size: 20px;
     font-weight: 600;
-    line-height: 26px;
-    text-transform: uppercase;
+    line-height: 24px;
     text-align: center;
     margin-bottom: 30px;
+    span {
+      font-weight: 600;
+      text-transform: uppercase;
+      &:first-of-type {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+    }
   }
   .dialog-heading {
+    color: @green;
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
   }
   p {
     font-size: 15px;
-    margin-bottom: 10px;
     text-align: justify;
+    margin: 0 0 10px 20px;
+    &.prize-value {
+      color: red;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px;
+    }
   }
   .bold-italic {
     display: block;
+    color: @green;
     font-size: 16px;
     font-weight: 500;
     font-style: italic;
     margin: 5px 0;
   }
+  span.organizer {
+    display: block;
+    color: #777;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    margin: 5px 0 0 0;
+  }
   ul {
     &.disc {
       list-style: disc inside !important;
-      margin-bottom: 10px;
+      margin: 0 0 10px 30px;
     }
     li {
       font-size: 15px;
     }
   }
   table {
+    thead > tr > th {
+      font-weight: 500;
+    }
+    tbody > tr > td {
+      &:first-child, &:nth-child(2), &:last-child {
+        font-weight: 500;
+      }
+    }
     thead > tr > th, tbody > tr > td {
       font-size: 15px;
       &:first-child, &:last-child {

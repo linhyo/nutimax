@@ -3692,34 +3692,66 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   color: #009639;
   font-size: 20px;
   font-weight: 600;
-  line-height: 26px;
-  text-transform: uppercase;
+  line-height: 24px;
   text-align: center;
   margin-bottom: 30px;
 }
+#viewRules .dialog-title span {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#viewRules .dialog-title span:first-of-type {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
 #viewRules .dialog-heading {
+  color: #009639;
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
 }
 #viewRules p {
   font-size: 15px;
-  margin-bottom: 10px;
   text-align: justify;
+  margin: 0 0 10px 20px;
+}
+#viewRules p.prize-value {
+  color: red;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
 }
 #viewRules .bold-italic {
   display: block;
+  color: #009639;
   font-size: 16px;
   font-weight: 500;
   font-style: italic;
   margin: 5px 0;
 }
+#viewRules span.organizer {
+  display: block;
+  color: #777;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+  margin: 5px 0 0 0;
+}
 #viewRules ul.disc {
   list-style: disc inside !important;
-  margin-bottom: 10px;
+  margin: 0 0 10px 30px;
 }
 #viewRules ul li {
   font-size: 15px;
+}
+#viewRules table thead > tr > th {
+  font-weight: 500;
+}
+#viewRules table tbody > tr > td:first-child,
+#viewRules table tbody > tr > td:nth-child(2),
+#viewRules table tbody > tr > td:last-child {
+  font-weight: 500;
 }
 #viewRules table thead > tr > th,
 #viewRules table tbody > tr > td {
