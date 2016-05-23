@@ -3766,6 +3766,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
 @media (min-width: 992px) {
   #shareSuccess .modal-dialog {
     width: 550px;
+    margin: 120px auto;
   }
 }
 #shareSuccess .modal-content {
@@ -3778,19 +3779,20 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
-  padding: 40px;
+  padding: 50px;
 }
 #shareSuccess p {
   color: #fff;
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 24px;
   text-align: center;
 }
 #shareSuccess p:first-of-type {
-  margin: 30px 0 0;
+  margin: 35px 0 0;
 }
 #shareSuccess p:last-of-type {
-  margin: 0 0 30px;
+  margin: 0 0 35px;
 }
 #shareSuccess .btn-close {
   display: block;
