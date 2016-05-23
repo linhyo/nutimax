@@ -14,7 +14,7 @@ var globalBMIText= "";
 var template = '';
 template += '<div class="container wow fadeInDown" data-wow-duration="1s">';
 template += '<div class="step-value">';
-template += '  <div class="detail-value {0}">';
+template += '  <div class="detail-value {0} wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">';
 template += '  <div class="detail-people">';
 template += '  <h2 class="detail-title">THÔNG TIN BMI</h2>';
 template += '  <p class="detail-content">Trạng thái: {6} </p>';
