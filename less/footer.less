@@ -38,6 +38,44 @@
     margin: 10px auto;
     text-align: center;
   }
+  .footer-content{
+    display: block;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    .youtube-link{
+      background: url("../images/golden-stage/youtube-icon.png") no-repeat;
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      top: -14px;
+      display: block;
+      right: 45px;
+      z-index: 1;
+      @media (max-width: 480px) {
+        position: relative;
+        top: 0;
+        display: inline-block;
+        right: 0;
+      }
+    }
+    .fb-link{
+      background: url("../images/golden-stage/facebook-icon.png") no-repeat;
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      top: -14px;
+      right: 0;
+      z-index: 1;
+      display: block;
+      @media (max-width: 480px) {
+        position: relative;
+        top: 0;
+        display: inline-block;
+        right: 0;
+      }
+    }
+  }
   h5 {
     font-weight: 500;
     font-size: 14px;
