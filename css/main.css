@@ -4005,6 +4005,9 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   font-weight: 500;
   line-height: 24px;
 }
+#viewRules .blue-text {
+  color: #4c5ee3;
+}
 #viewRules .bold-italic {
   display: block;
   color: #009639;
