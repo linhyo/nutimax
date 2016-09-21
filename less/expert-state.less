@@ -119,7 +119,87 @@
           color: white;
           display: block;
           font-size: 14px;
-          margin-bottom: 25px;
+          margin-bottom: 10px;
+        }
+      }
+      .title-form-step {
+        color: white;
+        display: block;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      .check-now {
+        display: block;
+        background-color: #02801d;
+        .border-radius(8px);
+        border: 1px solid white;
+        .transition();
+        box-shadow: 0 0 4px rgb(255, 255, 255) inset;
+        position: relative;
+        margin-bottom: 10px;
+        .check-now-content {
+          display: block;
+          position: absolute;
+          left: 20px;
+          top: 20px;
+          .sub-content-title, .main-content-title {
+            display: block;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+          }
+          .sub-content-title {
+            color: #6de110;
+            font-size: 18px;
+            .transition();
+          }
+          .main-content-title {
+            color: white;
+            font-weight: bold;
+            line-height: 30px;
+            font-size: 28px;
+            .transition();
+            margin-bottom: 10px;
+          }
+          .btn-check-now {
+            color: white;
+            text-transform: uppercase;
+            padding: 3px 10px 6px;
+            .horizontal-gradient(#489708, #6ce709);
+            .transition();
+            position: relative;
+            .border-radius(2px);
+            z-index: 1;
+            &:after {
+              content: '';
+              position: absolute;
+              width: 98%;
+              height: 96%;
+              left: 1%;
+              top: 4%;
+              z-index: -1;
+              .border-radius(1 px);
+              background-color: #e5282a;
+            }
+            &:hover {
+              background-color: #e5282a;
+            }
+          }
+        }
+        &:hover {
+          background-color: #2bcf3a;
+          .check-now-content {
+            .sub-content-title {
+              color: #035916;
+            }
+            .main-content-title {
+              color: white;
+            }
+          }
+        }
+        img {
+          .border-radius(8px);
+          display: block;
+          width: 100%;
         }
       }
     }
@@ -189,7 +269,7 @@
         @media (max-width: 480px) {
           display: none;
         }
-        &:nth-child(4){
+        &:nth-child(4) {
           @media (max-width: 480px) {
             width: 80%;
             display: block;
@@ -199,11 +279,11 @@
         &.active {
           opacity: 1;
           @media (max-width: 480px) {
-            display: block!important;
+            display: block !important;
             width: 80%;
             margin: 10px auto;
           }
-          &:nth-child(4){
+          &:nth-child(4) {
             @media (max-width: 480px) {
               display: none;
             }
@@ -232,7 +312,7 @@
         top: 50%;
         width: 270px;
         z-index: 1;
-        &.active{
+        &.active {
           display: block;
         }
         @media (max-width: 768px) {
@@ -464,7 +544,7 @@
         height: 100%;
         display: block;
         position: relative;
-        a{
+        a {
           .border-radius(4px);
           position: relative;
           margin: 0 auto;
@@ -473,7 +553,7 @@
           width: 250px;
           height: 200px;
           display: block;
-          .item-slide{
+          .item-slide {
             .transition();
             background-size: cover;
             background-position: center center;
@@ -483,7 +563,7 @@
             position: relative;
           }
           &:hover {
-            .item-slide{
+            .item-slide {
               .scale(1.05);
             }
           }
@@ -817,7 +897,7 @@
         width: 100%;
         display: block;
         overflow: hidden;
-        a{
+        a {
           font-family: @import-font;
           color: white;
           font-size: 14px;
@@ -881,7 +961,7 @@
     color: #009639;
     font-size: 24px;
     text-align: left;
-    .title-form-question{
+    .title-form-question {
       display: block;
       width: 100%;
       padding-left: 50px;
@@ -895,7 +975,7 @@
         position: absolute;
         display: inline-block;
       }
-      .title-form{
+      .title-form {
         font-weight: 500;
         display: inline-block;
       }
@@ -941,13 +1021,13 @@
   }
   .form-tutorial {
     text-align: left;
-    p{
+    p {
       color: hsl(143, 100%, 29%);
     }
   }
 }
 
-.contact-expert{
+.contact-expert {
   margin-bottom: 10px;
   display: block;
 }
