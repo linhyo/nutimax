@@ -4933,9 +4933,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   margin-bottom: 10px;
 }
 #expert-state .step2 .step2-content .check-now .check-now-content .btn-check-now {
-  color: white;
   text-transform: uppercase;
-  padding: 3px 10px 6px;
   background-color: #489708;
   background-image: -webkit-gradient(linear, left top, right top, from(#489708), to(#6ce709));
   background-image: -webkit-linear-gradient(left, #489708, #6ce709);
@@ -4955,27 +4953,19 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
-  z-index: 1;
+  padding: 4px 2px;
 }
-#expert-state .step2 .step2-content .check-now .check-now-content .btn-check-now:after {
-  content: '';
-  position: absolute;
-  width: 98%;
-  height: 96%;
-  left: 1%;
-  top: 4%;
-  z-index: -1;
-  -webkit-border-radius: 1 px;
-  -moz-border-radius: 1 px;
-  -ms-border-radius: 1 px;
-  border-radius: 1 px;
+#expert-state .step2 .step2-content .check-now .check-now-content .btn-check-now span {
+  padding: 3px 10px 3px;
+  background-color: #e5282a;
+  color: white;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  border-radius: 1px;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
-  background-color: #e5282a;
-}
-#expert-state .step2 .step2-content .check-now .check-now-content .btn-check-now:hover {
-  background-color: #e5282a;
 }
 #expert-state .step2 .step2-content .check-now:hover {
   background-color: #2bcf3a;
@@ -5020,7 +5010,7 @@ body[page='golden-stage'] .header .nuti-white-logo a .nuti-white {
   margin: 0;
 }
 #expert-state .step2 .img-responsive img.product-step {
-  bottom: -35px;
+  bottom: 0;
   z-index: 1;
   text-align: right;
   left: 0;

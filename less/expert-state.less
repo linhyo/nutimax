@@ -161,27 +161,17 @@
             margin-bottom: 10px;
           }
           .btn-check-now {
-            color: white;
             text-transform: uppercase;
-            padding: 3px 10px 6px;
             .horizontal-gradient(#489708, #6ce709);
             .transition();
             position: relative;
             .border-radius(2px);
-            z-index: 1;
-            &:after {
-              content: '';
-              position: absolute;
-              width: 98%;
-              height: 96%;
-              left: 1%;
-              top: 4%;
-              z-index: -1;
-              .border-radius(1 px);
+            padding: 4px 2px;
+            span{
+              padding: 3px 10px 3px;
               background-color: #e5282a;
-            }
-            &:hover {
-              background-color: #e5282a;
+              color: white;
+              .border-radius(1px);
             }
           }
         }
@@ -220,7 +210,7 @@
         left: 0;
         margin: 0;
         &.product-step {
-          bottom: -35px;
+          bottom: 0;
           z-index: 1;
           text-align: right;
           left: 0;
